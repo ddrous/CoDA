@@ -7,4 +7,4 @@ matplotlib
 autopep8
 torchvision
 torchviz
-sklearn
+scikit-learn
