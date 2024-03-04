@@ -74,9 +74,14 @@ class Forecaster(nn.Module):
         if epsilon < 1e-3:
             epsilon = 0
 
+        rtol = 1e-3 if self.method =="dopri5" else None
+        atol = 1e-6 if self.method =="dopri5" else None
+
+        # print("Calling with, options are\n\n\n\n", self.options)
+
         y = y.permute(2, 0, 1) if self.is_ode else y.permute(2, 0, 1, 3, 4)
         if epsilon == 0:
-            res = self.int_(self.derivative, y0=y[0], t=t, method=self.method, options=self.options)
+            res = self.int_(self.derivative, y0=y[0], t=t, rtol=rtol, atol=atol, method=self.method, options=self.options)
         else:
             eval_points = np.random.random(len(t)) < epsilon
             eval_points[-1] = False
@@ -87,7 +92,7 @@ class Forecaster(nn.Module):
                 if eval_point is True:
                     end_i = i + 1
                     t_seg = t[start_i:end_i + 1]
-                    res_seg = self.int_(self.derivative, y0=y[start_i], t=t_seg,
+                    res_seg = self.int_(self.derivative, y0=y[start_i], t=t_seg, rtol=rtol, atol=atol,
                                         method=self.method, options=self.options)
                     if len(res) == 0:
                         res.append(res_seg)
@@ -95,7 +100,7 @@ class Forecaster(nn.Module):
                         res.append(res_seg[1:])
                     start_i = end_i
             t_seg = t[start_i:]
-            res_seg = self.int_(self.derivative, y0=y[start_i], t=t_seg, method=self.method,
+            res_seg = self.int_(self.derivative, y0=y[start_i], t=t_seg, rtol=rtol, atol=atol, method=self.method, 
                                 options=self.options)
             if len(res) == 0:
                 res.append(res_seg)

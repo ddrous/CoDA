@@ -1,0 +1,1070 @@
+Params: n_mask 8645 / n_tot 8645 / n_hypernet 8645
+run_id: 20240206_122751
+gpu_id: 0
+dataset: lotka
+is_layer: False
+regul: 
+l_m: 1e-06
+l_t: 1e-06
+l_c: 9.999999999999999e-05
+code_c: 2
+layers: [-1]
+seed: 1081
+codes_init: None
+lr: 0.001
+init_gain: 0.15
+nl: swish
+n_params forecaster: 25953
+n_params net_root.net: 8645
+net parameters: dict_keys(['derivative.codes', 'derivative.net_root.net.0.weight', 'derivative.net_root.net.0.bias', 'derivative.net_root.net.1.activation.beta', 'derivative.net_root.net.2.weight', 'derivative.net_root.net.2.bias', 'derivative.net_root.net.3.activation.beta', 'derivative.net_root.net.4.weight', 'derivative.net_root.net.4.bias', 'derivative.net_root.net.5.activation.beta', 'derivative.net_root.net.6.weight', 'derivative.net_root.net.6.bias', 'derivative.net_hyper.weight', 'derivative.ghost_structure.net.0.weight', 'derivative.ghost_structure.net.0.bias', 'derivative.ghost_structure.net.1.activation.beta', 'derivative.ghost_structure.net.2.weight', 'derivative.ghost_structure.net.2.bias', 'derivative.ghost_structure.net.3.activation.beta', 'derivative.ghost_structure.net.4.weight', 'derivative.ghost_structure.net.4.bias', 'derivative.ghost_structure.net.5.activation.beta', 'derivative.ghost_structure.net.6.weight', 'derivative.ghost_structure.net.6.bias'])
+state: [36, 2, 20]
+t: tensor([0.0000, 0.5000, 1.0000, 1.5000, 2.0000, 2.5000, 3.0000, 3.5000, 4.0000,
+        4.5000, 5.0000, 5.5000, 6.0000, 6.5000, 7.0000, 7.5000, 8.0000, 8.5000,
+        9.0000, 9.5000], device='cuda:0')
+Dataset lotka, Runid 20240206_122751, Epoch 1, Iter 1, Loss Train: 1.30e+00, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 6, Iter 1, Loss Train: 6.94e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 11, Iter 1, Loss Train: 3.52e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 16, Iter 1, Loss Train: 2.32e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 21, Iter 1, Loss Train: 2.41e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 26, Iter 1, Loss Train: 2.21e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.98
+loss_test: 0.2167430818080902, loss_relative: 1.2128775119781494
+Checkpoint created: min ind test loss was inf, new is 0.2167430818080902
+Checkpoint created: min ind relative loss was inf, new is 1.2128775119781494
+Dataset lotka, Runid 20240206_122751, Epoch 30, Iter 1, Loss Test ind: 2.17e-01
+========
+Dataset lotka, Runid 20240206_122751, Epoch 31, Iter 1, Loss Train: 1.92e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 36, Iter 1, Loss Train: 1.78e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 41, Iter 1, Loss Train: 1.57e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 46, Iter 1, Loss Train: 1.33e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 51, Iter 1, Loss Train: 1.13e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 56, Iter 1, Loss Train: 9.33e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.97
+loss_test: 0.08385957032442093, loss_relative: 0.47896069288253784
+Checkpoint created: min ind test loss was 0.2167430818080902, new is 0.08385957032442093
+Checkpoint created: min ind relative loss was 1.2128775119781494, new is 0.47896069288253784
+Dataset lotka, Runid 20240206_122751, Epoch 60, Iter 1, Loss Test ind: 8.39e-02
+========
+Dataset lotka, Runid 20240206_122751, Epoch 61, Iter 1, Loss Train: 7.66e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 66, Iter 1, Loss Train: 6.35e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 71, Iter 1, Loss Train: 5.25e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 76, Iter 1, Loss Train: 4.34e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 81, Iter 1, Loss Train: 3.55e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 86, Iter 1, Loss Train: 2.92e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.961
+loss_test: 0.027960574254393578, loss_relative: 0.44868597388267517
+Checkpoint created: min ind test loss was 0.08385957032442093, new is 0.027960574254393578
+Checkpoint created: min ind relative loss was 0.47896069288253784, new is 0.44868597388267517
+Dataset lotka, Runid 20240206_122751, Epoch 90, Iter 1, Loss Test ind: 2.80e-02
+========
+Dataset lotka, Runid 20240206_122751, Epoch 91, Iter 1, Loss Train: 2.43e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 96, Iter 1, Loss Train: 2.07e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 101, Iter 1, Loss Train: 1.81e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 106, Iter 1, Loss Train: 1.61e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 111, Iter 1, Loss Train: 1.45e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 116, Iter 1, Loss Train: 1.30e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.951
+loss_test: 0.013752883300185204, loss_relative: 0.36549490690231323
+Checkpoint created: min ind test loss was 0.027960574254393578, new is 0.013752883300185204
+Checkpoint created: min ind relative loss was 0.44868597388267517, new is 0.36549490690231323
+Dataset lotka, Runid 20240206_122751, Epoch 120, Iter 1, Loss Test ind: 1.38e-02
+========
+Dataset lotka, Runid 20240206_122751, Epoch 121, Iter 1, Loss Train: 1.16e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 126, Iter 1, Loss Train: 1.04e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 131, Iter 1, Loss Train: 9.23e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 136, Iter 1, Loss Train: 8.25e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 141, Iter 1, Loss Train: 7.42e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 146, Iter 1, Loss Train: 6.73e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.941
+loss_test: 0.007977492175996304, loss_relative: 0.22916890680789948
+Checkpoint created: min ind test loss was 0.013752883300185204, new is 0.007977492175996304
+Checkpoint created: min ind relative loss was 0.36549490690231323, new is 0.22916890680789948
+Dataset lotka, Runid 20240206_122751, Epoch 150, Iter 1, Loss Test ind: 7.98e-03
+========
+Dataset lotka, Runid 20240206_122751, Epoch 151, Iter 1, Loss Train: 6.16e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 156, Iter 1, Loss Train: 5.69e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 161, Iter 1, Loss Train: 5.29e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 166, Iter 1, Loss Train: 4.96e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 171, Iter 1, Loss Train: 4.69e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 176, Iter 1, Loss Train: 4.46e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.932
+loss_test: 0.006002803333103657, loss_relative: 0.17320644855499268
+Checkpoint created: min ind test loss was 0.007977492175996304, new is 0.006002803333103657
+Checkpoint created: min ind relative loss was 0.22916890680789948, new is 0.17320644855499268
+Dataset lotka, Runid 20240206_122751, Epoch 180, Iter 1, Loss Test ind: 6.00e-03
+========
+Dataset lotka, Runid 20240206_122751, Epoch 181, Iter 1, Loss Train: 4.27e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 186, Iter 1, Loss Train: 4.10e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 191, Iter 1, Loss Train: 3.95e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 196, Iter 1, Loss Train: 3.82e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 201, Iter 1, Loss Train: 3.71e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 206, Iter 1, Loss Train: 3.60e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.923
+loss_test: 0.005094327498227358, loss_relative: 0.16030150651931763
+Checkpoint created: min ind test loss was 0.006002803333103657, new is 0.005094327498227358
+Checkpoint created: min ind relative loss was 0.17320644855499268, new is 0.16030150651931763
+Dataset lotka, Runid 20240206_122751, Epoch 210, Iter 1, Loss Test ind: 5.09e-03
+========
+Dataset lotka, Runid 20240206_122751, Epoch 211, Iter 1, Loss Train: 3.49e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 216, Iter 1, Loss Train: 3.40e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 221, Iter 1, Loss Train: 3.30e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 226, Iter 1, Loss Train: 3.21e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 231, Iter 1, Loss Train: 3.13e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 236, Iter 1, Loss Train: 3.04e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.914
+loss_test: 0.004433377645909786, loss_relative: 0.15051859617233276
+Checkpoint created: min ind test loss was 0.005094327498227358, new is 0.004433377645909786
+Checkpoint created: min ind relative loss was 0.16030150651931763, new is 0.15051859617233276
+Dataset lotka, Runid 20240206_122751, Epoch 240, Iter 1, Loss Test ind: 4.43e-03
+========
+Dataset lotka, Runid 20240206_122751, Epoch 241, Iter 1, Loss Train: 2.96e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 246, Iter 1, Loss Train: 2.88e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 251, Iter 1, Loss Train: 2.80e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 256, Iter 1, Loss Train: 2.73e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 261, Iter 1, Loss Train: 2.65e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 266, Iter 1, Loss Train: 2.58e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.904
+loss_test: 0.003827112726867199, loss_relative: 0.1409054547548294
+Checkpoint created: min ind test loss was 0.004433377645909786, new is 0.003827112726867199
+Checkpoint created: min ind relative loss was 0.15051859617233276, new is 0.1409054547548294
+Dataset lotka, Runid 20240206_122751, Epoch 270, Iter 1, Loss Test ind: 3.83e-03
+========
+Dataset lotka, Runid 20240206_122751, Epoch 271, Iter 1, Loss Train: 2.50e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 276, Iter 1, Loss Train: 2.43e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 281, Iter 1, Loss Train: 2.36e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 286, Iter 1, Loss Train: 2.29e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 291, Iter 1, Loss Train: 2.23e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 296, Iter 1, Loss Train: 2.16e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.895
+loss_test: 0.003257933771237731, loss_relative: 0.13219064474105835
+Checkpoint created: min ind test loss was 0.003827112726867199, new is 0.003257933771237731
+Checkpoint created: min ind relative loss was 0.1409054547548294, new is 0.13219064474105835
+Dataset lotka, Runid 20240206_122751, Epoch 300, Iter 1, Loss Test ind: 3.26e-03
+========
+Dataset lotka, Runid 20240206_122751, Epoch 301, Iter 1, Loss Train: 2.09e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 306, Iter 1, Loss Train: 2.02e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 311, Iter 1, Loss Train: 1.96e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 316, Iter 1, Loss Train: 1.89e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 321, Iter 1, Loss Train: 1.83e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 326, Iter 1, Loss Train: 1.76e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.886
+loss_test: 0.0027032478246837854, loss_relative: 0.12333767116069794
+Checkpoint created: min ind test loss was 0.003257933771237731, new is 0.0027032478246837854
+Checkpoint created: min ind relative loss was 0.13219064474105835, new is 0.12333767116069794
+Dataset lotka, Runid 20240206_122751, Epoch 330, Iter 1, Loss Test ind: 2.70e-03
+========
+Dataset lotka, Runid 20240206_122751, Epoch 331, Iter 1, Loss Train: 1.70e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 336, Iter 1, Loss Train: 1.64e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 341, Iter 1, Loss Train: 1.57e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 346, Iter 1, Loss Train: 1.51e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 351, Iter 1, Loss Train: 1.45e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 356, Iter 1, Loss Train: 1.39e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.878
+loss_test: 0.0021575174760073423, loss_relative: 0.11358977854251862
+Checkpoint created: min ind test loss was 0.0027032478246837854, new is 0.0021575174760073423
+Checkpoint created: min ind relative loss was 0.12333767116069794, new is 0.11358977854251862
+Dataset lotka, Runid 20240206_122751, Epoch 360, Iter 1, Loss Test ind: 2.16e-03
+========
+Dataset lotka, Runid 20240206_122751, Epoch 361, Iter 1, Loss Train: 1.33e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 366, Iter 1, Loss Train: 1.27e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 371, Iter 1, Loss Train: 1.21e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 376, Iter 1, Loss Train: 1.15e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 381, Iter 1, Loss Train: 1.10e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 386, Iter 1, Loss Train: 1.04e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.869
+loss_test: 0.0016468362882733345, loss_relative: 0.10165587812662125
+Checkpoint created: min ind test loss was 0.0021575174760073423, new is 0.0016468362882733345
+Checkpoint created: min ind relative loss was 0.11358977854251862, new is 0.10165587812662125
+Dataset lotka, Runid 20240206_122751, Epoch 390, Iter 1, Loss Test ind: 1.65e-03
+========
+Dataset lotka, Runid 20240206_122751, Epoch 391, Iter 1, Loss Train: 9.88e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 396, Iter 1, Loss Train: 9.36e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 401, Iter 1, Loss Train: 8.86e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 406, Iter 1, Loss Train: 8.38e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 411, Iter 1, Loss Train: 7.91e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 416, Iter 1, Loss Train: 7.46e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.86
+loss_test: 0.0012075005797669291, loss_relative: 0.08837466686964035
+Checkpoint created: min ind test loss was 0.0016468362882733345, new is 0.0012075005797669291
+Checkpoint created: min ind relative loss was 0.10165587812662125, new is 0.08837466686964035
+Dataset lotka, Runid 20240206_122751, Epoch 420, Iter 1, Loss Test ind: 1.21e-03
+========
+Dataset lotka, Runid 20240206_122751, Epoch 421, Iter 1, Loss Train: 7.03e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 426, Iter 1, Loss Train: 6.62e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 431, Iter 1, Loss Train: 6.23e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 436, Iter 1, Loss Train: 5.87e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 441, Iter 1, Loss Train: 5.56e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 446, Iter 1, Loss Train: 5.32e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.851
+loss_test: 0.0009071385720744729, loss_relative: 0.0783134251832962
+Checkpoint created: min ind test loss was 0.0012075005797669291, new is 0.0009071385720744729
+Checkpoint created: min ind relative loss was 0.08837466686964035, new is 0.0783134251832962
+Dataset lotka, Runid 20240206_122751, Epoch 450, Iter 1, Loss Test ind: 9.07e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 451, Iter 1, Loss Train: 5.04e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 456, Iter 1, Loss Train: 4.63e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 461, Iter 1, Loss Train: 4.34e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 466, Iter 1, Loss Train: 4.15e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 471, Iter 1, Loss Train: 4.18e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 476, Iter 1, Loss Train: 4.08e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.843
+loss_test: 0.0006838563131168485, loss_relative: 0.06919044256210327
+Checkpoint created: min ind test loss was 0.0009071385720744729, new is 0.0006838563131168485
+Checkpoint created: min ind relative loss was 0.0783134251832962, new is 0.06919044256210327
+Dataset lotka, Runid 20240206_122751, Epoch 480, Iter 1, Loss Test ind: 6.84e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 481, Iter 1, Loss Train: 3.58e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 486, Iter 1, Loss Train: 3.30e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 491, Iter 1, Loss Train: 3.21e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 496, Iter 1, Loss Train: 2.96e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 501, Iter 1, Loss Train: 2.93e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 506, Iter 1, Loss Train: 2.86e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.835
+loss_test: 0.0005474943318404257, loss_relative: 0.06291259080171585
+Checkpoint created: min ind test loss was 0.0006838563131168485, new is 0.0005474943318404257
+Checkpoint created: min ind relative loss was 0.06919044256210327, new is 0.06291259080171585
+Dataset lotka, Runid 20240206_122751, Epoch 510, Iter 1, Loss Test ind: 5.47e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 511, Iter 1, Loss Train: 2.67e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 516, Iter 1, Loss Train: 2.47e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 521, Iter 1, Loss Train: 2.37e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 526, Iter 1, Loss Train: 2.43e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 531, Iter 1, Loss Train: 3.82e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 536, Iter 1, Loss Train: 2.19e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.826
+loss_test: 0.0004493171873036772, loss_relative: 0.056160811334848404
+Checkpoint created: min ind test loss was 0.0005474943318404257, new is 0.0004493171873036772
+Checkpoint created: min ind relative loss was 0.06291259080171585, new is 0.056160811334848404
+Dataset lotka, Runid 20240206_122751, Epoch 540, Iter 1, Loss Test ind: 4.49e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 541, Iter 1, Loss Train: 2.05e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 546, Iter 1, Loss Train: 2.00e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 551, Iter 1, Loss Train: 1.94e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 556, Iter 1, Loss Train: 1.91e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 561, Iter 1, Loss Train: 1.86e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 566, Iter 1, Loss Train: 1.83e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.818
+loss_test: 0.0004044749366585165, loss_relative: 0.054793212562799454
+Checkpoint created: min ind test loss was 0.0004493171873036772, new is 0.0004044749366585165
+Checkpoint created: min ind relative loss was 0.056160811334848404, new is 0.054793212562799454
+Dataset lotka, Runid 20240206_122751, Epoch 570, Iter 1, Loss Test ind: 4.04e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 571, Iter 1, Loss Train: 1.73e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 576, Iter 1, Loss Train: 1.67e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 581, Iter 1, Loss Train: 1.64e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 586, Iter 1, Loss Train: 1.59e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 591, Iter 1, Loss Train: 1.58e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 596, Iter 1, Loss Train: 1.55e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.81
+loss_test: 0.000369770685210824, loss_relative: 0.05338791012763977
+Checkpoint created: min ind test loss was 0.0004044749366585165, new is 0.000369770685210824
+Checkpoint created: min ind relative loss was 0.054793212562799454, new is 0.05338791012763977
+Dataset lotka, Runid 20240206_122751, Epoch 600, Iter 1, Loss Test ind: 3.70e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 601, Iter 1, Loss Train: 1.51e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 606, Iter 1, Loss Train: 1.49e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 611, Iter 1, Loss Train: 1.90e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 616, Iter 1, Loss Train: 3.21e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 621, Iter 1, Loss Train: 1.85e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 626, Iter 1, Loss Train: 1.36e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.802
+loss_test: 0.0003529394743964076, loss_relative: 0.05388821288943291
+Checkpoint created: min ind test loss was 0.000369770685210824, new is 0.0003529394743964076
+Dataset lotka, Runid 20240206_122751, Epoch 630, Iter 1, Loss Test ind: 3.53e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 631, Iter 1, Loss Train: 1.40e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 636, Iter 1, Loss Train: 1.48e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 641, Iter 1, Loss Train: 1.45e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 646, Iter 1, Loss Train: 1.31e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 651, Iter 1, Loss Train: 1.26e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 656, Iter 1, Loss Train: 1.29e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.794
+loss_test: 0.0003226921835448593, loss_relative: 0.05051574483513832
+Checkpoint created: min ind test loss was 0.0003529394743964076, new is 0.0003226921835448593
+Checkpoint created: min ind relative loss was 0.05338791012763977, new is 0.05051574483513832
+Dataset lotka, Runid 20240206_122751, Epoch 660, Iter 1, Loss Test ind: 3.23e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 661, Iter 1, Loss Train: 1.22e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 666, Iter 1, Loss Train: 1.23e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 671, Iter 1, Loss Train: 1.21e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 676, Iter 1, Loss Train: 1.17e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 681, Iter 1, Loss Train: 1.18e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 686, Iter 1, Loss Train: 1.18e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.786
+loss_test: 0.00032954709604382515, loss_relative: 0.05502176284790039
+Dataset lotka, Runid 20240206_122751, Epoch 690, Iter 1, Loss Test ind: 3.30e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 691, Iter 1, Loss Train: 1.32e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 696, Iter 1, Loss Train: 2.61e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 701, Iter 1, Loss Train: 1.54e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 706, Iter 1, Loss Train: 1.89e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 711, Iter 1, Loss Train: 1.58e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 716, Iter 1, Loss Train: 1.20e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.778
+loss_test: 0.0002956261741928756, loss_relative: 0.04926490783691406
+Checkpoint created: min ind test loss was 0.0003226921835448593, new is 0.0002956261741928756
+Checkpoint created: min ind relative loss was 0.05051574483513832, new is 0.04926490783691406
+Dataset lotka, Runid 20240206_122751, Epoch 720, Iter 1, Loss Test ind: 2.96e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 721, Iter 1, Loss Train: 1.06e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 726, Iter 1, Loss Train: 1.07e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 731, Iter 1, Loss Train: 1.11e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 736, Iter 1, Loss Train: 1.05e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 741, Iter 1, Loss Train: 1.02e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 746, Iter 1, Loss Train: 1.02e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.77
+loss_test: 0.0002821746456902474, loss_relative: 0.04712275415658951
+Checkpoint created: min ind test loss was 0.0002956261741928756, new is 0.0002821746456902474
+Checkpoint created: min ind relative loss was 0.04926490783691406, new is 0.04712275415658951
+Dataset lotka, Runid 20240206_122751, Epoch 750, Iter 1, Loss Test ind: 2.82e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 751, Iter 1, Loss Train: 1.01e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 756, Iter 1, Loss Train: 9.79e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 761, Iter 1, Loss Train: 9.75e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 766, Iter 1, Loss Train: 9.64e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 771, Iter 1, Loss Train: 9.59e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 776, Iter 1, Loss Train: 9.99e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.762
+loss_test: 0.00034301169216632843, loss_relative: 0.06231296807527542
+Dataset lotka, Runid 20240206_122751, Epoch 780, Iter 1, Loss Test ind: 3.43e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 781, Iter 1, Loss Train: 1.59e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 786, Iter 1, Loss Train: 3.75e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 791, Iter 1, Loss Train: 1.65e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 796, Iter 1, Loss Train: 1.02e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 801, Iter 1, Loss Train: 9.17e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 806, Iter 1, Loss Train: 9.63e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.755
+loss_test: 0.00028215671773068607, loss_relative: 0.05092870444059372
+Checkpoint created: min ind test loss was 0.0002821746456902474, new is 0.00028215671773068607
+Dataset lotka, Runid 20240206_122751, Epoch 810, Iter 1, Loss Test ind: 2.82e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 811, Iter 1, Loss Train: 1.03e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 816, Iter 1, Loss Train: 1.02e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 821, Iter 1, Loss Train: 9.28e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 826, Iter 1, Loss Train: 8.77e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 831, Iter 1, Loss Train: 8.65e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 836, Iter 1, Loss Train: 8.67e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.747
+loss_test: 0.0002543932059779763, loss_relative: 0.04557834938168526
+Checkpoint created: min ind test loss was 0.00028215671773068607, new is 0.0002543932059779763
+Checkpoint created: min ind relative loss was 0.04712275415658951, new is 0.04557834938168526
+Dataset lotka, Runid 20240206_122751, Epoch 840, Iter 1, Loss Test ind: 2.54e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 841, Iter 1, Loss Train: 8.56e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 846, Iter 1, Loss Train: 8.42e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 851, Iter 1, Loss Train: 8.40e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 856, Iter 1, Loss Train: 8.34e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 861, Iter 1, Loss Train: 8.24e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 866, Iter 1, Loss Train: 8.18e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.74
+loss_test: 0.0002520966809242964, loss_relative: 0.04820379242300987
+Checkpoint created: min ind test loss was 0.0002543932059779763, new is 0.0002520966809242964
+Dataset lotka, Runid 20240206_122751, Epoch 870, Iter 1, Loss Test ind: 2.52e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 871, Iter 1, Loss Train: 8.64e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 876, Iter 1, Loss Train: 1.25e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 881, Iter 1, Loss Train: 2.30e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 886, Iter 1, Loss Train: 9.23e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 891, Iter 1, Loss Train: 1.36e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 896, Iter 1, Loss Train: 8.60e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.732
+loss_test: 0.00025710344198159873, loss_relative: 0.050252050161361694
+Dataset lotka, Runid 20240206_122751, Epoch 900, Iter 1, Loss Test ind: 2.57e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 901, Iter 1, Loss Train: 9.29e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 906, Iter 1, Loss Train: 8.79e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 911, Iter 1, Loss Train: 7.85e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 916, Iter 1, Loss Train: 8.04e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 921, Iter 1, Loss Train: 7.72e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 926, Iter 1, Loss Train: 7.51e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.725
+loss_test: 0.00023260826128534973, loss_relative: 0.04387594759464264
+Checkpoint created: min ind test loss was 0.0002520966809242964, new is 0.00023260826128534973
+Checkpoint created: min ind relative loss was 0.04557834938168526, new is 0.04387594759464264
+Dataset lotka, Runid 20240206_122751, Epoch 930, Iter 1, Loss Test ind: 2.33e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 931, Iter 1, Loss Train: 7.60e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 936, Iter 1, Loss Train: 7.99e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 941, Iter 1, Loss Train: 8.81e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 946, Iter 1, Loss Train: 1.42e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 951, Iter 1, Loss Train: 2.16e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 956, Iter 1, Loss Train: 7.50e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.718
+loss_test: 0.00027230323757976294, loss_relative: 0.05512530729174614
+Dataset lotka, Runid 20240206_122751, Epoch 960, Iter 1, Loss Test ind: 2.72e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 961, Iter 1, Loss Train: 1.14e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 966, Iter 1, Loss Train: 8.00e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 971, Iter 1, Loss Train: 7.63e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 976, Iter 1, Loss Train: 7.63e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 981, Iter 1, Loss Train: 7.33e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 986, Iter 1, Loss Train: 6.91e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.711
+loss_test: 0.000220516201807186, loss_relative: 0.042923349887132645
+Checkpoint created: min ind test loss was 0.00023260826128534973, new is 0.000220516201807186
+Checkpoint created: min ind relative loss was 0.04387594759464264, new is 0.042923349887132645
+Dataset lotka, Runid 20240206_122751, Epoch 990, Iter 1, Loss Test ind: 2.21e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 991, Iter 1, Loss Train: 6.95e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 996, Iter 1, Loss Train: 7.05e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1001, Iter 1, Loss Train: 7.48e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1006, Iter 1, Loss Train: 1.06e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1011, Iter 1, Loss Train: 1.95e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1016, Iter 1, Loss Train: 1.06e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.703
+loss_test: 0.00026454462204128504, loss_relative: 0.055236391723155975
+Dataset lotka, Runid 20240206_122751, Epoch 1020, Iter 1, Loss Test ind: 2.65e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 1021, Iter 1, Loss Train: 1.11e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1026, Iter 1, Loss Train: 6.73e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1031, Iter 1, Loss Train: 8.40e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1036, Iter 1, Loss Train: 6.56e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1041, Iter 1, Loss Train: 7.08e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1046, Iter 1, Loss Train: 6.49e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.696
+loss_test: 0.0002106676110997796, loss_relative: 0.04194767773151398
+Checkpoint created: min ind test loss was 0.000220516201807186, new is 0.0002106676110997796
+Checkpoint created: min ind relative loss was 0.042923349887132645, new is 0.04194767773151398
+Dataset lotka, Runid 20240206_122751, Epoch 1050, Iter 1, Loss Test ind: 2.11e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 1051, Iter 1, Loss Train: 6.57e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1056, Iter 1, Loss Train: 6.43e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1061, Iter 1, Loss Train: 6.30e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1066, Iter 1, Loss Train: 6.29e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1071, Iter 1, Loss Train: 6.28e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1076, Iter 1, Loss Train: 6.53e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.689
+loss_test: 0.00028609437867999077, loss_relative: 0.060910895466804504
+Dataset lotka, Runid 20240206_122751, Epoch 1080, Iter 1, Loss Test ind: 2.86e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 1081, Iter 1, Loss Train: 1.40e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1086, Iter 1, Loss Train: 5.94e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1091, Iter 1, Loss Train: 2.73e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1096, Iter 1, Loss Train: 1.89e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1101, Iter 1, Loss Train: 1.47e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1106, Iter 1, Loss Train: 1.21e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.683
+loss_test: 0.00023484720441047102, loss_relative: 0.04250957816839218
+Dataset lotka, Runid 20240206_122751, Epoch 1110, Iter 1, Loss Test ind: 2.35e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 1111, Iter 1, Loss Train: 9.43e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1116, Iter 1, Loss Train: 8.13e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1121, Iter 1, Loss Train: 7.30e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1126, Iter 1, Loss Train: 6.87e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1131, Iter 1, Loss Train: 6.37e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1136, Iter 1, Loss Train: 6.01e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.676
+loss_test: 0.00020212474919389933, loss_relative: 0.04050504043698311
+Checkpoint created: min ind test loss was 0.0002106676110997796, new is 0.00020212474919389933
+Checkpoint created: min ind relative loss was 0.04194767773151398, new is 0.04050504043698311
+Dataset lotka, Runid 20240206_122751, Epoch 1140, Iter 1, Loss Test ind: 2.02e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 1141, Iter 1, Loss Train: 5.89e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1146, Iter 1, Loss Train: 5.81e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1151, Iter 1, Loss Train: 5.77e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1156, Iter 1, Loss Train: 5.73e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1161, Iter 1, Loss Train: 5.69e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1166, Iter 1, Loss Train: 5.65e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.669
+loss_test: 0.0001947811688296497, loss_relative: 0.04072398319840431
+Checkpoint created: min ind test loss was 0.00020212474919389933, new is 0.0001947811688296497
+Dataset lotka, Runid 20240206_122751, Epoch 1170, Iter 1, Loss Test ind: 1.95e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 1171, Iter 1, Loss Train: 5.63e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1176, Iter 1, Loss Train: 5.59e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1181, Iter 1, Loss Train: 5.56e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1186, Iter 1, Loss Train: 5.52e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1191, Iter 1, Loss Train: 5.50e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1196, Iter 1, Loss Train: 5.46e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.662
+loss_test: 0.00018770579481497407, loss_relative: 0.04033711180090904
+Checkpoint created: min ind test loss was 0.0001947811688296497, new is 0.00018770579481497407
+Checkpoint created: min ind relative loss was 0.04050504043698311, new is 0.04033711180090904
+Dataset lotka, Runid 20240206_122751, Epoch 1200, Iter 1, Loss Test ind: 1.88e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 1201, Iter 1, Loss Train: 5.44e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1206, Iter 1, Loss Train: 5.40e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1211, Iter 1, Loss Train: 5.37e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1216, Iter 1, Loss Train: 5.36e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1221, Iter 1, Loss Train: 5.34e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1226, Iter 1, Loss Train: 5.59e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.656
+loss_test: 0.00021590689721051604, loss_relative: 0.04998629540205002
+Dataset lotka, Runid 20240206_122751, Epoch 1230, Iter 1, Loss Test ind: 2.16e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 1231, Iter 1, Loss Train: 8.39e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1236, Iter 1, Loss Train: 3.86e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1241, Iter 1, Loss Train: 7.63e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1246, Iter 1, Loss Train: 8.97e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1251, Iter 1, Loss Train: 7.32e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1256, Iter 1, Loss Train: 6.39e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.649
+loss_test: 0.00019424049241933972, loss_relative: 0.04125402122735977
+Dataset lotka, Runid 20240206_122751, Epoch 1260, Iter 1, Loss Test ind: 1.94e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 1261, Iter 1, Loss Train: 5.77e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1266, Iter 1, Loss Train: 5.48e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1271, Iter 1, Loss Train: 5.41e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1276, Iter 1, Loss Train: 5.40e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1281, Iter 1, Loss Train: 5.40e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1286, Iter 1, Loss Train: 5.47e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.643
+loss_test: 0.00018805760191753507, loss_relative: 0.04065040498971939
+Dataset lotka, Runid 20240206_122751, Epoch 1290, Iter 1, Loss Test ind: 1.88e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 1291, Iter 1, Loss Train: 5.38e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1296, Iter 1, Loss Train: 5.26e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1301, Iter 1, Loss Train: 4.99e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1306, Iter 1, Loss Train: 4.98e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1311, Iter 1, Loss Train: 4.98e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1316, Iter 1, Loss Train: 4.94e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.636
+loss_test: 0.00017784081865102053, loss_relative: 0.039063710719347
+Checkpoint created: min ind test loss was 0.00018770579481497407, new is 0.00017784081865102053
+Checkpoint created: min ind relative loss was 0.04033711180090904, new is 0.039063710719347
+Dataset lotka, Runid 20240206_122751, Epoch 1320, Iter 1, Loss Test ind: 1.78e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 1321, Iter 1, Loss Train: 4.91e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1326, Iter 1, Loss Train: 4.85e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1331, Iter 1, Loss Train: 4.85e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1336, Iter 1, Loss Train: 4.80e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1341, Iter 1, Loss Train: 4.77e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1346, Iter 1, Loss Train: 4.75e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.63
+loss_test: 0.00017123429279308766, loss_relative: 0.038376662880182266
+Checkpoint created: min ind test loss was 0.00017784081865102053, new is 0.00017123429279308766
+Checkpoint created: min ind relative loss was 0.039063710719347, new is 0.038376662880182266
+Dataset lotka, Runid 20240206_122751, Epoch 1350, Iter 1, Loss Test ind: 1.71e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 1351, Iter 1, Loss Train: 4.72e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1356, Iter 1, Loss Train: 4.70e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1361, Iter 1, Loss Train: 4.69e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1366, Iter 1, Loss Train: 4.71e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1371, Iter 1, Loss Train: 5.13e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1376, Iter 1, Loss Train: 9.52e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.624
+loss_test: 0.000510911806486547, loss_relative: 0.08061599731445312
+Dataset lotka, Runid 20240206_122751, Epoch 1380, Iter 1, Loss Test ind: 5.11e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 1381, Iter 1, Loss Train: 4.12e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1386, Iter 1, Loss Train: 5.06e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1391, Iter 1, Loss Train: 6.67e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1396, Iter 1, Loss Train: 8.69e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1401, Iter 1, Loss Train: 7.89e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1406, Iter 1, Loss Train: 7.11e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.617
+loss_test: 0.00019478243484627455, loss_relative: 0.044736720621585846
+Dataset lotka, Runid 20240206_122751, Epoch 1410, Iter 1, Loss Test ind: 1.95e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 1411, Iter 1, Loss Train: 6.57e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1416, Iter 1, Loss Train: 5.75e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1421, Iter 1, Loss Train: 5.10e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1426, Iter 1, Loss Train: 4.60e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1431, Iter 1, Loss Train: 4.53e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1436, Iter 1, Loss Train: 4.64e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.611
+loss_test: 0.00016715731180738658, loss_relative: 0.03660484403371811
+Checkpoint created: min ind test loss was 0.00017123429279308766, new is 0.00016715731180738658
+Checkpoint created: min ind relative loss was 0.038376662880182266, new is 0.03660484403371811
+Dataset lotka, Runid 20240206_122751, Epoch 1440, Iter 1, Loss Test ind: 1.67e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 1441, Iter 1, Loss Train: 4.46e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1446, Iter 1, Loss Train: 4.50e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1451, Iter 1, Loss Train: 4.37e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1456, Iter 1, Loss Train: 4.36e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1461, Iter 1, Loss Train: 4.33e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1466, Iter 1, Loss Train: 4.33e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.605
+loss_test: 0.0001611802726984024, loss_relative: 0.03693486377596855
+Checkpoint created: min ind test loss was 0.00016715731180738658, new is 0.0001611802726984024
+Dataset lotka, Runid 20240206_122751, Epoch 1470, Iter 1, Loss Test ind: 1.61e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 1471, Iter 1, Loss Train: 4.28e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1476, Iter 1, Loss Train: 4.27e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1481, Iter 1, Loss Train: 4.25e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1486, Iter 1, Loss Train: 4.23e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1491, Iter 1, Loss Train: 4.20e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1496, Iter 1, Loss Train: 4.18e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.599
+loss_test: 0.00015670548600610346, loss_relative: 0.03695211187005043
+Checkpoint created: min ind test loss was 0.0001611802726984024, new is 0.00015670548600610346
+Dataset lotka, Runid 20240206_122751, Epoch 1500, Iter 1, Loss Test ind: 1.57e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 1501, Iter 1, Loss Train: 4.18e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1506, Iter 1, Loss Train: 5.01e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1511, Iter 1, Loss Train: 1.75e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1516, Iter 1, Loss Train: 4.81e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1521, Iter 1, Loss Train: 2.71e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1526, Iter 1, Loss Train: 1.78e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.593
+loss_test: 0.0002269618707941845, loss_relative: 0.04326126351952553
+Dataset lotka, Runid 20240206_122751, Epoch 1530, Iter 1, Loss Test ind: 2.27e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 1531, Iter 1, Loss Train: 1.17e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1536, Iter 1, Loss Train: 8.93e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1541, Iter 1, Loss Train: 7.18e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1546, Iter 1, Loss Train: 5.87e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1551, Iter 1, Loss Train: 5.02e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1556, Iter 1, Loss Train: 4.49e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.587
+loss_test: 0.00015935799456201494, loss_relative: 0.034875303506851196
+Checkpoint created: min ind relative loss was 0.03660484403371811, new is 0.034875303506851196
+Dataset lotka, Runid 20240206_122751, Epoch 1560, Iter 1, Loss Test ind: 1.59e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 1561, Iter 1, Loss Train: 4.17e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1566, Iter 1, Loss Train: 4.05e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1571, Iter 1, Loss Train: 4.09e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1576, Iter 1, Loss Train: 4.17e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1581, Iter 1, Loss Train: 4.09e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1586, Iter 1, Loss Train: 3.98e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.581
+loss_test: 0.0001530369627289474, loss_relative: 0.034903161227703094
+Checkpoint created: min ind test loss was 0.00015670548600610346, new is 0.0001530369627289474
+Dataset lotka, Runid 20240206_122751, Epoch 1590, Iter 1, Loss Test ind: 1.53e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 1591, Iter 1, Loss Train: 3.98e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1596, Iter 1, Loss Train: 3.94e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1601, Iter 1, Loss Train: 3.88e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1606, Iter 1, Loss Train: 3.90e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1611, Iter 1, Loss Train: 3.86e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1616, Iter 1, Loss Train: 3.89e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.575
+loss_test: 0.00014905762509442866, loss_relative: 0.03463931009173393
+Checkpoint created: min ind test loss was 0.0001530369627289474, new is 0.00014905762509442866
+Checkpoint created: min ind relative loss was 0.034875303506851196, new is 0.03463931009173393
+Dataset lotka, Runid 20240206_122751, Epoch 1620, Iter 1, Loss Test ind: 1.49e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 1621, Iter 1, Loss Train: 3.93e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1626, Iter 1, Loss Train: 3.85e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1631, Iter 1, Loss Train: 3.79e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1636, Iter 1, Loss Train: 3.77e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1641, Iter 1, Loss Train: 3.74e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1646, Iter 1, Loss Train: 3.75e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.57
+loss_test: 0.00014874004409648478, loss_relative: 0.03445494920015335
+Checkpoint created: min ind test loss was 0.00014905762509442866, new is 0.00014874004409648478
+Checkpoint created: min ind relative loss was 0.03463931009173393, new is 0.03445494920015335
+Dataset lotka, Runid 20240206_122751, Epoch 1650, Iter 1, Loss Test ind: 1.49e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 1651, Iter 1, Loss Train: 4.19e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1656, Iter 1, Loss Train: 1.10e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1661, Iter 1, Loss Train: 4.72e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1666, Iter 1, Loss Train: 8.93e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1671, Iter 1, Loss Train: 4.37e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1676, Iter 1, Loss Train: 4.16e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.564
+loss_test: 0.00016295135719701648, loss_relative: 0.038757771253585815
+Dataset lotka, Runid 20240206_122751, Epoch 1680, Iter 1, Loss Test ind: 1.63e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 1681, Iter 1, Loss Train: 4.50e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1686, Iter 1, Loss Train: 4.28e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1691, Iter 1, Loss Train: 4.29e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1696, Iter 1, Loss Train: 4.52e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1701, Iter 1, Loss Train: 4.37e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1706, Iter 1, Loss Train: 3.94e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.558
+loss_test: 0.0001471063296776265, loss_relative: 0.03403091058135033
+Checkpoint created: min ind test loss was 0.00014874004409648478, new is 0.0001471063296776265
+Checkpoint created: min ind relative loss was 0.03445494920015335, new is 0.03403091058135033
+Dataset lotka, Runid 20240206_122751, Epoch 1710, Iter 1, Loss Test ind: 1.47e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 1711, Iter 1, Loss Train: 3.65e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1716, Iter 1, Loss Train: 3.65e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1721, Iter 1, Loss Train: 3.69e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1726, Iter 1, Loss Train: 3.56e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1731, Iter 1, Loss Train: 3.56e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1736, Iter 1, Loss Train: 3.56e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.553
+loss_test: 0.00014106000890024006, loss_relative: 0.0335514061152935
+Checkpoint created: min ind test loss was 0.0001471063296776265, new is 0.00014106000890024006
+Checkpoint created: min ind relative loss was 0.03403091058135033, new is 0.0335514061152935
+Dataset lotka, Runid 20240206_122751, Epoch 1740, Iter 1, Loss Test ind: 1.41e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 1741, Iter 1, Loss Train: 3.52e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1746, Iter 1, Loss Train: 3.49e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1751, Iter 1, Loss Train: 3.49e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1756, Iter 1, Loss Train: 3.48e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1761, Iter 1, Loss Train: 3.51e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1766, Iter 1, Loss Train: 3.84e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.547
+loss_test: 0.00015409945626743138, loss_relative: 0.040344174951314926
+Dataset lotka, Runid 20240206_122751, Epoch 1770, Iter 1, Loss Test ind: 1.54e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 1771, Iter 1, Loss Train: 5.06e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1776, Iter 1, Loss Train: 8.87e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1781, Iter 1, Loss Train: 1.61e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1786, Iter 1, Loss Train: 4.82e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1791, Iter 1, Loss Train: 6.83e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1796, Iter 1, Loss Train: 4.44e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.542
+loss_test: 0.00014968907635193318, loss_relative: 0.03817521035671234
+Dataset lotka, Runid 20240206_122751, Epoch 1800, Iter 1, Loss Test ind: 1.50e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 1801, Iter 1, Loss Train: 4.40e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1806, Iter 1, Loss Train: 3.78e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1811, Iter 1, Loss Train: 3.55e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1816, Iter 1, Loss Train: 3.60e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1821, Iter 1, Loss Train: 3.34e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1826, Iter 1, Loss Train: 3.30e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.536
+loss_test: 0.0001344929332844913, loss_relative: 0.033304858952760696
+Checkpoint created: min ind test loss was 0.00014106000890024006, new is 0.0001344929332844913
+Checkpoint created: min ind relative loss was 0.0335514061152935, new is 0.033304858952760696
+Dataset lotka, Runid 20240206_122751, Epoch 1830, Iter 1, Loss Test ind: 1.34e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 1831, Iter 1, Loss Train: 3.31e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1836, Iter 1, Loss Train: 3.27e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1841, Iter 1, Loss Train: 3.27e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1846, Iter 1, Loss Train: 3.66e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1851, Iter 1, Loss Train: 1.07e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1856, Iter 1, Loss Train: 5.58e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.531
+loss_test: 0.0002723310608416796, loss_relative: 0.06135411560535431
+Dataset lotka, Runid 20240206_122751, Epoch 1860, Iter 1, Loss Test ind: 2.72e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 1861, Iter 1, Loss Train: 1.54e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1866, Iter 1, Loss Train: 9.59e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1871, Iter 1, Loss Train: 7.20e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1876, Iter 1, Loss Train: 6.13e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1881, Iter 1, Loss Train: 5.59e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1886, Iter 1, Loss Train: 4.83e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.526
+loss_test: 0.00015241738583426923, loss_relative: 0.03715478256344795
+Dataset lotka, Runid 20240206_122751, Epoch 1890, Iter 1, Loss Test ind: 1.52e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 1891, Iter 1, Loss Train: 4.29e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1896, Iter 1, Loss Train: 3.86e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1901, Iter 1, Loss Train: 3.55e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1906, Iter 1, Loss Train: 3.29e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1911, Iter 1, Loss Train: 3.19e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1916, Iter 1, Loss Train: 3.20e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.52
+loss_test: 0.00013293264782987535, loss_relative: 0.03126068785786629
+Checkpoint created: min ind test loss was 0.0001344929332844913, new is 0.00013293264782987535
+Checkpoint created: min ind relative loss was 0.033304858952760696, new is 0.03126068785786629
+Dataset lotka, Runid 20240206_122751, Epoch 1920, Iter 1, Loss Test ind: 1.33e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 1921, Iter 1, Loss Train: 3.26e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1926, Iter 1, Loss Train: 3.13e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1931, Iter 1, Loss Train: 3.15e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1936, Iter 1, Loss Train: 3.10e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1941, Iter 1, Loss Train: 3.10e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1946, Iter 1, Loss Train: 3.06e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.515
+loss_test: 0.00012798194075003266, loss_relative: 0.032602712512016296
+Checkpoint created: min ind test loss was 0.00013293264782987535, new is 0.00012798194075003266
+Dataset lotka, Runid 20240206_122751, Epoch 1950, Iter 1, Loss Test ind: 1.28e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 1951, Iter 1, Loss Train: 3.12e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1956, Iter 1, Loss Train: 3.59e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1961, Iter 1, Loss Train: 4.35e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1966, Iter 1, Loss Train: 3.37e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1971, Iter 1, Loss Train: 3.00e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1976, Iter 1, Loss Train: 3.13e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.51
+loss_test: 0.0001291306980419904, loss_relative: 0.03138994053006172
+Dataset lotka, Runid 20240206_122751, Epoch 1980, Iter 1, Loss Test ind: 1.29e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 1981, Iter 1, Loss Train: 3.61e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1986, Iter 1, Loss Train: 6.67e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1991, Iter 1, Loss Train: 1.01e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 1996, Iter 1, Loss Train: 5.26e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2001, Iter 1, Loss Train: 3.21e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2006, Iter 1, Loss Train: 4.93e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.505
+loss_test: 0.00014234882837627083, loss_relative: 0.03824775293469429
+Dataset lotka, Runid 20240206_122751, Epoch 2010, Iter 1, Loss Test ind: 1.42e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 2011, Iter 1, Loss Train: 4.59e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2016, Iter 1, Loss Train: 3.12e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2021, Iter 1, Loss Train: 3.00e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2026, Iter 1, Loss Train: 3.52e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2031, Iter 1, Loss Train: 4.55e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2036, Iter 1, Loss Train: 7.82e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.5
+loss_test: 0.00023792384308762848, loss_relative: 0.04845809563994408
+Dataset lotka, Runid 20240206_122751, Epoch 2040, Iter 1, Loss Test ind: 2.38e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 2041, Iter 1, Loss Train: 1.55e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2046, Iter 1, Loss Train: 6.31e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2051, Iter 1, Loss Train: 5.61e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2056, Iter 1, Loss Train: 3.63e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2061, Iter 1, Loss Train: 3.93e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2066, Iter 1, Loss Train: 3.82e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.495
+loss_test: 0.00012117635924369097, loss_relative: 0.030299291014671326
+Checkpoint created: min ind test loss was 0.00012798194075003266, new is 0.00012117635924369097
+Checkpoint created: min ind relative loss was 0.03126068785786629, new is 0.030299291014671326
+Dataset lotka, Runid 20240206_122751, Epoch 2070, Iter 1, Loss Test ind: 1.21e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 2071, Iter 1, Loss Train: 2.84e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2076, Iter 1, Loss Train: 2.87e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2081, Iter 1, Loss Train: 2.91e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2086, Iter 1, Loss Train: 2.98e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2091, Iter 1, Loss Train: 3.47e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2096, Iter 1, Loss Train: 4.91e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.49
+loss_test: 0.0002320732019143179, loss_relative: 0.05634314939379692
+Dataset lotka, Runid 20240206_122751, Epoch 2100, Iter 1, Loss Test ind: 2.32e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 2101, Iter 1, Loss Train: 1.38e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2106, Iter 1, Loss Train: 1.82e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2111, Iter 1, Loss Train: 4.98e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2116, Iter 1, Loss Train: 5.23e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2121, Iter 1, Loss Train: 5.39e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2126, Iter 1, Loss Train: 2.78e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.485
+loss_test: 0.00012666427937801927, loss_relative: 0.03022860363125801
+Checkpoint created: min ind relative loss was 0.030299291014671326, new is 0.03022860363125801
+Dataset lotka, Runid 20240206_122751, Epoch 2130, Iter 1, Loss Test ind: 1.27e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 2131, Iter 1, Loss Train: 3.76e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2136, Iter 1, Loss Train: 2.82e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2141, Iter 1, Loss Train: 3.83e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2146, Iter 1, Loss Train: 3.17e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2151, Iter 1, Loss Train: 2.75e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2156, Iter 1, Loss Train: 2.86e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.48
+loss_test: 0.00012469585635699332, loss_relative: 0.03375935181975365
+Dataset lotka, Runid 20240206_122751, Epoch 2160, Iter 1, Loss Test ind: 1.25e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 2161, Iter 1, Loss Train: 3.42e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2166, Iter 1, Loss Train: 4.78e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2171, Iter 1, Loss Train: 9.02e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2176, Iter 1, Loss Train: 1.02e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2181, Iter 1, Loss Train: 3.45e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2186, Iter 1, Loss Train: 4.23e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.475
+loss_test: 0.00013483646034728736, loss_relative: 0.03163355961441994
+Dataset lotka, Runid 20240206_122751, Epoch 2190, Iter 1, Loss Test ind: 1.35e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 2191, Iter 1, Loss Train: 4.90e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2196, Iter 1, Loss Train: 2.96e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2201, Iter 1, Loss Train: 2.73e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2206, Iter 1, Loss Train: 3.42e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2211, Iter 1, Loss Train: 5.87e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2216, Iter 1, Loss Train: 9.86e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.471
+loss_test: 0.00014677000581286848, loss_relative: 0.033616356551647186
+Dataset lotka, Runid 20240206_122751, Epoch 2220, Iter 1, Loss Test ind: 1.47e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 2221, Iter 1, Loss Train: 6.49e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2226, Iter 1, Loss Train: 2.58e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2231, Iter 1, Loss Train: 4.93e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2236, Iter 1, Loss Train: 4.43e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2241, Iter 1, Loss Train: 2.57e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2246, Iter 1, Loss Train: 3.16e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.466
+loss_test: 0.00013025263615418226, loss_relative: 0.031031884253025055
+Dataset lotka, Runid 20240206_122751, Epoch 2250, Iter 1, Loss Test ind: 1.30e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 2251, Iter 1, Loss Train: 4.62e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2256, Iter 1, Loss Train: 6.67e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2261, Iter 1, Loss Train: 6.28e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2266, Iter 1, Loss Train: 3.68e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2271, Iter 1, Loss Train: 2.48e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2276, Iter 1, Loss Train: 2.78e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.461
+loss_test: 0.0001146908471127972, loss_relative: 0.03146234527230263
+Checkpoint created: min ind test loss was 0.00012117635924369097, new is 0.0001146908471127972
+Dataset lotka, Runid 20240206_122751, Epoch 2280, Iter 1, Loss Test ind: 1.15e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 2281, Iter 1, Loss Train: 2.86e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2286, Iter 1, Loss Train: 2.66e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2291, Iter 1, Loss Train: 2.73e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2296, Iter 1, Loss Train: 5.02e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2301, Iter 1, Loss Train: 2.91e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2306, Iter 1, Loss Train: 1.31e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.457
+loss_test: 0.00022399643785320222, loss_relative: 0.04713118076324463
+Dataset lotka, Runid 20240206_122751, Epoch 2310, Iter 1, Loss Test ind: 2.24e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 2311, Iter 1, Loss Train: 1.57e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2316, Iter 1, Loss Train: 1.30e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2321, Iter 1, Loss Train: 9.03e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2326, Iter 1, Loss Train: 6.06e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2331, Iter 1, Loss Train: 4.59e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2336, Iter 1, Loss Train: 3.68e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.452
+loss_test: 0.00011871129390783608, loss_relative: 0.027966946363449097
+Checkpoint created: min ind relative loss was 0.03022860363125801, new is 0.027966946363449097
+Dataset lotka, Runid 20240206_122751, Epoch 2340, Iter 1, Loss Test ind: 1.19e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 2341, Iter 1, Loss Train: 3.04e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2346, Iter 1, Loss Train: 2.51e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2351, Iter 1, Loss Train: 2.48e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2356, Iter 1, Loss Train: 2.59e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2361, Iter 1, Loss Train: 2.48e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2366, Iter 1, Loss Train: 2.39e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.448
+loss_test: 0.00010720366117311642, loss_relative: 0.02769949845969677
+Checkpoint created: min ind test loss was 0.0001146908471127972, new is 0.00010720366117311642
+Checkpoint created: min ind relative loss was 0.027966946363449097, new is 0.02769949845969677
+Dataset lotka, Runid 20240206_122751, Epoch 2370, Iter 1, Loss Test ind: 1.07e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 2371, Iter 1, Loss Train: 2.40e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2376, Iter 1, Loss Train: 2.34e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2381, Iter 1, Loss Train: 2.35e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2386, Iter 1, Loss Train: 2.35e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2391, Iter 1, Loss Train: 2.31e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2396, Iter 1, Loss Train: 2.30e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.443
+loss_test: 0.00010319115244783461, loss_relative: 0.027811231091618538
+Checkpoint created: min ind test loss was 0.00010720366117311642, new is 0.00010319115244783461
+Dataset lotka, Runid 20240206_122751, Epoch 2400, Iter 1, Loss Test ind: 1.03e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 2401, Iter 1, Loss Train: 2.29e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2406, Iter 1, Loss Train: 2.27e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2411, Iter 1, Loss Train: 2.27e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2416, Iter 1, Loss Train: 2.34e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2421, Iter 1, Loss Train: 2.97e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2426, Iter 1, Loss Train: 7.12e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.439
+loss_test: 0.0003843239974230528, loss_relative: 0.07584583759307861
+Dataset lotka, Runid 20240206_122751, Epoch 2430, Iter 1, Loss Test ind: 3.84e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 2431, Iter 1, Loss Train: 2.98e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2436, Iter 1, Loss Train: 3.58e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2441, Iter 1, Loss Train: 9.89e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2446, Iter 1, Loss Train: 1.01e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2451, Iter 1, Loss Train: 6.20e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2456, Iter 1, Loss Train: 3.03e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.434
+loss_test: 0.00010729964560596272, loss_relative: 0.02782430127263069
+Dataset lotka, Runid 20240206_122751, Epoch 2460, Iter 1, Loss Test ind: 1.07e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 2461, Iter 1, Loss Train: 2.40e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2466, Iter 1, Loss Train: 3.32e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2471, Iter 1, Loss Train: 3.03e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2476, Iter 1, Loss Train: 2.36e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2481, Iter 1, Loss Train: 2.31e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2486, Iter 1, Loss Train: 2.38e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.43
+loss_test: 0.00010361675231251866, loss_relative: 0.0278672706335783
+Dataset lotka, Runid 20240206_122751, Epoch 2490, Iter 1, Loss Test ind: 1.04e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 2491, Iter 1, Loss Train: 2.25e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2496, Iter 1, Loss Train: 2.18e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2501, Iter 1, Loss Train: 2.21e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2506, Iter 1, Loss Train: 2.39e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2511, Iter 1, Loss Train: 2.44e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2516, Iter 1, Loss Train: 2.35e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.426
+loss_test: 0.0001001199780148454, loss_relative: 0.026774242520332336
+Checkpoint created: min ind test loss was 0.00010319115244783461, new is 0.0001001199780148454
+Checkpoint created: min ind relative loss was 0.02769949845969677, new is 0.026774242520332336
+Dataset lotka, Runid 20240206_122751, Epoch 2520, Iter 1, Loss Test ind: 1.00e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 2521, Iter 1, Loss Train: 2.38e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2526, Iter 1, Loss Train: 2.38e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2531, Iter 1, Loss Train: 2.24e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2536, Iter 1, Loss Train: 2.29e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2541, Iter 1, Loss Train: 2.53e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2546, Iter 1, Loss Train: 3.57e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.421
+loss_test: 0.00021082590683363378, loss_relative: 0.04619843140244484
+Dataset lotka, Runid 20240206_122751, Epoch 2550, Iter 1, Loss Test ind: 2.11e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 2551, Iter 1, Loss Train: 1.43e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2556, Iter 1, Loss Train: 3.56e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2561, Iter 1, Loss Train: 1.50e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2566, Iter 1, Loss Train: 6.06e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2571, Iter 1, Loss Train: 2.45e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2576, Iter 1, Loss Train: 2.51e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.417
+loss_test: 0.0001068769779521972, loss_relative: 0.02663804031908512
+Checkpoint created: min ind relative loss was 0.026774242520332336, new is 0.02663804031908512
+Dataset lotka, Runid 20240206_122751, Epoch 2580, Iter 1, Loss Test ind: 1.07e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 2581, Iter 1, Loss Train: 2.86e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2586, Iter 1, Loss Train: 3.36e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2591, Iter 1, Loss Train: 3.06e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2596, Iter 1, Loss Train: 2.27e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2601, Iter 1, Loss Train: 2.12e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2606, Iter 1, Loss Train: 2.29e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.413
+loss_test: 9.969099482987076e-05, loss_relative: 0.027268681675195694
+Checkpoint created: min ind test loss was 0.0001001199780148454, new is 9.969099482987076e-05
+Dataset lotka, Runid 20240206_122751, Epoch 2610, Iter 1, Loss Test ind: 9.97e-05
+========
+Dataset lotka, Runid 20240206_122751, Epoch 2611, Iter 1, Loss Train: 2.14e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2616, Iter 1, Loss Train: 2.13e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2621, Iter 1, Loss Train: 2.06e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2626, Iter 1, Loss Train: 2.18e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2631, Iter 1, Loss Train: 2.07e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2636, Iter 1, Loss Train: 2.00e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.409
+loss_test: 9.566103835823014e-05, loss_relative: 0.027386698871850967
+Checkpoint created: min ind test loss was 9.969099482987076e-05, new is 9.566103835823014e-05
+Dataset lotka, Runid 20240206_122751, Epoch 2640, Iter 1, Loss Test ind: 9.57e-05
+========
+Dataset lotka, Runid 20240206_122751, Epoch 2641, Iter 1, Loss Train: 2.11e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2646, Iter 1, Loss Train: 2.27e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2651, Iter 1, Loss Train: 2.67e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2656, Iter 1, Loss Train: 3.48e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2661, Iter 1, Loss Train: 5.74e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2666, Iter 1, Loss Train: 7.80e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.405
+loss_test: 0.0001180192775791511, loss_relative: 0.03478981927037239
+Dataset lotka, Runid 20240206_122751, Epoch 2670, Iter 1, Loss Test ind: 1.18e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 2671, Iter 1, Loss Train: 4.19e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2676, Iter 1, Loss Train: 2.19e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2681, Iter 1, Loss Train: 4.43e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2686, Iter 1, Loss Train: 4.09e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2691, Iter 1, Loss Train: 2.59e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2696, Iter 1, Loss Train: 1.95e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.401
+loss_test: 0.00010071298311231658, loss_relative: 0.030131816864013672
+Dataset lotka, Runid 20240206_122751, Epoch 2700, Iter 1, Loss Test ind: 1.01e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 2701, Iter 1, Loss Train: 2.63e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2706, Iter 1, Loss Train: 4.17e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2711, Iter 1, Loss Train: 6.59e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2716, Iter 1, Loss Train: 7.11e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2721, Iter 1, Loss Train: 2.73e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2726, Iter 1, Loss Train: 2.38e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.397
+loss_test: 0.00011098476534243673, loss_relative: 0.028473524376749992
+Dataset lotka, Runid 20240206_122751, Epoch 2730, Iter 1, Loss Test ind: 1.11e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 2731, Iter 1, Loss Train: 4.09e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2736, Iter 1, Loss Train: 3.56e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2741, Iter 1, Loss Train: 2.59e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2746, Iter 1, Loss Train: 2.09e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2751, Iter 1, Loss Train: 1.90e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2756, Iter 1, Loss Train: 1.93e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.393
+loss_test: 9.537667210679501e-05, loss_relative: 0.025871219113469124
+Checkpoint created: min ind test loss was 9.566103835823014e-05, new is 9.537667210679501e-05
+Checkpoint created: min ind relative loss was 0.02663804031908512, new is 0.025871219113469124
+Dataset lotka, Runid 20240206_122751, Epoch 2760, Iter 1, Loss Test ind: 9.54e-05
+========
+Dataset lotka, Runid 20240206_122751, Epoch 2761, Iter 1, Loss Train: 2.59e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2766, Iter 1, Loss Train: 8.83e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2771, Iter 1, Loss Train: 4.07e-04, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2776, Iter 1, Loss Train: 4.73e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2781, Iter 1, Loss Train: 2.27e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2786, Iter 1, Loss Train: 3.91e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.389
+loss_test: 0.00013348045467864722, loss_relative: 0.036917854100465775
+Dataset lotka, Runid 20240206_122751, Epoch 2790, Iter 1, Loss Test ind: 1.33e-04
+========
+Dataset lotka, Runid 20240206_122751, Epoch 2791, Iter 1, Loss Train: 4.97e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2796, Iter 1, Loss Train: 4.90e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2801, Iter 1, Loss Train: 4.06e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2806, Iter 1, Loss Train: 2.72e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2811, Iter 1, Loss Train: 1.99e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2816, Iter 1, Loss Train: 1.97e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.385
+loss_test: 9.385396697325632e-05, loss_relative: 0.024641288444399834
+Checkpoint created: min ind test loss was 9.537667210679501e-05, new is 9.385396697325632e-05
+Checkpoint created: min ind relative loss was 0.025871219113469124, new is 0.024641288444399834
+Dataset lotka, Runid 20240206_122751, Epoch 2820, Iter 1, Loss Test ind: 9.39e-05
+========
+Dataset lotka, Runid 20240206_122751, Epoch 2821, Iter 1, Loss Train: 2.11e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2826, Iter 1, Loss Train: 1.89e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2831, Iter 1, Loss Train: 1.97e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2836, Iter 1, Loss Train: 1.82e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset lotka, Runid 20240206_122751, Epoch 2841, Iter 1, Loss Train: 1.84e-05, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00

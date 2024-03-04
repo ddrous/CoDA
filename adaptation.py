@@ -130,6 +130,9 @@ pretrained_dict = {k: v for k, v in checkpoint['model_state_dict'].items() if (k
 model_dict.update(pretrained_dict)
 net.load_state_dict(model_dict)
 net = net.to(device)
+print("Total number of parameters: ", sum(p.numel() for p in net.parameters() if p.requires_grad))
+# exit()
+
 
 for name, param in net.named_parameters():
     if param.requires_grad and ("net_root" in name or "net_hyper" in name or "mask" in name):

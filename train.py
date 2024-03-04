@@ -12,6 +12,8 @@ import sys, os
 import math
 import torch.nn.functional as F
 from sklearn.preprocessing import MinMaxScaler
+from time import time
+start = time.time()
 
 log_every = 5
 dataset = "lotka"
@@ -26,6 +28,7 @@ l_c = l_m * 100
 l_t = l_m
 seed = 1
 options = {}
+# options = {"rtol":1e-3, "atol":1e-4}
 opts, args = getopt.getopt(sys.argv[1:], "c:d:g:h:l:m:r:s:t:x:")
 code_c = 2
 for opt, arg in opts:
@@ -78,7 +81,7 @@ if dataset == "lotka":
     factor = 1.0
     state_c = 2
     init_gain = 0.15
-    method = "rk4"
+    method = "dopri5"
     dataset_train_params = {
         "n_data_per_env": minibatch_size, "t_horizon": 10, "dt": 0.5, "method": "RK45", "group": "train",
         "params": [
@@ -96,6 +99,10 @@ if dataset == "lotka":
     dataset_test_params["n_data_per_env"] = 32
     dataset_test_params["group"] = "test"
     dataset_train, dataset_test = LotkaVolterraDataset(**dataset_train_params), LotkaVolterraDataset(**dataset_test_params)
+
+    # print(vars(dataset_train))
+    # exit()
+
 elif "g_osci" in dataset:
     minibatch_size = 32
     factor = 1.0
@@ -175,6 +182,15 @@ dataloader_train, dataloader_test = DataLoaderODE(dataset_train, minibatch_size,
                                     DataLoaderODE(dataset_test, minibatch_size, n_env, is_train=False)
 if dataset_test_ood:
     dataloader_test_ood = DataLoaderODE(dataset_test_ood, minibatch_size, n_env, is_train=False)
+
+## MyTest Print dataloader
+# count =0
+# for i, data in enumerate(dataloader_train):
+#     print(data['state'].shape)
+#     count += 1
+# print("Dataset sise: ", count)
+
+# exit()
 
 # Forecaster
 epsilon = epsilon_t = 0.99
@@ -293,7 +309,7 @@ for epoch in range(n_epochs):
             logger.info(f"epsilon: {epsilon_t:.3}")
 
             with torch.no_grad():
-                print(net.derivative.codes)
+                # print(net.derivative.codes)
                 dataloader_test_list = [(dataloader_test, "ind"), (dataloader_test_ood, "ood")] if dataset_test_ood else [(dataloader_test, "ind")]
                 for (dataloader_test_instance, test_type) in dataloader_test_list:
                     loss_test = 0.0
@@ -301,6 +317,7 @@ for epoch in range(n_epochs):
                     # loss_env = [0.0 for _ in range(len(dataset_train_params["params"]))]
                     # loss_test_tot = 0.0
                     for j, data_test in enumerate(dataloader_test_instance, 0):
+                        # print("\n Here I lie, dataloader test instance: ", dataloader_test_instance.dataset, "\n")
                         state = data_test["state"].to(device)
                         t = data_test["t"].to(device)
                         targets = state
@@ -310,7 +327,7 @@ for epoch in range(n_epochs):
                         loss_test += criterion(outputs, targets)
                         raw_loss_relative = torch.abs(outputs - targets) / torch.abs(targets)
                         loss_relative += raw_loss_relative[~(torch.isnan(raw_loss_relative))].mean()
-                    loss_test /= j + 1
+                    loss_test /= j + 1          ## TODO: they are actually taking the mean !!! Line 326
                     loss_relative /= j + 1
                     logger.info(f"loss_test: {loss_test}, loss_relative: {loss_relative}")
 
@@ -365,3 +382,6 @@ for epoch in range(n_epochs):
 
                     logger.info("Dataset %s, Runid %s, Epoch %d, Iter %d, Loss Test %s: %.2e" % (dataset, ts, epoch + 1, i + 1, test_type, loss_test))
                 logger.info("========")
+
+end = time.time()
+print("Total script time in hours minutes seconds: ", time.strftime("%H:%M:%S", time.gmtime(end - start)))
