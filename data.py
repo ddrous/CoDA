@@ -55,7 +55,12 @@ class ODEDataset(Dataset):
             out['state'] = torch.from_numpy(self.buffer[index])
         
         out['index'] = index
-        out['param'] = torch.tensor(list(self.params_eq[env].values()))
+        env_val = self.params_eq[env]
+        if env_val is dict:
+            # out['param'] = torch.tensor(list(self.params_eq[env].values()))
+            out['param'] = torch.tensor(list(env_val.values()))
+        elif env_val is callable:
+            out['param'] = env_val.__name__
         return out
 
     def __len__(self):
@@ -72,6 +77,22 @@ class LotkaVolterraDataset(ODEDataset):
         d[0] = alpha * x[0] - beta * x[0] * x[1]
         d[1] = delta * x[0] * x[1] - gamma * x[1]
         return d
+
+    def _get_init_cond(self, index):
+        np.random.seed(index if not self.test else self.max - index)
+        return np.random.random(2) + self.rdn_gen
+
+
+
+
+class ForcedOscillatorDataset(ODEDataset):
+    def _f(self, t, X, env=0):
+        x, v = X
+        forcing = self.params_eq[env]
+        mass, damping, nat_freq = 1, 0.1, 1
+        dxdt = v
+        dvdt = -2 * damping*nat_freq*v - (nat_freq**2)*x + forcing(t)
+        return np.array([dxdt, dvdt])
 
     def _get_init_cond(self, index):
         np.random.seed(index if not self.test else self.max - index)
@@ -120,6 +141,13 @@ class GrayScottDataset(Dataset):
         a_pn = np.roll(a_zz, (-1, +1), (0, 1))
         a_pp = np.roll(a_zz, (-1, -1), (0, 1))
 
+        # print("\n\n\nSTOP HERE: dx is :", self.dx)
+
+        ## Open a new log file, and write the dx value
+        # with open('dx.log', 'w') as file:
+        #     file.write(f'dx: {self.dx}\n')
+
+
         return (- 3 * a + 0.5 * (a_nz + a_pz + a_zn + a_zp) + 0.25 * (a_nn + a_np + a_pn + a_pp)) / (self.dx ** 2)
 
     def _vec_to_mat(self, vec_uv):
@@ -159,6 +187,7 @@ class GrayScottDataset(Dataset):
         env_index = index % self.n_data_per_env
         t = torch.arange(0, self.time_horizon, self.dt_eval).float()
         if self.buffer.get(f'{env},{env_index}') is None:
+        # if True:          ## TODO grey-scott has a buffer problem !
             print(f'generating {env},{env_index}')
             uv_0 = self._mat_to_vec(*self._get_init_cond(env_index))
             res = solve_ivp(partial(self._f, env=env), (0., self.time_horizon), y0=uv_0, method=self.method,

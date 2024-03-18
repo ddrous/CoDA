@@ -12,7 +12,7 @@ import sys, os
 import math
 import torch.nn.functional as F
 from sklearn.preprocessing import MinMaxScaler
-from time import time
+import time
 start = time.time()
 
 log_every = 5
@@ -71,7 +71,7 @@ path_checkpoint = os.path.join(path_results, ts)
 logger = create_logger(path_checkpoint, os.path.join(path_checkpoint, "log"))
 os.makedirs(path_checkpoint, exist_ok=True)
 scaler = MinMaxScaler(feature_range=(-0.02, 0.02))
-is_ode = any(name in dataset for name in ["lotka", "g_osci"])
+is_ode = any(name in dataset for name in ["lotka", "g_osci", "forced"])
 init_type = "default"
 set_rdm_seed(seed)
 codes_init = None
@@ -100,8 +100,45 @@ if dataset == "lotka":
     dataset_test_params["group"] = "test"
     dataset_train, dataset_test = LotkaVolterraDataset(**dataset_train_params), LotkaVolterraDataset(**dataset_test_params)
 
-    # print(vars(dataset_train))
-    # exit()
+
+
+
+elif dataset == "forced":
+
+    def sin(t):
+        return np.sin(t)
+    def cos(t):
+        return np.cos(t)
+    def periodic(t):
+        return np.sin(t) + np.cos(t)
+    def expcos(t):
+        return np.exp(np.cos(t))
+    def sincos(t):
+        return np.sin(np.cos(t))
+    def sinperiodic(t):
+        return np.sin(periodic(t))
+    def sinhperiodic(t):
+        return np.sinh(periodic(t))
+    def sinhsin(t):
+        return np.sinh(np.sin(t))
+
+    def sinhcos(t): ## For adaptation !
+        return np.sinh(np.cos(t))
+
+    minibatch_size = 4
+    factor = 1.0
+    state_c = 2
+    init_gain = 0.15
+    method = "dopri5"
+    dataset_train_params = {
+        "n_data_per_env": minibatch_size, "t_horizon": 6*np.pi, "dt": 0.1, "method": "RK45", "group": "train",
+        "params": [sin, cos, periodic, expcos, sincos, sinperiodic, sinhperiodic, sinhsin]}
+    dataset_test_params = dict()
+    dataset_test_params.update(dataset_train_params)
+    dataset_test_params["n_data_per_env"] = 32
+    dataset_test_params["group"] = "test"
+    dataset_train, dataset_test = ForcedOscillatorDataset(**dataset_train_params), ForcedOscillatorDataset(**dataset_test_params)
+
 
 elif "g_osci" in dataset:
     minibatch_size = 32
@@ -197,12 +234,12 @@ epsilon = epsilon_t = 0.99
 update_epsilon_every = 30
 if dataset == "navier":
     update_epsilon_every = 15
-n_epochs = 120000
+n_epochs = 20
 forecaster_params = {
     "dataset": dataset,
     "is_ode": is_ode,
     "state_c": state_c,
-    "hidden_c": 64,
+    "hidden_c": 256,
     "code_c": code_c,
     "n_env": n_env,
     "factor": factor,
@@ -214,7 +251,7 @@ forecaster_params = {
     "htype": 'hyper',
     "options": options,
 }
-lr = 1e-3
+lr = 1e-4
 nl = forecaster_params["nl"]
 net = Forecaster(**forecaster_params, logger=logger, codes_init=codes_init, device=device)
 init_weights(net, init_type=init_type, init_gain=init_gain)
