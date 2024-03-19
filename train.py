@@ -81,7 +81,8 @@ if dataset == "lotka":
     factor = 1.0
     state_c = 2
     init_gain = 0.15
-    method = "dopri5"
+    # method = "dopri5"
+    method = "rk4"
     dataset_train_params = {
         "n_data_per_env": minibatch_size, "t_horizon": 10, "dt": 0.5, "method": "RK45", "group": "train",
         "params": [
@@ -234,7 +235,7 @@ epsilon = epsilon_t = 0.99
 update_epsilon_every = 30
 if dataset == "navier":
     update_epsilon_every = 15
-n_epochs = 20
+n_epochs = 120000
 forecaster_params = {
     "dataset": dataset,
     "is_ode": is_ode,
@@ -421,4 +422,4 @@ for epoch in range(n_epochs):
                 logger.info("========")
 
 end = time.time()
-print("Total script time in hours minutes seconds: ", time.strftime("%H:%M:%S", time.gmtime(end - start)))
+print("\nTotal script time in hours minutes seconds: ", time.strftime("%H:%M:%S", time.gmtime(end - start)))
