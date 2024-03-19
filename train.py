@@ -308,7 +308,8 @@ for epoch in range(n_epochs):
         loss_reg_code = torch.zeros(1).to(device)
         if "l2t" in regul:
             for env_id in range(n_env):
-                loss_reg_theta += torch.norm(net.derivative.net_hyper(net.derivative.codes[env_id])) ** 2
+                # loss_reg_theta += torch.norm(net.derivative.net_hyper(net.derivative.codes[env_id])) ** 2
+                loss_reg_theta += torch.abs(net.derivative.net_hyper(net.derivative.codes[env_id])) ** 2
         if "l2c" in regul:
             # loss_reg_code += (torch.norm(net.derivative.codes, dim=1) ** 2).sum()
             loss_reg_code += (torch.norm(net.derivative.codes, dim=0) ** 2).sum()
