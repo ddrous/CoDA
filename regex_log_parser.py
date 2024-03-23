@@ -40,3 +40,6 @@ print('Final Loss Train: ', loss_train_values[-1])
 print('Final Loss Test: ', loss_test_values[-1])
 
 # %%
+
+## save the figure to selkov.pdf
+plt.savefig('selkov.pdf', dpi=300, bbox_inches='tight')

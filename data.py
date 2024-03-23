@@ -40,6 +40,7 @@ class ODEDataset(Dataset):
         raise NotImplemented
 
     def __getitem__(self, index):
+        # print("How env is obtained:", index, self.n_data_per_env)
         env = index // self.n_data_per_env
         env_index = index % self.n_data_per_env
         t = torch.arange(0, self.t_horizon, self.dt).float()
@@ -53,7 +54,7 @@ class ODEDataset(Dataset):
             self.buffer[index] = y.numpy()
         else:
             out['state'] = torch.from_numpy(self.buffer[index])
-        
+
         out['index'] = index
         env_val = self.params_eq[env]
         if env_val is dict:
@@ -61,6 +62,7 @@ class ODEDataset(Dataset):
             out['param'] = torch.tensor(list(env_val.values()))
         elif env_val is callable:
             out['param'] = env_val.__name__
+
         return out
 
     def __len__(self):
@@ -97,6 +99,19 @@ class ForcedOscillatorDataset(ODEDataset):
     def _get_init_cond(self, index):
         np.random.seed(index if not self.test else self.max - index)
         return np.random.random(2) + self.rdn_gen
+
+
+class SelkovDataset(ODEDataset):
+    def _f(self, t, x, env=0):
+        a, b = self.params_eq[env]
+        x, y = x
+        dx = -x + a*y + (x**2)*y
+        dy = b - a*y - (x**2)*y
+        return np.array([dx, dy])
+
+    def _get_init_cond(self, index):
+        np.random.seed(index if not self.test else self.max - index)
+        return np.random.uniform(0, 3, 2)
 
 
 ##############

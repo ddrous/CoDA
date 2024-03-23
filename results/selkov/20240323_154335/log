@@ -1,0 +1,467 @@
+Params: n_mask 132869 / n_tot 132869 / n_hypernet 132869
+run_id: 20240323_154335
+gpu_id: 0
+dataset: selkov
+is_layer: False
+regul: 
+l_m: 1e-06
+l_t: 1e-06
+l_c: 9.999999999999999e-05
+code_c: 2
+layers: [-1]
+seed: 1
+codes_init: None
+lr: 0.0001
+init_gain: 0.15
+nl: swish
+n_params forecaster: 398649
+n_params net_root.net: 132869
+net parameters: dict_keys(['derivative.codes', 'derivative.net_root.net.0.weight', 'derivative.net_root.net.0.bias', 'derivative.net_root.net.1.activation.beta', 'derivative.net_root.net.2.weight', 'derivative.net_root.net.2.bias', 'derivative.net_root.net.3.activation.beta', 'derivative.net_root.net.4.weight', 'derivative.net_root.net.4.bias', 'derivative.net_root.net.5.activation.beta', 'derivative.net_root.net.6.weight', 'derivative.net_root.net.6.bias', 'derivative.net_hyper.weight', 'derivative.ghost_structure.net.0.weight', 'derivative.ghost_structure.net.0.bias', 'derivative.ghost_structure.net.1.activation.beta', 'derivative.ghost_structure.net.2.weight', 'derivative.ghost_structure.net.2.bias', 'derivative.ghost_structure.net.3.activation.beta', 'derivative.ghost_structure.net.4.weight', 'derivative.ghost_structure.net.4.bias', 'derivative.ghost_structure.net.5.activation.beta', 'derivative.ghost_structure.net.6.weight', 'derivative.ghost_structure.net.6.bias'])
+state: [84, 2, 11]
+t: tensor([ 0.,  4.,  8., 12., 16., 20., 24., 28., 32., 36., 40.],
+       device='cuda:0')
+Dataset selkov, Runid 20240323_154335, Epoch 1, Iter 1, Loss Train: 3.34e+00, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 6, Iter 1, Loss Train: 1.55e+00, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 11, Iter 1, Loss Train: 1.11e+00, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 16, Iter 1, Loss Train: 9.40e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 21, Iter 1, Loss Train: 8.56e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 26, Iter 1, Loss Train: 8.08e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.98
+loss_test: 0.7916631102561951, loss_relative: 1030.143310546875
+Checkpoint created: min ind test loss was inf, new is 0.7916631102561951
+Checkpoint created: min ind relative loss was inf, new is 1030.143310546875
+Dataset selkov, Runid 20240323_154335, Epoch 30, Iter 1, Loss Test ind: 7.92e-01
+========
+Dataset selkov, Runid 20240323_154335, Epoch 31, Iter 1, Loss Train: 7.79e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 36, Iter 1, Loss Train: 7.62e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 41, Iter 1, Loss Train: 7.51e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 46, Iter 1, Loss Train: 7.43e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 51, Iter 1, Loss Train: 7.38e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 56, Iter 1, Loss Train: 7.34e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.97
+loss_test: 0.7281944751739502, loss_relative: 731.8088989257812
+Checkpoint created: min ind test loss was 0.7916631102561951, new is 0.7281944751739502
+Checkpoint created: min ind relative loss was 1030.143310546875, new is 731.8088989257812
+Dataset selkov, Runid 20240323_154335, Epoch 60, Iter 1, Loss Test ind: 7.28e-01
+========
+Dataset selkov, Runid 20240323_154335, Epoch 61, Iter 1, Loss Train: 7.30e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 66, Iter 1, Loss Train: 7.26e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 71, Iter 1, Loss Train: 7.22e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 76, Iter 1, Loss Train: 7.18e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 81, Iter 1, Loss Train: 7.13e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 86, Iter 1, Loss Train: 7.06e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.961
+loss_test: 0.6938531994819641, loss_relative: 577.7391357421875
+Checkpoint created: min ind test loss was 0.7281944751739502, new is 0.6938531994819641
+Checkpoint created: min ind relative loss was 731.8088989257812, new is 577.7391357421875
+Dataset selkov, Runid 20240323_154335, Epoch 90, Iter 1, Loss Test ind: 6.94e-01
+========
+Dataset selkov, Runid 20240323_154335, Epoch 91, Iter 1, Loss Train: 6.97e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 96, Iter 1, Loss Train: 6.85e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 101, Iter 1, Loss Train: 6.67e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 106, Iter 1, Loss Train: 6.38e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 111, Iter 1, Loss Train: 5.84e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 116, Iter 1, Loss Train: 4.73e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.951
+loss_test: 0.5175041556358337, loss_relative: 4226.30029296875
+Checkpoint created: min ind test loss was 0.6938531994819641, new is 0.5175041556358337
+Dataset selkov, Runid 20240323_154335, Epoch 120, Iter 1, Loss Test ind: 5.18e-01
+========
+Dataset selkov, Runid 20240323_154335, Epoch 121, Iter 1, Loss Train: 4.25e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 126, Iter 1, Loss Train: 3.84e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 131, Iter 1, Loss Train: 3.17e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 136, Iter 1, Loss Train: 2.68e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 141, Iter 1, Loss Train: 2.32e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 146, Iter 1, Loss Train: 2.11e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.941
+loss_test: 1.2470413446426392, loss_relative: 1495.4169921875
+Dataset selkov, Runid 20240323_154335, Epoch 150, Iter 1, Loss Test ind: 1.25e+00
+========
+Dataset selkov, Runid 20240323_154335, Epoch 151, Iter 1, Loss Train: 1.92e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 156, Iter 1, Loss Train: 1.80e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 161, Iter 1, Loss Train: 1.71e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 166, Iter 1, Loss Train: 1.82e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 171, Iter 1, Loss Train: 1.68e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 176, Iter 1, Loss Train: 1.81e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.932
+loss_test: 1.226925253868103, loss_relative: 1338.1500244140625
+Dataset selkov, Runid 20240323_154335, Epoch 180, Iter 1, Loss Test ind: 1.23e+00
+========
+Dataset selkov, Runid 20240323_154335, Epoch 181, Iter 1, Loss Train: 1.60e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 186, Iter 1, Loss Train: 1.54e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 191, Iter 1, Loss Train: 1.49e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 196, Iter 1, Loss Train: 1.45e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 201, Iter 1, Loss Train: 1.41e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 206, Iter 1, Loss Train: 1.49e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.923
+loss_test: 1.6619822978973389, loss_relative: 1396.6531982421875
+Dataset selkov, Runid 20240323_154335, Epoch 210, Iter 1, Loss Test ind: 1.66e+00
+========
+Dataset selkov, Runid 20240323_154335, Epoch 211, Iter 1, Loss Train: 1.66e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 216, Iter 1, Loss Train: 1.54e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 221, Iter 1, Loss Train: 1.39e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 226, Iter 1, Loss Train: 1.35e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 231, Iter 1, Loss Train: 1.34e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 236, Iter 1, Loss Train: 1.35e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.914
+loss_test: 0.4769328832626343, loss_relative: 1247.46240234375
+Checkpoint created: min ind test loss was 0.5175041556358337, new is 0.4769328832626343
+Dataset selkov, Runid 20240323_154335, Epoch 240, Iter 1, Loss Test ind: 4.77e-01
+========
+Dataset selkov, Runid 20240323_154335, Epoch 241, Iter 1, Loss Train: 1.29e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 246, Iter 1, Loss Train: 1.28e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 251, Iter 1, Loss Train: 1.38e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 256, Iter 1, Loss Train: 1.25e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 261, Iter 1, Loss Train: 1.24e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 266, Iter 1, Loss Train: 1.24e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.904
+loss_test: 0.3941638767719269, loss_relative: 1133.62646484375
+Checkpoint created: min ind test loss was 0.4769328832626343, new is 0.3941638767719269
+Dataset selkov, Runid 20240323_154335, Epoch 270, Iter 1, Loss Test ind: 3.94e-01
+========
+Dataset selkov, Runid 20240323_154335, Epoch 271, Iter 1, Loss Train: 1.21e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 276, Iter 1, Loss Train: 1.26e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 281, Iter 1, Loss Train: 1.26e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 286, Iter 1, Loss Train: 1.19e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 291, Iter 1, Loss Train: 1.18e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 296, Iter 1, Loss Train: 1.21e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.895
+loss_test: 0.27910709381103516, loss_relative: 1217.826416015625
+Checkpoint created: min ind test loss was 0.3941638767719269, new is 0.27910709381103516
+Dataset selkov, Runid 20240323_154335, Epoch 300, Iter 1, Loss Test ind: 2.79e-01
+========
+Dataset selkov, Runid 20240323_154335, Epoch 301, Iter 1, Loss Train: 1.24e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 306, Iter 1, Loss Train: 1.24e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 311, Iter 1, Loss Train: 1.19e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 316, Iter 1, Loss Train: 1.16e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 321, Iter 1, Loss Train: 1.15e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 326, Iter 1, Loss Train: 1.13e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.886
+loss_test: 0.189061239361763, loss_relative: 884.3568725585938
+Checkpoint created: min ind test loss was 0.27910709381103516, new is 0.189061239361763
+Dataset selkov, Runid 20240323_154335, Epoch 330, Iter 1, Loss Test ind: 1.89e-01
+========
+Dataset selkov, Runid 20240323_154335, Epoch 331, Iter 1, Loss Train: 1.12e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 336, Iter 1, Loss Train: 1.11e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 341, Iter 1, Loss Train: 1.10e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 346, Iter 1, Loss Train: 1.09e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 351, Iter 1, Loss Train: 1.08e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 356, Iter 1, Loss Train: 1.07e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.878
+loss_test: 0.17395764589309692, loss_relative: 935.490234375
+Checkpoint created: min ind test loss was 0.189061239361763, new is 0.17395764589309692
+Dataset selkov, Runid 20240323_154335, Epoch 360, Iter 1, Loss Test ind: 1.74e-01
+========
+Dataset selkov, Runid 20240323_154335, Epoch 361, Iter 1, Loss Train: 1.06e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 366, Iter 1, Loss Train: 1.04e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 371, Iter 1, Loss Train: 1.03e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 376, Iter 1, Loss Train: 1.02e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 381, Iter 1, Loss Train: 1.01e-01, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 386, Iter 1, Loss Train: 9.94e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.869
+loss_test: 0.14909085631370544, loss_relative: 1146.2728271484375
+Checkpoint created: min ind test loss was 0.17395764589309692, new is 0.14909085631370544
+Dataset selkov, Runid 20240323_154335, Epoch 390, Iter 1, Loss Test ind: 1.49e-01
+========
+Dataset selkov, Runid 20240323_154335, Epoch 391, Iter 1, Loss Train: 9.78e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 396, Iter 1, Loss Train: 9.62e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 401, Iter 1, Loss Train: 9.45e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 406, Iter 1, Loss Train: 9.27e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 411, Iter 1, Loss Train: 9.09e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 416, Iter 1, Loss Train: 8.91e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.86
+loss_test: 0.12840470671653748, loss_relative: 1503.6788330078125
+Checkpoint created: min ind test loss was 0.14909085631370544, new is 0.12840470671653748
+Dataset selkov, Runid 20240323_154335, Epoch 420, Iter 1, Loss Test ind: 1.28e-01
+========
+Dataset selkov, Runid 20240323_154335, Epoch 421, Iter 1, Loss Train: 8.73e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 426, Iter 1, Loss Train: 8.55e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 431, Iter 1, Loss Train: 8.38e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 436, Iter 1, Loss Train: 8.21e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 441, Iter 1, Loss Train: 8.06e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 446, Iter 1, Loss Train: 7.93e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.851
+loss_test: 0.10778175294399261, loss_relative: 1487.3438720703125
+Checkpoint created: min ind test loss was 0.12840470671653748, new is 0.10778175294399261
+Dataset selkov, Runid 20240323_154335, Epoch 450, Iter 1, Loss Test ind: 1.08e-01
+========
+Dataset selkov, Runid 20240323_154335, Epoch 451, Iter 1, Loss Train: 7.81e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 456, Iter 1, Loss Train: 7.72e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 461, Iter 1, Loss Train: 7.63e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 466, Iter 1, Loss Train: 7.55e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 471, Iter 1, Loss Train: 7.48e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 476, Iter 1, Loss Train: 7.40e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.843
+loss_test: 0.09444529563188553, loss_relative: 1320.9036865234375
+Checkpoint created: min ind test loss was 0.10778175294399261, new is 0.09444529563188553
+Dataset selkov, Runid 20240323_154335, Epoch 480, Iter 1, Loss Test ind: 9.44e-02
+========
+Dataset selkov, Runid 20240323_154335, Epoch 481, Iter 1, Loss Train: 7.33e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 486, Iter 1, Loss Train: 7.26e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 491, Iter 1, Loss Train: 7.18e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 496, Iter 1, Loss Train: 7.11e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 501, Iter 1, Loss Train: 7.04e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 506, Iter 1, Loss Train: 6.97e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.835
+loss_test: 0.08542748540639877, loss_relative: 1279.9036865234375
+Checkpoint created: min ind test loss was 0.09444529563188553, new is 0.08542748540639877
+Dataset selkov, Runid 20240323_154335, Epoch 510, Iter 1, Loss Test ind: 8.54e-02
+========
+Dataset selkov, Runid 20240323_154335, Epoch 511, Iter 1, Loss Train: 6.90e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 516, Iter 1, Loss Train: 6.83e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 521, Iter 1, Loss Train: 6.76e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 526, Iter 1, Loss Train: 6.70e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 531, Iter 1, Loss Train: 6.63e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 536, Iter 1, Loss Train: 6.56e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.826
+loss_test: 0.07866736501455307, loss_relative: 1243.592041015625
+Checkpoint created: min ind test loss was 0.08542748540639877, new is 0.07866736501455307
+Dataset selkov, Runid 20240323_154335, Epoch 540, Iter 1, Loss Test ind: 7.87e-02
+========
+Dataset selkov, Runid 20240323_154335, Epoch 541, Iter 1, Loss Train: 6.50e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 546, Iter 1, Loss Train: 6.44e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 551, Iter 1, Loss Train: 6.38e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 556, Iter 1, Loss Train: 6.32e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 561, Iter 1, Loss Train: 6.26e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 566, Iter 1, Loss Train: 6.20e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.818
+loss_test: 0.07357942312955856, loss_relative: 1244.9384765625
+Checkpoint created: min ind test loss was 0.07866736501455307, new is 0.07357942312955856
+Dataset selkov, Runid 20240323_154335, Epoch 570, Iter 1, Loss Test ind: 7.36e-02
+========
+Dataset selkov, Runid 20240323_154335, Epoch 571, Iter 1, Loss Train: 6.15e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 576, Iter 1, Loss Train: 6.10e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 581, Iter 1, Loss Train: 6.05e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 586, Iter 1, Loss Train: 6.00e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 591, Iter 1, Loss Train: 5.96e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 596, Iter 1, Loss Train: 5.92e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.81
+loss_test: 0.07007288187742233, loss_relative: 1307.444091796875
+Checkpoint created: min ind test loss was 0.07357942312955856, new is 0.07007288187742233
+Dataset selkov, Runid 20240323_154335, Epoch 600, Iter 1, Loss Test ind: 7.01e-02
+========
+Dataset selkov, Runid 20240323_154335, Epoch 601, Iter 1, Loss Train: 5.88e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 606, Iter 1, Loss Train: 5.84e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 611, Iter 1, Loss Train: 5.81e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 616, Iter 1, Loss Train: 5.77e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 621, Iter 1, Loss Train: 5.74e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 626, Iter 1, Loss Train: 5.71e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.802
+loss_test: 0.06783749163150787, loss_relative: 1398.290771484375
+Checkpoint created: min ind test loss was 0.07007288187742233, new is 0.06783749163150787
+Dataset selkov, Runid 20240323_154335, Epoch 630, Iter 1, Loss Test ind: 6.78e-02
+========
+Dataset selkov, Runid 20240323_154335, Epoch 631, Iter 1, Loss Train: 5.68e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 636, Iter 1, Loss Train: 5.66e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 641, Iter 1, Loss Train: 5.63e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 646, Iter 1, Loss Train: 5.60e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 651, Iter 1, Loss Train: 5.58e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 656, Iter 1, Loss Train: 5.56e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.794
+loss_test: 0.06633232533931732, loss_relative: 1461.9327392578125
+Checkpoint created: min ind test loss was 0.06783749163150787, new is 0.06633232533931732
+Dataset selkov, Runid 20240323_154335, Epoch 660, Iter 1, Loss Test ind: 6.63e-02
+========
+Dataset selkov, Runid 20240323_154335, Epoch 661, Iter 1, Loss Train: 5.54e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 666, Iter 1, Loss Train: 5.51e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 671, Iter 1, Loss Train: 5.49e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 676, Iter 1, Loss Train: 5.47e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 681, Iter 1, Loss Train: 5.45e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 686, Iter 1, Loss Train: 5.43e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.786
+loss_test: 0.06512998044490814, loss_relative: 1479.1302490234375
+Checkpoint created: min ind test loss was 0.06633232533931732, new is 0.06512998044490814
+Dataset selkov, Runid 20240323_154335, Epoch 690, Iter 1, Loss Test ind: 6.51e-02
+========
+Dataset selkov, Runid 20240323_154335, Epoch 691, Iter 1, Loss Train: 5.41e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 696, Iter 1, Loss Train: 5.39e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 701, Iter 1, Loss Train: 5.37e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 706, Iter 1, Loss Train: 5.35e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 711, Iter 1, Loss Train: 5.34e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 716, Iter 1, Loss Train: 5.32e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.778
+loss_test: 0.06401540338993073, loss_relative: 1458.719970703125
+Checkpoint created: min ind test loss was 0.06512998044490814, new is 0.06401540338993073
+Dataset selkov, Runid 20240323_154335, Epoch 720, Iter 1, Loss Test ind: 6.40e-02
+========
+Dataset selkov, Runid 20240323_154335, Epoch 721, Iter 1, Loss Train: 5.30e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 726, Iter 1, Loss Train: 5.28e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 731, Iter 1, Loss Train: 5.26e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 736, Iter 1, Loss Train: 5.24e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 741, Iter 1, Loss Train: 5.22e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 746, Iter 1, Loss Train: 5.20e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.77
+loss_test: 0.0628836527466774, loss_relative: 1410.8695068359375
+Checkpoint created: min ind test loss was 0.06401540338993073, new is 0.0628836527466774
+Dataset selkov, Runid 20240323_154335, Epoch 750, Iter 1, Loss Test ind: 6.29e-02
+========
+Dataset selkov, Runid 20240323_154335, Epoch 751, Iter 1, Loss Train: 5.18e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 756, Iter 1, Loss Train: 5.16e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 761, Iter 1, Loss Train: 5.14e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 766, Iter 1, Loss Train: 5.12e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 771, Iter 1, Loss Train: 5.10e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 776, Iter 1, Loss Train: 5.08e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.762
+loss_test: 0.061665114015340805, loss_relative: 1340.16796875
+Checkpoint created: min ind test loss was 0.0628836527466774, new is 0.061665114015340805
+Dataset selkov, Runid 20240323_154335, Epoch 780, Iter 1, Loss Test ind: 6.17e-02
+========
+Dataset selkov, Runid 20240323_154335, Epoch 781, Iter 1, Loss Train: 5.06e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 786, Iter 1, Loss Train: 5.04e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 791, Iter 1, Loss Train: 5.02e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 796, Iter 1, Loss Train: 5.00e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 801, Iter 1, Loss Train: 4.98e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 806, Iter 1, Loss Train: 4.96e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.755
+loss_test: 0.06029592081904411, loss_relative: 1242.9720458984375
+Checkpoint created: min ind test loss was 0.061665114015340805, new is 0.06029592081904411
+Dataset selkov, Runid 20240323_154335, Epoch 810, Iter 1, Loss Test ind: 6.03e-02
+========
+Dataset selkov, Runid 20240323_154335, Epoch 811, Iter 1, Loss Train: 4.94e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 816, Iter 1, Loss Train: 4.92e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 821, Iter 1, Loss Train: 4.89e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 826, Iter 1, Loss Train: 4.87e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 831, Iter 1, Loss Train: 4.85e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 836, Iter 1, Loss Train: 4.83e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.747
+loss_test: 0.058718327432870865, loss_relative: 1122.35400390625
+Checkpoint created: min ind test loss was 0.06029592081904411, new is 0.058718327432870865
+Dataset selkov, Runid 20240323_154335, Epoch 840, Iter 1, Loss Test ind: 5.87e-02
+========
+Dataset selkov, Runid 20240323_154335, Epoch 841, Iter 1, Loss Train: 4.80e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 846, Iter 1, Loss Train: 4.78e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 851, Iter 1, Loss Train: 4.75e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 856, Iter 1, Loss Train: 4.73e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 861, Iter 1, Loss Train: 4.71e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 866, Iter 1, Loss Train: 4.68e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.74
+loss_test: 0.05689995363354683, loss_relative: 979.5006713867188
+Checkpoint created: min ind test loss was 0.058718327432870865, new is 0.05689995363354683
+Dataset selkov, Runid 20240323_154335, Epoch 870, Iter 1, Loss Test ind: 5.69e-02
+========
+Dataset selkov, Runid 20240323_154335, Epoch 871, Iter 1, Loss Train: 4.65e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 876, Iter 1, Loss Train: 4.63e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 881, Iter 1, Loss Train: 4.60e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 886, Iter 1, Loss Train: 4.58e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 891, Iter 1, Loss Train: 4.55e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 896, Iter 1, Loss Train: 4.52e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.732
+loss_test: 0.05481254681944847, loss_relative: 820.6133422851562
+Checkpoint created: min ind test loss was 0.05689995363354683, new is 0.05481254681944847
+Dataset selkov, Runid 20240323_154335, Epoch 900, Iter 1, Loss Test ind: 5.48e-02
+========
+Dataset selkov, Runid 20240323_154335, Epoch 901, Iter 1, Loss Train: 4.49e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 906, Iter 1, Loss Train: 4.46e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 911, Iter 1, Loss Train: 4.43e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 916, Iter 1, Loss Train: 4.40e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 921, Iter 1, Loss Train: 4.37e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 926, Iter 1, Loss Train: 4.34e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.725
+loss_test: 0.052450213581323624, loss_relative: 655.0848388671875
+Checkpoint created: min ind test loss was 0.05481254681944847, new is 0.052450213581323624
+Dataset selkov, Runid 20240323_154335, Epoch 930, Iter 1, Loss Test ind: 5.25e-02
+========
+Dataset selkov, Runid 20240323_154335, Epoch 931, Iter 1, Loss Train: 4.31e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 936, Iter 1, Loss Train: 4.27e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 941, Iter 1, Loss Train: 4.24e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 946, Iter 1, Loss Train: 4.20e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 951, Iter 1, Loss Train: 4.16e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 956, Iter 1, Loss Train: 4.13e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.718
+loss_test: 0.04988880082964897, loss_relative: 495.1484375
+Checkpoint created: min ind test loss was 0.052450213581323624, new is 0.04988880082964897
+Checkpoint created: min ind relative loss was 577.7391357421875, new is 495.1484375
+Dataset selkov, Runid 20240323_154335, Epoch 960, Iter 1, Loss Test ind: 4.99e-02
+========
+Dataset selkov, Runid 20240323_154335, Epoch 961, Iter 1, Loss Train: 4.09e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 966, Iter 1, Loss Train: 4.05e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 971, Iter 1, Loss Train: 4.00e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 976, Iter 1, Loss Train: 3.96e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 981, Iter 1, Loss Train: 3.91e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 986, Iter 1, Loss Train: 3.85e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.711
+loss_test: 0.04750910773873329, loss_relative: 341.6874084472656
+Checkpoint created: min ind test loss was 0.04988880082964897, new is 0.04750910773873329
+Checkpoint created: min ind relative loss was 495.1484375, new is 341.6874084472656
+Dataset selkov, Runid 20240323_154335, Epoch 990, Iter 1, Loss Test ind: 4.75e-02
+========
+Dataset selkov, Runid 20240323_154335, Epoch 991, Iter 1, Loss Train: 3.80e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 996, Iter 1, Loss Train: 3.74e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 1001, Iter 1, Loss Train: 3.68e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 1006, Iter 1, Loss Train: 3.61e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 1011, Iter 1, Loss Train: 3.54e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 1016, Iter 1, Loss Train: 3.39e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.703
+loss_test: 0.041768625378608704, loss_relative: 167.5050048828125
+Checkpoint created: min ind test loss was 0.04750910773873329, new is 0.041768625378608704
+Checkpoint created: min ind relative loss was 341.6874084472656, new is 167.5050048828125
+Dataset selkov, Runid 20240323_154335, Epoch 1020, Iter 1, Loss Test ind: 4.18e-02
+========
+Dataset selkov, Runid 20240323_154335, Epoch 1021, Iter 1, Loss Train: 3.16e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 1026, Iter 1, Loss Train: 2.99e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 1031, Iter 1, Loss Train: 2.96e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 1036, Iter 1, Loss Train: 2.81e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 1041, Iter 1, Loss Train: 2.79e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 1046, Iter 1, Loss Train: 2.67e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.696
+loss_test: 0.03751080110669136, loss_relative: 159.2003173828125
+Checkpoint created: min ind test loss was 0.041768625378608704, new is 0.03751080110669136
+Checkpoint created: min ind relative loss was 167.5050048828125, new is 159.2003173828125
+Dataset selkov, Runid 20240323_154335, Epoch 1050, Iter 1, Loss Test ind: 3.75e-02
+========
+Dataset selkov, Runid 20240323_154335, Epoch 1051, Iter 1, Loss Train: 2.54e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 1056, Iter 1, Loss Train: 2.47e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 1061, Iter 1, Loss Train: 2.34e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 1066, Iter 1, Loss Train: 2.35e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 1071, Iter 1, Loss Train: 2.24e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 1076, Iter 1, Loss Train: 2.16e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.689
+loss_test: 0.034108709543943405, loss_relative: 207.81076049804688
+Checkpoint created: min ind test loss was 0.03751080110669136, new is 0.034108709543943405
+Dataset selkov, Runid 20240323_154335, Epoch 1080, Iter 1, Loss Test ind: 3.41e-02
+========
+Dataset selkov, Runid 20240323_154335, Epoch 1081, Iter 1, Loss Train: 2.17e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 1086, Iter 1, Loss Train: 2.10e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 1091, Iter 1, Loss Train: 2.00e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 1096, Iter 1, Loss Train: 1.90e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 1101, Iter 1, Loss Train: 1.82e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 1106, Iter 1, Loss Train: 1.75e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.683
+loss_test: 0.028123173862695694, loss_relative: 195.46644592285156
+Checkpoint created: min ind test loss was 0.034108709543943405, new is 0.028123173862695694
+Dataset selkov, Runid 20240323_154335, Epoch 1110, Iter 1, Loss Test ind: 2.81e-02
+========
+Dataset selkov, Runid 20240323_154335, Epoch 1111, Iter 1, Loss Train: 1.57e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 1116, Iter 1, Loss Train: 1.44e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 1121, Iter 1, Loss Train: 1.33e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 1126, Iter 1, Loss Train: 1.19e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 1131, Iter 1, Loss Train: 1.10e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 1136, Iter 1, Loss Train: 9.43e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.676
+loss_test: 0.018412111327052116, loss_relative: 181.05735778808594
+Checkpoint created: min ind test loss was 0.028123173862695694, new is 0.018412111327052116
+Dataset selkov, Runid 20240323_154335, Epoch 1140, Iter 1, Loss Test ind: 1.84e-02
+========
+Dataset selkov, Runid 20240323_154335, Epoch 1141, Iter 1, Loss Train: 7.97e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 1146, Iter 1, Loss Train: 7.24e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 1151, Iter 1, Loss Train: 6.82e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 1156, Iter 1, Loss Train: 6.59e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 1161, Iter 1, Loss Train: 6.32e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 1166, Iter 1, Loss Train: 6.09e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.669
+loss_test: 0.015187661163508892, loss_relative: 116.84449768066406
+Checkpoint created: min ind test loss was 0.018412111327052116, new is 0.015187661163508892
+Checkpoint created: min ind relative loss was 159.2003173828125, new is 116.84449768066406
+Dataset selkov, Runid 20240323_154335, Epoch 1170, Iter 1, Loss Test ind: 1.52e-02
+========
+Dataset selkov, Runid 20240323_154335, Epoch 1171, Iter 1, Loss Train: 5.88e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 1176, Iter 1, Loss Train: 5.75e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 1181, Iter 1, Loss Train: 5.46e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 1186, Iter 1, Loss Train: 5.17e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 1191, Iter 1, Loss Train: 4.83e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset selkov, Runid 20240323_154335, Epoch 1196, Iter 1, Loss Train: 4.82e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.662
+loss_test: 0.015700165182352066, loss_relative: 107.8374252319336
+Checkpoint created: min ind relative loss was 116.84449768066406, new is 107.8374252319336
+Dataset selkov, Runid 20240323_154335, Epoch 1200, Iter 1, Loss Test ind: 1.57e-02
+========

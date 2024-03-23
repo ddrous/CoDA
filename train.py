@@ -71,7 +71,7 @@ path_checkpoint = os.path.join(path_results, ts)
 logger = create_logger(path_checkpoint, os.path.join(path_checkpoint, "log"))
 os.makedirs(path_checkpoint, exist_ok=True)
 scaler = MinMaxScaler(feature_range=(-0.02, 0.02))
-is_ode = any(name in dataset for name in ["lotka", "g_osci", "forced"])
+is_ode = any(name in dataset for name in ["lotka", "g_osci", "forced", "selkov"])
 init_type = "default"
 set_rdm_seed(seed)
 codes_init = None
@@ -102,6 +102,24 @@ if dataset == "lotka":
     dataset_train, dataset_test = LotkaVolterraDataset(**dataset_train_params), LotkaVolterraDataset(**dataset_test_params)
 
 
+if dataset == "selkov":
+    minibatch_size = 4
+    factor = 1.0
+    state_c = 2
+    init_gain = 0.15
+    method = "dopri5"
+    # method = "rk4"
+    dataset_train_params = {
+        "n_data_per_env": minibatch_size, "t_horizon": 44, "dt": 4., "method": "RK45", "group": "train",
+        "params": [(0.1, b) for b in list(np.linspace(-1, -0.25, 7))\
+        + list(np.linspace(-0.1, 0.1, 7))\
+        + list(np.linspace(0.25, 1., 7))]
+        }
+    dataset_test_params = dict()
+    dataset_test_params.update(dataset_train_params)
+    dataset_test_params["n_data_per_env"] = 4
+    dataset_test_params["group"] = "test"
+    dataset_train, dataset_test = SelkovDataset(**dataset_train_params), SelkovDataset(**dataset_test_params)
 
 
 elif dataset == "forced":
@@ -235,7 +253,7 @@ epsilon = epsilon_t = 0.99
 update_epsilon_every = 30
 if dataset == "navier":
     update_epsilon_every = 15
-n_epochs = 120000
+n_epochs = 12000
 forecaster_params = {
     "dataset": dataset,
     "is_ode": is_ode,
@@ -308,8 +326,8 @@ for epoch in range(n_epochs):
         loss_reg_code = torch.zeros(1).to(device)
         if "l2t" in regul:
             for env_id in range(n_env):
-                # loss_reg_theta += torch.norm(net.derivative.net_hyper(net.derivative.codes[env_id])) ** 2
-                loss_reg_theta += torch.abs(net.derivative.net_hyper(net.derivative.codes[env_id])) ** 2
+                loss_reg_theta += torch.norm(net.derivative.net_hyper(net.derivative.codes[env_id])) ** 2
+                # loss_reg_theta += torch.abs(net.derivative.net_hyper(net.derivative.codes[env_id])) ** 2
         if "l2c" in regul:
             # loss_reg_code += (torch.norm(net.derivative.codes, dim=1) ** 2).sum()
             loss_reg_code += (torch.norm(net.derivative.codes, dim=0) ** 2).sum()
