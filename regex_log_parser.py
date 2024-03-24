@@ -3,9 +3,14 @@ import re
 import matplotlib.pyplot as plt
 import numpy as np
 
-## get the content of the nohup.log file as a string
+# get the content of the nohup.log file as a string
 with open('nohup.log', 'r') as file:
     code = file.read()
+
+# ## Or read from the log file in forced/20240304_194521
+# with open('results/forced/20240304_194521/log', 'r') as file:
+#     code = file.read()
+
 
 ## collect all the loss values and epochs
 loss_train_values = re.findall(r'Loss Train: (\d+\.\d+e[+-]\d+)', code)
@@ -42,4 +47,4 @@ print('Final Loss Test: ', loss_test_values[-1])
 # %%
 
 ## save the figure to selkov.pdf
-plt.savefig('selkov.pdf', dpi=300, bbox_inches='tight')
+# plt.savefig('selkov.pdf', dpi=300, bbox_inches='tight')

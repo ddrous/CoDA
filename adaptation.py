@@ -65,6 +65,24 @@ if dataset == "lotka":
     dataset_test_params["n_data_per_env"] = 32
     dataset_test_params["group"] = "test"
     dataset_train, dataset_test = LotkaVolterraDataset(**dataset_train_params), LotkaVolterraDataset(**dataset_test_params)
+
+elif dataset == "selkov":
+    minibatch_size = 1
+    method = "dopri5"
+    # method = "rk4"
+    bs = [-1.25, -0.65, -0.05, 0.02, 0.6, 1.2]
+    dataset_train_params = {
+        "n_data_per_env": minibatch_size, "t_horizon": 44, "dt": 4., "method": "RK45", "group": "train",
+        "params": [(0.1, b) for b in bs]
+        }
+    n_env = len(bs)
+    dataset_test_params = dict()
+    dataset_test_params.update(dataset_train_params)
+    dataset_test_params["n_data_per_env"] = 4
+    dataset_test_params["group"] = "test"
+    dataset_train, dataset_test = SelkovDataset(**dataset_train_params), SelkovDataset(**dataset_test_params)
+
+
 elif dataset == "g_osci":
     k1 = [85, 95]
     K1 = [0.625, 0.875]
@@ -118,7 +136,7 @@ dataloader_train, dataloader_test = DataLoaderODE(dataset_train, minibatch_size,
 epsilon = epsilon_t = 0.95
 update_epsilon_every = 30
 log_every = 10
-n_epochs = 120000
+n_epochs = 6000
 lr = 1e-3
 test_type = "ind"
 checkpoint = torch.load(f"{path_model}", map_location=device)
