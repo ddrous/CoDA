@@ -164,7 +164,8 @@ elif "g_osci" in dataset:
     factor = 1.0
     state_c = 7
     init_gain = 0.1
-    method = "rk4"
+    # method = "rk4"
+    method = "dopri5"
     k1_range = [100, 90, 80]
     if "_1" in dataset:
         k1_range = [100, 97.5, 95]
@@ -253,7 +254,7 @@ epsilon = epsilon_t = 0.99
 update_epsilon_every = 30
 if dataset == "navier":
     update_epsilon_every = 15
-n_epochs = 6000
+n_epochs = 60000
 forecaster_params = {
     "dataset": dataset,
     "is_ode": is_ode,
