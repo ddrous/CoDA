@@ -81,7 +81,7 @@ class LotkaVolterraDataset(ODEDataset):
         return d
 
     def _get_init_cond(self, index):
-        # np.random.seed(index if not self.test else self.max - index)
+        np.random.seed(index if not self.test else self.max - index)
         return np.random.random(2) + self.rdn_gen
 
 

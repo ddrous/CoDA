@@ -102,7 +102,7 @@ if dataset == "lotka":
     dataset_train, dataset_test = LotkaVolterraDataset(**dataset_train_params), LotkaVolterraDataset(**dataset_test_params)
 
 
-if dataset == "selkov":
+elif dataset == "selkov":
     minibatch_size = 4
     factor = 1.0
     state_c = 2
@@ -254,12 +254,12 @@ epsilon = epsilon_t = 0.99
 update_epsilon_every = 30
 if dataset == "navier":
     update_epsilon_every = 15
-n_epochs = 60000
+n_epochs = 40000
 forecaster_params = {
     "dataset": dataset,
     "is_ode": is_ode,
     "state_c": state_c,
-    "hidden_c": 90,
+    "hidden_c": 224,
     "code_c": code_c,
     "n_env": n_env,
     "factor": factor,
