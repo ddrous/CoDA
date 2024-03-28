@@ -1,0 +1,718 @@
+Params: n_mask 1189637 / n_tot 1189637 / n_hypernet 1189637
+run_id: 20240328_074543
+gpu_id: 0
+dataset: gray
+is_layer: False
+regul: 
+l_m: 1e-06
+l_t: 1e-06
+l_c: 9.999999999999999e-05
+code_c: 2
+layers: [-1]
+seed: 1
+codes_init: None
+lr: 0.0001
+init_gain: 1
+nl: swish
+n_params forecaster: 3568919
+n_params net_root.net: 1189637
+net parameters: dict_keys(['derivative.codes', 'derivative.net_root.net.0.weight', 'derivative.net_root.net.0.bias', 'derivative.net_root.net.1.activation.beta', 'derivative.net_root.net.2.weight', 'derivative.net_root.net.2.bias', 'derivative.net_root.net.3.activation.beta', 'derivative.net_root.net.4.weight', 'derivative.net_root.net.4.bias', 'derivative.net_root.net.5.activation.beta', 'derivative.net_root.net.6.weight', 'derivative.net_root.net.6.bias', 'derivative.net_hyper.weight', 'derivative.ghost_structure.net.0.weight', 'derivative.ghost_structure.net.0.bias', 'derivative.ghost_structure.net.1.activation.beta', 'derivative.ghost_structure.net.2.weight', 'derivative.ghost_structure.net.2.bias', 'derivative.ghost_structure.net.3.activation.beta', 'derivative.ghost_structure.net.4.weight', 'derivative.ghost_structure.net.4.bias', 'derivative.ghost_structure.net.5.activation.beta', 'derivative.ghost_structure.net.6.weight', 'derivative.ghost_structure.net.6.bias'])
+state: [4, 2, 10, 32, 32]
+t: tensor([  0.,  40.,  80., 120., 160., 200., 240., 280., 320., 360.],
+       device='cuda:0')
+Dataset gray, Runid 20240328_074543, Epoch 1, Iter 1, Loss Train: 8.60e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 6, Iter 1, Loss Train: 7.73e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 11, Iter 1, Loss Train: 6.18e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 16, Iter 1, Loss Train: 5.24e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 21, Iter 1, Loss Train: 5.43e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 26, Iter 1, Loss Train: 5.25e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.98
+loss_test: 0.047720834612846375, loss_relative: 24.878570556640625
+Checkpoint created: min ind test loss was inf, new is 0.047720834612846375
+Checkpoint created: min ind relative loss was inf, new is 24.878570556640625
+Dataset gray, Runid 20240328_074543, Epoch 30, Iter 1, Loss Test ind: 4.77e-02
+========
+Dataset gray, Runid 20240328_074543, Epoch 31, Iter 1, Loss Train: 5.05e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 36, Iter 1, Loss Train: 5.03e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 41, Iter 1, Loss Train: 4.91e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 46, Iter 1, Loss Train: 4.74e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 51, Iter 1, Loss Train: 4.60e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 56, Iter 1, Loss Train: 4.41e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.97
+loss_test: 0.04038827866315842, loss_relative: 25.494985580444336
+Checkpoint created: min ind test loss was 0.047720834612846375, new is 0.04038827866315842
+Dataset gray, Runid 20240328_074543, Epoch 60, Iter 1, Loss Test ind: 4.04e-02
+========
+Dataset gray, Runid 20240328_074543, Epoch 61, Iter 1, Loss Train: 4.19e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 66, Iter 1, Loss Train: 3.96e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 71, Iter 1, Loss Train: 3.72e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 76, Iter 1, Loss Train: 3.52e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 81, Iter 1, Loss Train: 3.38e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 86, Iter 1, Loss Train: 3.28e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.961
+loss_test: 0.0344659797847271, loss_relative: 27.943117141723633
+Checkpoint created: min ind test loss was 0.04038827866315842, new is 0.0344659797847271
+Dataset gray, Runid 20240328_074543, Epoch 90, Iter 1, Loss Test ind: 3.45e-02
+========
+Dataset gray, Runid 20240328_074543, Epoch 91, Iter 1, Loss Train: 3.19e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 96, Iter 1, Loss Train: 3.13e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 101, Iter 1, Loss Train: 3.09e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 106, Iter 1, Loss Train: 3.05e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 111, Iter 1, Loss Train: 3.02e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 116, Iter 1, Loss Train: 3.00e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.951
+loss_test: 0.03229432925581932, loss_relative: 30.840465545654297
+Checkpoint created: min ind test loss was 0.0344659797847271, new is 0.03229432925581932
+Dataset gray, Runid 20240328_074543, Epoch 120, Iter 1, Loss Test ind: 3.23e-02
+========
+Dataset gray, Runid 20240328_074543, Epoch 121, Iter 1, Loss Train: 2.98e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 126, Iter 1, Loss Train: 2.96e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 131, Iter 1, Loss Train: 2.94e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 136, Iter 1, Loss Train: 2.92e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 141, Iter 1, Loss Train: 2.90e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 146, Iter 1, Loss Train: 2.88e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.941
+loss_test: 0.031195180490612984, loss_relative: 30.60777473449707
+Checkpoint created: min ind test loss was 0.03229432925581932, new is 0.031195180490612984
+Dataset gray, Runid 20240328_074543, Epoch 150, Iter 1, Loss Test ind: 3.12e-02
+========
+Dataset gray, Runid 20240328_074543, Epoch 151, Iter 1, Loss Train: 2.86e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 156, Iter 1, Loss Train: 2.84e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 161, Iter 1, Loss Train: 2.82e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 166, Iter 1, Loss Train: 2.80e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 171, Iter 1, Loss Train: 2.78e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 176, Iter 1, Loss Train: 2.76e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.932
+loss_test: 0.02996499463915825, loss_relative: 28.67741584777832
+Checkpoint created: min ind test loss was 0.031195180490612984, new is 0.02996499463915825
+Dataset gray, Runid 20240328_074543, Epoch 180, Iter 1, Loss Test ind: 3.00e-02
+========
+Dataset gray, Runid 20240328_074543, Epoch 181, Iter 1, Loss Train: 2.74e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 186, Iter 1, Loss Train: 2.72e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 191, Iter 1, Loss Train: 2.71e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 196, Iter 1, Loss Train: 2.69e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 201, Iter 1, Loss Train: 2.67e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 206, Iter 1, Loss Train: 2.65e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.923
+loss_test: 0.028774024918675423, loss_relative: 25.089841842651367
+Checkpoint created: min ind test loss was 0.02996499463915825, new is 0.028774024918675423
+Dataset gray, Runid 20240328_074543, Epoch 210, Iter 1, Loss Test ind: 2.88e-02
+========
+Dataset gray, Runid 20240328_074543, Epoch 211, Iter 1, Loss Train: 2.64e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 216, Iter 1, Loss Train: 2.62e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 221, Iter 1, Loss Train: 2.60e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 226, Iter 1, Loss Train: 2.58e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 231, Iter 1, Loss Train: 2.57e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 236, Iter 1, Loss Train: 2.55e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.914
+loss_test: 0.027656491845846176, loss_relative: 19.177898406982422
+Checkpoint created: min ind test loss was 0.028774024918675423, new is 0.027656491845846176
+Checkpoint created: min ind relative loss was 24.878570556640625, new is 19.177898406982422
+Dataset gray, Runid 20240328_074543, Epoch 240, Iter 1, Loss Test ind: 2.77e-02
+========
+Dataset gray, Runid 20240328_074543, Epoch 241, Iter 1, Loss Train: 2.53e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 246, Iter 1, Loss Train: 2.54e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 251, Iter 1, Loss Train: 2.52e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 256, Iter 1, Loss Train: 2.50e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 261, Iter 1, Loss Train: 2.48e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 266, Iter 1, Loss Train: 2.44e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.904
+loss_test: 0.02627106010913849, loss_relative: 16.773359298706055
+Checkpoint created: min ind test loss was 0.027656491845846176, new is 0.02627106010913849
+Checkpoint created: min ind relative loss was 19.177898406982422, new is 16.773359298706055
+Dataset gray, Runid 20240328_074543, Epoch 270, Iter 1, Loss Test ind: 2.63e-02
+========
+Dataset gray, Runid 20240328_074543, Epoch 271, Iter 1, Loss Train: 2.41e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 276, Iter 1, Loss Train: 2.41e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 281, Iter 1, Loss Train: 2.43e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 286, Iter 1, Loss Train: 2.41e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 291, Iter 1, Loss Train: 2.38e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 296, Iter 1, Loss Train: 2.34e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.895
+loss_test: 0.025539498776197433, loss_relative: 15.546003341674805
+Checkpoint created: min ind test loss was 0.02627106010913849, new is 0.025539498776197433
+Checkpoint created: min ind relative loss was 16.773359298706055, new is 15.546003341674805
+Dataset gray, Runid 20240328_074543, Epoch 300, Iter 1, Loss Test ind: 2.55e-02
+========
+Dataset gray, Runid 20240328_074543, Epoch 301, Iter 1, Loss Train: 2.30e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 306, Iter 1, Loss Train: 2.29e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 311, Iter 1, Loss Train: 2.32e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 316, Iter 1, Loss Train: 2.26e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 321, Iter 1, Loss Train: 2.23e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 326, Iter 1, Loss Train: 2.24e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.886
+loss_test: 0.025837134569883347, loss_relative: 15.619847297668457
+Dataset gray, Runid 20240328_074543, Epoch 330, Iter 1, Loss Test ind: 2.58e-02
+========
+Dataset gray, Runid 20240328_074543, Epoch 331, Iter 1, Loss Train: 2.21e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 336, Iter 1, Loss Train: 2.16e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 341, Iter 1, Loss Train: 2.15e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 346, Iter 1, Loss Train: 2.20e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 351, Iter 1, Loss Train: 2.13e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 356, Iter 1, Loss Train: 2.11e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.878
+loss_test: 0.026449600234627724, loss_relative: 15.061616897583008
+Checkpoint created: min ind relative loss was 15.546003341674805, new is 15.061616897583008
+Dataset gray, Runid 20240328_074543, Epoch 360, Iter 1, Loss Test ind: 2.64e-02
+========
+Dataset gray, Runid 20240328_074543, Epoch 361, Iter 1, Loss Train: 2.15e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 366, Iter 1, Loss Train: 2.06e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 371, Iter 1, Loss Train: 2.12e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 376, Iter 1, Loss Train: 2.14e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 381, Iter 1, Loss Train: 2.58e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 386, Iter 1, Loss Train: 2.11e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.869
+loss_test: 0.024888522922992706, loss_relative: 16.358060836791992
+Checkpoint created: min ind test loss was 0.025539498776197433, new is 0.024888522922992706
+Dataset gray, Runid 20240328_074543, Epoch 390, Iter 1, Loss Test ind: 2.49e-02
+========
+Dataset gray, Runid 20240328_074543, Epoch 391, Iter 1, Loss Train: 2.07e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 396, Iter 1, Loss Train: 2.04e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 401, Iter 1, Loss Train: 2.18e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 406, Iter 1, Loss Train: 2.17e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 411, Iter 1, Loss Train: 2.19e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 416, Iter 1, Loss Train: 2.02e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.86
+loss_test: 0.0260764230042696, loss_relative: 13.98701286315918
+Checkpoint created: min ind relative loss was 15.061616897583008, new is 13.98701286315918
+Dataset gray, Runid 20240328_074543, Epoch 420, Iter 1, Loss Test ind: 2.61e-02
+========
+Dataset gray, Runid 20240328_074543, Epoch 421, Iter 1, Loss Train: 1.98e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 426, Iter 1, Loss Train: 1.97e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 431, Iter 1, Loss Train: 1.96e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 436, Iter 1, Loss Train: 1.96e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 441, Iter 1, Loss Train: 1.94e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 446, Iter 1, Loss Train: 1.93e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.851
+loss_test: 0.02738066390156746, loss_relative: 13.133904457092285
+Checkpoint created: min ind relative loss was 13.98701286315918, new is 13.133904457092285
+Dataset gray, Runid 20240328_074543, Epoch 450, Iter 1, Loss Test ind: 2.74e-02
+========
+Dataset gray, Runid 20240328_074543, Epoch 451, Iter 1, Loss Train: 1.92e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 456, Iter 1, Loss Train: 1.91e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 461, Iter 1, Loss Train: 1.90e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 466, Iter 1, Loss Train: 1.92e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 471, Iter 1, Loss Train: 1.88e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 476, Iter 1, Loss Train: 1.88e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.843
+loss_test: 0.03183121979236603, loss_relative: 16.292388916015625
+Dataset gray, Runid 20240328_074543, Epoch 480, Iter 1, Loss Test ind: 3.18e-02
+========
+Dataset gray, Runid 20240328_074543, Epoch 481, Iter 1, Loss Train: 2.03e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 486, Iter 1, Loss Train: 2.02e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 491, Iter 1, Loss Train: 2.22e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 496, Iter 1, Loss Train: 2.43e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 501, Iter 1, Loss Train: 1.96e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 506, Iter 1, Loss Train: 1.96e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.835
+loss_test: 0.025439120829105377, loss_relative: 14.2308931350708
+Dataset gray, Runid 20240328_074543, Epoch 510, Iter 1, Loss Test ind: 2.54e-02
+========
+Dataset gray, Runid 20240328_074543, Epoch 511, Iter 1, Loss Train: 1.97e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 516, Iter 1, Loss Train: 1.89e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 521, Iter 1, Loss Train: 1.87e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 526, Iter 1, Loss Train: 1.88e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 531, Iter 1, Loss Train: 1.86e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 536, Iter 1, Loss Train: 1.86e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.826
+loss_test: 0.031002262607216835, loss_relative: 14.92581844329834
+Dataset gray, Runid 20240328_074543, Epoch 540, Iter 1, Loss Test ind: 3.10e-02
+========
+Dataset gray, Runid 20240328_074543, Epoch 541, Iter 1, Loss Train: 1.87e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 546, Iter 1, Loss Train: 1.83e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 551, Iter 1, Loss Train: 1.84e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 556, Iter 1, Loss Train: 1.87e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 561, Iter 1, Loss Train: 1.80e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 566, Iter 1, Loss Train: 1.86e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.818
+loss_test: 0.03486936539411545, loss_relative: 14.896833419799805
+Dataset gray, Runid 20240328_074543, Epoch 570, Iter 1, Loss Test ind: 3.49e-02
+========
+Dataset gray, Runid 20240328_074543, Epoch 571, Iter 1, Loss Train: 1.86e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 576, Iter 1, Loss Train: 1.79e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 581, Iter 1, Loss Train: 1.82e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 586, Iter 1, Loss Train: 1.80e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 591, Iter 1, Loss Train: 1.76e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 596, Iter 1, Loss Train: 1.76e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.81
+loss_test: 0.03618082404136658, loss_relative: 12.718100547790527
+Checkpoint created: min ind relative loss was 13.133904457092285, new is 12.718100547790527
+Dataset gray, Runid 20240328_074543, Epoch 600, Iter 1, Loss Test ind: 3.62e-02
+========
+Dataset gray, Runid 20240328_074543, Epoch 601, Iter 1, Loss Train: 1.74e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 606, Iter 1, Loss Train: 1.74e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 611, Iter 1, Loss Train: 1.79e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 616, Iter 1, Loss Train: 2.03e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 621, Iter 1, Loss Train: 1.75e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 626, Iter 1, Loss Train: 1.75e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.802
+loss_test: 0.05466032773256302, loss_relative: 16.567245483398438
+Dataset gray, Runid 20240328_074543, Epoch 630, Iter 1, Loss Test ind: 5.47e-02
+========
+Dataset gray, Runid 20240328_074543, Epoch 631, Iter 1, Loss Train: 2.09e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 636, Iter 1, Loss Train: 1.81e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 641, Iter 1, Loss Train: 1.80e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 646, Iter 1, Loss Train: 1.89e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 651, Iter 1, Loss Train: 1.86e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 656, Iter 1, Loss Train: 1.84e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.794
+loss_test: 0.029526514932513237, loss_relative: 12.102232933044434
+Checkpoint created: min ind relative loss was 12.718100547790527, new is 12.102232933044434
+Dataset gray, Runid 20240328_074543, Epoch 660, Iter 1, Loss Test ind: 2.95e-02
+========
+Dataset gray, Runid 20240328_074543, Epoch 661, Iter 1, Loss Train: 1.87e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 666, Iter 1, Loss Train: 1.73e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 671, Iter 1, Loss Train: 1.91e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 676, Iter 1, Loss Train: 1.74e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 681, Iter 1, Loss Train: 1.77e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 686, Iter 1, Loss Train: 1.79e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.786
+loss_test: 0.04304219409823418, loss_relative: 16.056068420410156
+Dataset gray, Runid 20240328_074543, Epoch 690, Iter 1, Loss Test ind: 4.30e-02
+========
+Dataset gray, Runid 20240328_074543, Epoch 691, Iter 1, Loss Train: 1.84e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 696, Iter 1, Loss Train: 1.71e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 701, Iter 1, Loss Train: 1.70e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 706, Iter 1, Loss Train: 1.68e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 711, Iter 1, Loss Train: 1.68e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 716, Iter 1, Loss Train: 1.67e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.778
+loss_test: 0.050280988216400146, loss_relative: 12.753796577453613
+Dataset gray, Runid 20240328_074543, Epoch 720, Iter 1, Loss Test ind: 5.03e-02
+========
+Dataset gray, Runid 20240328_074543, Epoch 721, Iter 1, Loss Train: 1.65e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 726, Iter 1, Loss Train: 1.65e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 731, Iter 1, Loss Train: 1.65e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 736, Iter 1, Loss Train: 1.64e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 741, Iter 1, Loss Train: 1.64e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 746, Iter 1, Loss Train: 1.64e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.77
+loss_test: 0.09224627912044525, loss_relative: 13.552669525146484
+Dataset gray, Runid 20240328_074543, Epoch 750, Iter 1, Loss Test ind: 9.22e-02
+========
+Dataset gray, Runid 20240328_074543, Epoch 751, Iter 1, Loss Train: 1.65e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 756, Iter 1, Loss Train: 1.62e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 761, Iter 1, Loss Train: 1.63e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 766, Iter 1, Loss Train: 1.59e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 771, Iter 1, Loss Train: 1.66e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 776, Iter 1, Loss Train: 2.03e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.762
+loss_test: 0.05574415624141693, loss_relative: 13.806900024414062
+Dataset gray, Runid 20240328_074543, Epoch 780, Iter 1, Loss Test ind: 5.57e-02
+========
+Dataset gray, Runid 20240328_074543, Epoch 781, Iter 1, Loss Train: 1.61e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 786, Iter 1, Loss Train: 1.61e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 791, Iter 1, Loss Train: 2.28e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 796, Iter 1, Loss Train: 1.99e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 801, Iter 1, Loss Train: 1.87e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 806, Iter 1, Loss Train: 1.67e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.755
+loss_test: 0.06417828798294067, loss_relative: 16.020627975463867
+Dataset gray, Runid 20240328_074543, Epoch 810, Iter 1, Loss Test ind: 6.42e-02
+========
+Dataset gray, Runid 20240328_074543, Epoch 811, Iter 1, Loss Train: 1.88e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 816, Iter 1, Loss Train: 1.88e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 821, Iter 1, Loss Train: 1.68e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 826, Iter 1, Loss Train: 1.72e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 831, Iter 1, Loss Train: 1.60e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 836, Iter 1, Loss Train: 1.59e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.747
+loss_test: 0.049818068742752075, loss_relative: 15.430291175842285
+Dataset gray, Runid 20240328_074543, Epoch 840, Iter 1, Loss Test ind: 4.98e-02
+========
+Dataset gray, Runid 20240328_074543, Epoch 841, Iter 1, Loss Train: 1.65e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 846, Iter 1, Loss Train: 1.60e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 851, Iter 1, Loss Train: 1.65e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 856, Iter 1, Loss Train: 1.63e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 861, Iter 1, Loss Train: 1.62e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 866, Iter 1, Loss Train: 1.57e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.74
+loss_test: 0.036081474274396896, loss_relative: 11.276880264282227
+Checkpoint created: min ind relative loss was 12.102232933044434, new is 11.276880264282227
+Dataset gray, Runid 20240328_074543, Epoch 870, Iter 1, Loss Test ind: 3.61e-02
+========
+Dataset gray, Runid 20240328_074543, Epoch 871, Iter 1, Loss Train: 1.62e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 876, Iter 1, Loss Train: 1.60e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 881, Iter 1, Loss Train: 1.58e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 886, Iter 1, Loss Train: 1.57e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 891, Iter 1, Loss Train: 1.52e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 896, Iter 1, Loss Train: 1.54e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.732
+loss_test: 0.06326805055141449, loss_relative: 12.719422340393066
+Dataset gray, Runid 20240328_074543, Epoch 900, Iter 1, Loss Test ind: 6.33e-02
+========
+Dataset gray, Runid 20240328_074543, Epoch 901, Iter 1, Loss Train: 1.53e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 906, Iter 1, Loss Train: 1.51e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 911, Iter 1, Loss Train: 1.49e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 916, Iter 1, Loss Train: 1.49e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 921, Iter 1, Loss Train: 1.48e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 926, Iter 1, Loss Train: 1.47e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.725
+loss_test: 0.1442161500453949, loss_relative: 11.646284103393555
+Dataset gray, Runid 20240328_074543, Epoch 930, Iter 1, Loss Test ind: 1.44e-01
+========
+Dataset gray, Runid 20240328_074543, Epoch 931, Iter 1, Loss Train: 1.46e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 936, Iter 1, Loss Train: 1.45e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 941, Iter 1, Loss Train: 1.45e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 946, Iter 1, Loss Train: 1.48e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 951, Iter 1, Loss Train: 1.46e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 956, Iter 1, Loss Train: 1.42e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.718
+loss_test: 0.5949247479438782, loss_relative: 10.994339942932129
+Checkpoint created: min ind relative loss was 11.276880264282227, new is 10.994339942932129
+Dataset gray, Runid 20240328_074543, Epoch 960, Iter 1, Loss Test ind: 5.95e-01
+========
+Dataset gray, Runid 20240328_074543, Epoch 961, Iter 1, Loss Train: 1.44e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 966, Iter 1, Loss Train: 1.42e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 971, Iter 1, Loss Train: 1.47e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 976, Iter 1, Loss Train: 1.54e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 981, Iter 1, Loss Train: 1.45e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 986, Iter 1, Loss Train: 1.47e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.711
+loss_test: 0.18306902050971985, loss_relative: 10.614605903625488
+Checkpoint created: min ind relative loss was 10.994339942932129, new is 10.614605903625488
+Dataset gray, Runid 20240328_074543, Epoch 990, Iter 1, Loss Test ind: 1.83e-01
+========
+Dataset gray, Runid 20240328_074543, Epoch 991, Iter 1, Loss Train: 1.51e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 996, Iter 1, Loss Train: 1.49e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1001, Iter 1, Loss Train: 1.46e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1006, Iter 1, Loss Train: 1.41e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1011, Iter 1, Loss Train: 1.40e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1016, Iter 1, Loss Train: 1.38e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.703
+loss_test: 1.6474957466125488, loss_relative: 10.771211624145508
+Dataset gray, Runid 20240328_074543, Epoch 1020, Iter 1, Loss Test ind: 1.65e+00
+========
+Dataset gray, Runid 20240328_074543, Epoch 1021, Iter 1, Loss Train: 1.42e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1026, Iter 1, Loss Train: 1.40e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1031, Iter 1, Loss Train: 1.36e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1036, Iter 1, Loss Train: 1.38e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1041, Iter 1, Loss Train: 1.36e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1046, Iter 1, Loss Train: 1.35e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.696
+loss_test: 33.06785583496094, loss_relative: 12.16164493560791
+Dataset gray, Runid 20240328_074543, Epoch 1050, Iter 1, Loss Test ind: 3.31e+01
+========
+Dataset gray, Runid 20240328_074543, Epoch 1051, Iter 1, Loss Train: 1.34e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1056, Iter 1, Loss Train: 1.34e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1061, Iter 1, Loss Train: 1.32e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1066, Iter 1, Loss Train: 1.32e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1071, Iter 1, Loss Train: 1.31e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1076, Iter 1, Loss Train: 1.34e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.689
+loss_test: 914.4322509765625, loss_relative: 17.66558837890625
+Dataset gray, Runid 20240328_074543, Epoch 1080, Iter 1, Loss Test ind: 9.14e+02
+========
+Dataset gray, Runid 20240328_074543, Epoch 1081, Iter 1, Loss Train: 1.31e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1086, Iter 1, Loss Train: 1.29e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1091, Iter 1, Loss Train: 1.27e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1096, Iter 1, Loss Train: 1.27e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1101, Iter 1, Loss Train: 1.26e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1106, Iter 1, Loss Train: 1.31e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.683
+loss_test: 6673.90869140625, loss_relative: 39.46467971801758
+Dataset gray, Runid 20240328_074543, Epoch 1110, Iter 1, Loss Test ind: 6.67e+03
+========
+Dataset gray, Runid 20240328_074543, Epoch 1111, Iter 1, Loss Train: 2.00e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1116, Iter 1, Loss Train: 1.35e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1121, Iter 1, Loss Train: 2.09e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1126, Iter 1, Loss Train: 1.89e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1131, Iter 1, Loss Train: 1.35e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1136, Iter 1, Loss Train: 1.62e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.676
+loss_test: 2743.77978515625, loss_relative: 30.52250099182129
+Dataset gray, Runid 20240328_074543, Epoch 1140, Iter 1, Loss Test ind: 2.74e+03
+========
+Dataset gray, Runid 20240328_074543, Epoch 1141, Iter 1, Loss Train: 1.94e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1146, Iter 1, Loss Train: 1.56e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1151, Iter 1, Loss Train: 1.44e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1156, Iter 1, Loss Train: 1.35e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1161, Iter 1, Loss Train: 1.42e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1166, Iter 1, Loss Train: 1.36e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.669
+loss_test: 8047.42041015625, loss_relative: 26.883140563964844
+Dataset gray, Runid 20240328_074543, Epoch 1170, Iter 1, Loss Test ind: 8.05e+03
+========
+Dataset gray, Runid 20240328_074543, Epoch 1171, Iter 1, Loss Train: 1.28e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1176, Iter 1, Loss Train: 1.23e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1181, Iter 1, Loss Train: 1.24e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1186, Iter 1, Loss Train: 1.21e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1191, Iter 1, Loss Train: 1.20e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1196, Iter 1, Loss Train: 1.19e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.662
+loss_test: 24027.591796875, loss_relative: 36.944366455078125
+Dataset gray, Runid 20240328_074543, Epoch 1200, Iter 1, Loss Test ind: 2.40e+04
+========
+Dataset gray, Runid 20240328_074543, Epoch 1201, Iter 1, Loss Train: 1.18e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1206, Iter 1, Loss Train: 1.17e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1211, Iter 1, Loss Train: 1.16e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1216, Iter 1, Loss Train: 1.15e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1221, Iter 1, Loss Train: 1.14e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1226, Iter 1, Loss Train: 1.13e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.656
+loss_test: 3318032.25, loss_relative: 363.2344970703125
+Dataset gray, Runid 20240328_074543, Epoch 1230, Iter 1, Loss Test ind: 3.32e+06
+========
+Dataset gray, Runid 20240328_074543, Epoch 1231, Iter 1, Loss Train: 1.12e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1236, Iter 1, Loss Train: 1.11e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1241, Iter 1, Loss Train: 1.10e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1246, Iter 1, Loss Train: 1.09e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1251, Iter 1, Loss Train: 1.09e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1256, Iter 1, Loss Train: 1.08e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.649
+loss_test: 804757184.0, loss_relative: 6386.96484375
+Dataset gray, Runid 20240328_074543, Epoch 1260, Iter 1, Loss Test ind: 8.05e+08
+========
+Dataset gray, Runid 20240328_074543, Epoch 1261, Iter 1, Loss Train: 1.11e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1266, Iter 1, Loss Train: 1.08e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1271, Iter 1, Loss Train: 1.07e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1276, Iter 1, Loss Train: 1.05e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1281, Iter 1, Loss Train: 1.03e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1286, Iter 1, Loss Train: 1.07e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.643
+loss_test: 29608173568.0, loss_relative: 39710.77734375
+Dataset gray, Runid 20240328_074543, Epoch 1290, Iter 1, Loss Test ind: 2.96e+10
+========
+Dataset gray, Runid 20240328_074543, Epoch 1291, Iter 1, Loss Train: 1.09e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1296, Iter 1, Loss Train: 1.01e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1301, Iter 1, Loss Train: 1.10e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1306, Iter 1, Loss Train: 1.11e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1311, Iter 1, Loss Train: 1.02e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1316, Iter 1, Loss Train: 1.05e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.636
+loss_test: 174447624192.0, loss_relative: 92424.9765625
+Dataset gray, Runid 20240328_074543, Epoch 1320, Iter 1, Loss Test ind: 1.74e+11
+========
+Dataset gray, Runid 20240328_074543, Epoch 1321, Iter 1, Loss Train: 1.02e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1326, Iter 1, Loss Train: 1.01e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1331, Iter 1, Loss Train: 1.14e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1336, Iter 1, Loss Train: 1.00e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1341, Iter 1, Loss Train: 9.69e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1346, Iter 1, Loss Train: 9.49e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.63
+loss_test: 391373946880.0, loss_relative: 132294.421875
+Dataset gray, Runid 20240328_074543, Epoch 1350, Iter 1, Loss Test ind: 3.91e+11
+========
+Dataset gray, Runid 20240328_074543, Epoch 1351, Iter 1, Loss Train: 1.01e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1356, Iter 1, Loss Train: 1.11e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1361, Iter 1, Loss Train: 1.06e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1366, Iter 1, Loss Train: 9.82e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1371, Iter 1, Loss Train: 1.04e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1376, Iter 1, Loss Train: 9.58e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.624
+loss_test: 105565560832.0, loss_relative: 64761.2421875
+Dataset gray, Runid 20240328_074543, Epoch 1380, Iter 1, Loss Test ind: 1.06e+11
+========
+Dataset gray, Runid 20240328_074543, Epoch 1381, Iter 1, Loss Train: 9.54e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1386, Iter 1, Loss Train: 9.42e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1391, Iter 1, Loss Train: 9.30e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1396, Iter 1, Loss Train: 9.15e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1401, Iter 1, Loss Train: 8.82e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1406, Iter 1, Loss Train: 8.70e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.617
+loss_test: 1552373252096.0, loss_relative: 250266.0625
+Dataset gray, Runid 20240328_074543, Epoch 1410, Iter 1, Loss Test ind: 1.55e+12
+========
+Dataset gray, Runid 20240328_074543, Epoch 1411, Iter 1, Loss Train: 8.61e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1416, Iter 1, Loss Train: 8.55e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1421, Iter 1, Loss Train: 8.45e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1426, Iter 1, Loss Train: 8.38e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1431, Iter 1, Loss Train: 8.31e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1436, Iter 1, Loss Train: 8.23e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.611
+loss_test: 28953041436672.0, loss_relative: 1088393.125
+Dataset gray, Runid 20240328_074543, Epoch 1440, Iter 1, Loss Test ind: 2.90e+13
+========
+Dataset gray, Runid 20240328_074543, Epoch 1441, Iter 1, Loss Train: 8.16e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1446, Iter 1, Loss Train: 8.10e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1451, Iter 1, Loss Train: 8.03e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1456, Iter 1, Loss Train: 7.97e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1461, Iter 1, Loss Train: 7.93e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1466, Iter 1, Loss Train: 7.98e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.605
+loss_test: 391117505822720.0, loss_relative: 4080829.75
+Dataset gray, Runid 20240328_074543, Epoch 1470, Iter 1, Loss Test ind: 3.91e+14
+========
+Dataset gray, Runid 20240328_074543, Epoch 1471, Iter 1, Loss Train: 7.81e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1476, Iter 1, Loss Train: 8.03e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1481, Iter 1, Loss Train: 7.68e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1486, Iter 1, Loss Train: 7.73e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1491, Iter 1, Loss Train: 7.75e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1496, Iter 1, Loss Train: 7.52e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.599
+loss_test: 653555778191360.0, loss_relative: 5408251.5
+Dataset gray, Runid 20240328_074543, Epoch 1500, Iter 1, Loss Test ind: 6.54e+14
+========
+Dataset gray, Runid 20240328_074543, Epoch 1501, Iter 1, Loss Train: 7.50e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1506, Iter 1, Loss Train: 1.00e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1511, Iter 1, Loss Train: 7.69e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1516, Iter 1, Loss Train: 7.46e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1521, Iter 1, Loss Train: 9.36e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1526, Iter 1, Loss Train: 8.07e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.593
+loss_test: 0.01822521537542343, loss_relative: 7.669310092926025
+Checkpoint created: min ind test loss was 0.024888522922992706, new is 0.01822521537542343
+Checkpoint created: min ind relative loss was 10.614605903625488, new is 7.669310092926025
+Dataset gray, Runid 20240328_074543, Epoch 1530, Iter 1, Loss Test ind: 1.82e-02
+========
+Dataset gray, Runid 20240328_074543, Epoch 1531, Iter 1, Loss Train: 1.18e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1536, Iter 1, Loss Train: 9.22e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1541, Iter 1, Loss Train: 7.84e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1546, Iter 1, Loss Train: 7.57e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1551, Iter 1, Loss Train: 7.54e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1556, Iter 1, Loss Train: 7.35e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.587
+loss_test: 2497489928192.0, loss_relative: 336074.96875
+Dataset gray, Runid 20240328_074543, Epoch 1560, Iter 1, Loss Test ind: 2.50e+12
+========
+Dataset gray, Runid 20240328_074543, Epoch 1561, Iter 1, Loss Train: 7.32e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1566, Iter 1, Loss Train: 7.15e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1571, Iter 1, Loss Train: 7.15e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1576, Iter 1, Loss Train: 7.12e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1581, Iter 1, Loss Train: 6.98e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1586, Iter 1, Loss Train: 7.00e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.581
+loss_test: 45131874304.0, loss_relative: 45369.61328125
+Dataset gray, Runid 20240328_074543, Epoch 1590, Iter 1, Loss Test ind: 4.51e+10
+========
+Dataset gray, Runid 20240328_074543, Epoch 1591, Iter 1, Loss Train: 7.27e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1596, Iter 1, Loss Train: 7.37e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1601, Iter 1, Loss Train: 7.92e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1606, Iter 1, Loss Train: 7.26e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1611, Iter 1, Loss Train: 1.11e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1616, Iter 1, Loss Train: 1.05e-02, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.575
+loss_test: 13465231360.0, loss_relative: 25437.287109375
+Dataset gray, Runid 20240328_074543, Epoch 1620, Iter 1, Loss Test ind: 1.35e+10
+========
+Dataset gray, Runid 20240328_074543, Epoch 1621, Iter 1, Loss Train: 8.37e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1626, Iter 1, Loss Train: 9.26e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1631, Iter 1, Loss Train: 8.48e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1636, Iter 1, Loss Train: 6.92e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1641, Iter 1, Loss Train: 7.01e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1646, Iter 1, Loss Train: 7.25e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.57
+loss_test: 816422400.0, loss_relative: 6221.048828125
+Dataset gray, Runid 20240328_074543, Epoch 1650, Iter 1, Loss Test ind: 8.16e+08
+========
+Dataset gray, Runid 20240328_074543, Epoch 1651, Iter 1, Loss Train: 6.72e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1656, Iter 1, Loss Train: 6.84e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1661, Iter 1, Loss Train: 6.59e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1666, Iter 1, Loss Train: 6.53e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1671, Iter 1, Loss Train: 6.52e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1676, Iter 1, Loss Train: 6.43e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.564
+loss_test: 0.011799028143286705, loss_relative: 11.872385025024414
+Checkpoint created: min ind test loss was 0.01822521537542343, new is 0.011799028143286705
+Dataset gray, Runid 20240328_074543, Epoch 1680, Iter 1, Loss Test ind: 1.18e-02
+========
+Dataset gray, Runid 20240328_074543, Epoch 1681, Iter 1, Loss Train: 6.38e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1686, Iter 1, Loss Train: 6.35e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1691, Iter 1, Loss Train: 6.31e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1696, Iter 1, Loss Train: 6.26e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1701, Iter 1, Loss Train: 6.22e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1706, Iter 1, Loss Train: 6.17e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.558
+loss_test: 0.011715785600244999, loss_relative: 11.628436088562012
+Checkpoint created: min ind test loss was 0.011799028143286705, new is 0.011715785600244999
+Dataset gray, Runid 20240328_074543, Epoch 1710, Iter 1, Loss Test ind: 1.17e-02
+========
+Dataset gray, Runid 20240328_074543, Epoch 1711, Iter 1, Loss Train: 6.13e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1716, Iter 1, Loss Train: 6.08e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1721, Iter 1, Loss Train: 6.03e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1726, Iter 1, Loss Train: 5.98e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1731, Iter 1, Loss Train: 5.93e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1736, Iter 1, Loss Train: 5.88e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.553
+loss_test: 0.011463344097137451, loss_relative: 11.79106330871582
+Checkpoint created: min ind test loss was 0.011715785600244999, new is 0.011463344097137451
+Dataset gray, Runid 20240328_074543, Epoch 1740, Iter 1, Loss Test ind: 1.15e-02
+========
+Dataset gray, Runid 20240328_074543, Epoch 1741, Iter 1, Loss Train: 5.83e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1746, Iter 1, Loss Train: 5.77e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1751, Iter 1, Loss Train: 5.72e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1756, Iter 1, Loss Train: 5.66e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1761, Iter 1, Loss Train: 5.61e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1766, Iter 1, Loss Train: 5.55e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.547
+loss_test: 0.011427678167819977, loss_relative: 11.693328857421875
+Checkpoint created: min ind test loss was 0.011463344097137451, new is 0.011427678167819977
+Dataset gray, Runid 20240328_074543, Epoch 1770, Iter 1, Loss Test ind: 1.14e-02
+========
+Dataset gray, Runid 20240328_074543, Epoch 1771, Iter 1, Loss Train: 5.49e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1776, Iter 1, Loss Train: 5.43e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1781, Iter 1, Loss Train: 5.37e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1786, Iter 1, Loss Train: 5.31e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1791, Iter 1, Loss Train: 5.25e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1796, Iter 1, Loss Train: 5.19e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.542
+loss_test: 0.011559019796550274, loss_relative: 11.408987045288086
+Dataset gray, Runid 20240328_074543, Epoch 1800, Iter 1, Loss Test ind: 1.16e-02
+========
+Dataset gray, Runid 20240328_074543, Epoch 1801, Iter 1, Loss Train: 5.13e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1806, Iter 1, Loss Train: 5.07e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1811, Iter 1, Loss Train: 5.01e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1816, Iter 1, Loss Train: 4.95e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1821, Iter 1, Loss Train: 4.89e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1826, Iter 1, Loss Train: 4.84e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.536
+loss_test: 0.011407796293497086, loss_relative: 11.244489669799805
+Checkpoint created: min ind test loss was 0.011427678167819977, new is 0.011407796293497086
+Dataset gray, Runid 20240328_074543, Epoch 1830, Iter 1, Loss Test ind: 1.14e-02
+========
+Dataset gray, Runid 20240328_074543, Epoch 1831, Iter 1, Loss Train: 4.79e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1836, Iter 1, Loss Train: 4.74e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1841, Iter 1, Loss Train: 4.69e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1846, Iter 1, Loss Train: 4.64e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1851, Iter 1, Loss Train: 4.59e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1856, Iter 1, Loss Train: 4.54e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.531
+loss_test: 0.011033445596694946, loss_relative: 10.91537857055664
+Checkpoint created: min ind test loss was 0.011407796293497086, new is 0.011033445596694946
+Dataset gray, Runid 20240328_074543, Epoch 1860, Iter 1, Loss Test ind: 1.10e-02
+========
+Dataset gray, Runid 20240328_074543, Epoch 1861, Iter 1, Loss Train: 4.49e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1866, Iter 1, Loss Train: 4.44e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1871, Iter 1, Loss Train: 4.40e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1876, Iter 1, Loss Train: 4.34e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1881, Iter 1, Loss Train: 4.29e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1886, Iter 1, Loss Train: 4.22e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.526
+loss_test: 0.01068422757089138, loss_relative: 9.940369606018066
+Checkpoint created: min ind test loss was 0.011033445596694946, new is 0.01068422757089138
+Dataset gray, Runid 20240328_074543, Epoch 1890, Iter 1, Loss Test ind: 1.07e-02
+========
+Dataset gray, Runid 20240328_074543, Epoch 1891, Iter 1, Loss Train: 4.16e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1896, Iter 1, Loss Train: 4.08e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1901, Iter 1, Loss Train: 4.00e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1906, Iter 1, Loss Train: 3.90e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1911, Iter 1, Loss Train: 3.81e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1916, Iter 1, Loss Train: 4.77e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.52
+loss_test: 0.011249909177422523, loss_relative: 8.272501945495605
+Dataset gray, Runid 20240328_074543, Epoch 1920, Iter 1, Loss Test ind: 1.12e-02
+========
+Dataset gray, Runid 20240328_074543, Epoch 1921, Iter 1, Loss Train: 3.76e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1926, Iter 1, Loss Train: 3.72e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1931, Iter 1, Loss Train: 3.69e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1936, Iter 1, Loss Train: 3.79e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1941, Iter 1, Loss Train: 3.52e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1946, Iter 1, Loss Train: 3.25e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.515
+loss_test: 0.008610568009316921, loss_relative: 9.644392967224121
+Checkpoint created: min ind test loss was 0.01068422757089138, new is 0.008610568009316921
+Dataset gray, Runid 20240328_074543, Epoch 1950, Iter 1, Loss Test ind: 8.61e-03
+========
+Dataset gray, Runid 20240328_074543, Epoch 1951, Iter 1, Loss Train: 3.38e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1956, Iter 1, Loss Train: 3.42e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1961, Iter 1, Loss Train: 3.06e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1966, Iter 1, Loss Train: 3.28e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1971, Iter 1, Loss Train: 3.21e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1976, Iter 1, Loss Train: 3.05e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+epsilon: 0.51
+loss_test: 0.009586818516254425, loss_relative: 8.353940963745117
+Dataset gray, Runid 20240328_074543, Epoch 1980, Iter 1, Loss Test ind: 9.59e-03
+========
+Dataset gray, Runid 20240328_074543, Epoch 1981, Iter 1, Loss Train: 2.90e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1986, Iter 1, Loss Train: 2.82e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00
+Dataset gray, Runid 20240328_074543, Epoch 1991, Iter 1, Loss Train: 2.82e-03, Loss RegRow: 0.00e+00, Loss RegCol: 0.00e+00, Loss RegTheta: 0.00e+00, Loss RegCode: 0.00e+00

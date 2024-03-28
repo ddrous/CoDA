@@ -188,7 +188,7 @@ elif dataset == "gray":
     factor = 5e-4
     state_c = 2
     init_gain = 1
-    method = "rk4"
+    method = "dopri5"
     dataset_train_params = {
         "n_data_per_env": 1, "t_horizon": 400, "dt": 40, "method": "RK45", "size": 32, "n_block": 3, "dx": 1, "group": "train",
         "buffer_file": f"{path_results}/gray_buffer_train.shelve",
@@ -254,12 +254,12 @@ epsilon = epsilon_t = 0.99
 update_epsilon_every = 30
 if dataset == "navier":
     update_epsilon_every = 15
-n_epochs = 40000
+n_epochs = 4
 forecaster_params = {
     "dataset": dataset,
     "is_ode": is_ode,
     "state_c": state_c,
-    "hidden_c": 224,
+    "hidden_c": 100,
     "code_c": code_c,
     "n_env": n_env,
     "factor": factor,

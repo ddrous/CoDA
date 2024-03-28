@@ -1,0 +1,166 @@
+Params: n_mask 104170 / n_tot 104170 / n_hypernet 104170
+derivative.codes, True
+derivative.net_root.net.0.weight, False
+derivative.net_root.net.0.bias, False
+derivative.net_root.net.1.activation.beta, False
+derivative.net_root.net.2.weight, False
+derivative.net_root.net.2.bias, False
+derivative.net_root.net.3.activation.beta, False
+derivative.net_root.net.4.weight, False
+derivative.net_root.net.4.bias, False
+derivative.net_root.net.5.activation.beta, False
+derivative.net_root.net.6.weight, False
+derivative.net_root.net.6.bias, False
+derivative.net_hyper.weight, False
+derivative.ghost_structure.net.0.weight, False
+derivative.ghost_structure.net.0.bias, False
+derivative.ghost_structure.net.1.activation.beta, False
+derivative.ghost_structure.net.2.weight, False
+derivative.ghost_structure.net.2.bias, False
+derivative.ghost_structure.net.3.activation.beta, False
+derivative.ghost_structure.net.4.weight, False
+derivative.ghost_structure.net.4.bias, False
+derivative.ghost_structure.net.5.activation.beta, False
+derivative.ghost_structure.net.6.weight, False
+derivative.ghost_structure.net.6.bias, False
+lr: 0.001
+run_id: 20240328_035654
+gpu_id: 0
+dataset: g_osci
+path_model: ./results/g_osci/20240326_141140/model_ind.pt
+regul: 
+state: [4, 7, 20]
+t: tensor([0.0000, 0.0500, 0.1000, 0.1500, 0.2000, 0.2500, 0.3000, 0.3500, 0.4000,
+        0.4500, 0.5000, 0.5500, 0.6000, 0.6500, 0.7000, 0.7500, 0.8000, 0.8500,
+        0.9000, 0.9500], device='cuda:0')
+Runid 20240328_035654, Epoch 1, Iter 1, Loss Train: 8.288e-02
+Runid 20240328_035654, Epoch 11, Iter 1, Loss Train: 5.678e-02
+Runid 20240328_035654, Epoch 21, Iter 1, Loss Train: 4.149e-02
+epsilon: 0.902
+Checkpoint created: min test loss was inf, new is 0.037944819778203964
+Runid 20240328_035654, Epoch 30, Iter 1, Loss Test: 3.794e-02, Loss Relative: 3.795e-01
+========
+Runid 20240328_035654, Epoch 31, Iter 1, Loss Train: 3.297e-02
+Runid 20240328_035654, Epoch 41, Iter 1, Loss Train: 2.802e-02
+Runid 20240328_035654, Epoch 51, Iter 1, Loss Train: 2.456e-02
+epsilon: 0.857
+Checkpoint created: min test loss was 0.037944819778203964, new is 0.025797469541430473
+Runid 20240328_035654, Epoch 60, Iter 1, Loss Test: 2.580e-02, Loss Relative: 2.920e-01
+========
+Runid 20240328_035654, Epoch 61, Iter 1, Loss Train: 2.170e-02
+Runid 20240328_035654, Epoch 71, Iter 1, Loss Train: 1.911e-02
+Runid 20240328_035654, Epoch 81, Iter 1, Loss Train: 1.669e-02
+epsilon: 0.815
+Checkpoint created: min test loss was 0.025797469541430473, new is 0.016092604026198387
+Runid 20240328_035654, Epoch 90, Iter 1, Loss Test: 1.609e-02, Loss Relative: 2.207e-01
+========
+Runid 20240328_035654, Epoch 91, Iter 1, Loss Train: 1.437e-02
+Runid 20240328_035654, Epoch 101, Iter 1, Loss Train: 1.213e-02
+Runid 20240328_035654, Epoch 111, Iter 1, Loss Train: 9.956e-03
+epsilon: 0.774
+Checkpoint created: min test loss was 0.016092604026198387, new is 0.008695976808667183
+Runid 20240328_035654, Epoch 120, Iter 1, Loss Test: 8.696e-03, Loss Relative: 1.604e-01
+========
+Runid 20240328_035654, Epoch 121, Iter 1, Loss Train: 7.881e-03
+Runid 20240328_035654, Epoch 131, Iter 1, Loss Train: 5.958e-03
+Runid 20240328_035654, Epoch 141, Iter 1, Loss Train: 4.254e-03
+epsilon: 0.735
+Checkpoint created: min test loss was 0.008695976808667183, new is 0.0032026441767811775
+Runid 20240328_035654, Epoch 150, Iter 1, Loss Test: 3.203e-03, Loss Relative: 1.064e-01
+========
+Runid 20240328_035654, Epoch 151, Iter 1, Loss Train: 2.833e-03
+Runid 20240328_035654, Epoch 161, Iter 1, Loss Train: 1.745e-03
+Runid 20240328_035654, Epoch 171, Iter 1, Loss Train: 9.863e-04
+epsilon: 0.698
+Checkpoint created: min test loss was 0.0032026441767811775, new is 0.0008692516130395234
+Runid 20240328_035654, Epoch 180, Iter 1, Loss Test: 8.693e-04, Loss Relative: 6.753e-02
+========
+Runid 20240328_035654, Epoch 181, Iter 1, Loss Train: 5.130e-04
+Runid 20240328_035654, Epoch 191, Iter 1, Loss Train: 2.514e-04
+Runid 20240328_035654, Epoch 201, Iter 1, Loss Train: 1.247e-04
+epsilon: 0.663
+Checkpoint created: min test loss was 0.0008692516130395234, new is 0.00044446330866776407
+Runid 20240328_035654, Epoch 210, Iter 1, Loss Test: 4.445e-04, Loss Relative: 5.312e-02
+========
+Runid 20240328_035654, Epoch 211, Iter 1, Loss Train: 7.193e-05
+Runid 20240328_035654, Epoch 221, Iter 1, Loss Train: 5.384e-05
+Runid 20240328_035654, Epoch 231, Iter 1, Loss Train: 4.921e-05
+epsilon: 0.63
+Checkpoint created: min test loss was 0.00044446330866776407, new is 0.00042323238449171185
+Runid 20240328_035654, Epoch 240, Iter 1, Loss Test: 4.232e-04, Loss Relative: 5.151e-02
+========
+Runid 20240328_035654, Epoch 241, Iter 1, Loss Train: 4.854e-05
+Runid 20240328_035654, Epoch 251, Iter 1, Loss Train: 4.856e-05
+Runid 20240328_035654, Epoch 261, Iter 1, Loss Train: 4.856e-05
+epsilon: 0.599
+Checkpoint created: min test loss was 0.00042323238449171185, new is 0.0004230145423207432
+Runid 20240328_035654, Epoch 270, Iter 1, Loss Test: 4.230e-04, Loss Relative: 5.148e-02
+========
+Runid 20240328_035654, Epoch 271, Iter 1, Loss Train: 4.854e-05
+Runid 20240328_035654, Epoch 281, Iter 1, Loss Train: 4.851e-05
+Runid 20240328_035654, Epoch 291, Iter 1, Loss Train: 4.850e-05
+epsilon: 0.569
+Checkpoint created: min test loss was 0.0004230145423207432, new is 0.0004227232711855322
+Runid 20240328_035654, Epoch 300, Iter 1, Loss Test: 4.227e-04, Loss Relative: 5.150e-02
+========
+Runid 20240328_035654, Epoch 301, Iter 1, Loss Train: 4.849e-05
+Runid 20240328_035654, Epoch 311, Iter 1, Loss Train: 4.850e-05
+Runid 20240328_035654, Epoch 321, Iter 1, Loss Train: 4.850e-05
+epsilon: 0.54
+Runid 20240328_035654, Epoch 330, Iter 1, Loss Test: 4.227e-04, Loss Relative: 5.150e-02
+========
+Runid 20240328_035654, Epoch 331, Iter 1, Loss Train: 4.850e-05
+Runid 20240328_035654, Epoch 341, Iter 1, Loss Train: 4.850e-05
+Runid 20240328_035654, Epoch 351, Iter 1, Loss Train: 4.850e-05
+epsilon: 0.513
+Runid 20240328_035654, Epoch 360, Iter 1, Loss Test: 4.228e-04, Loss Relative: 5.150e-02
+========
+Runid 20240328_035654, Epoch 361, Iter 1, Loss Train: 4.849e-05
+Runid 20240328_035654, Epoch 371, Iter 1, Loss Train: 4.849e-05
+Runid 20240328_035654, Epoch 381, Iter 1, Loss Train: 4.850e-05
+epsilon: 0.488
+Runid 20240328_035654, Epoch 390, Iter 1, Loss Test: 4.228e-04, Loss Relative: 5.150e-02
+========
+Runid 20240328_035654, Epoch 391, Iter 1, Loss Train: 4.850e-05
+Runid 20240328_035654, Epoch 401, Iter 1, Loss Train: 4.850e-05
+Runid 20240328_035654, Epoch 411, Iter 1, Loss Train: 4.850e-05
+epsilon: 0.463
+Runid 20240328_035654, Epoch 420, Iter 1, Loss Test: 4.227e-04, Loss Relative: 5.150e-02
+========
+Runid 20240328_035654, Epoch 421, Iter 1, Loss Train: 4.850e-05
+Runid 20240328_035654, Epoch 431, Iter 1, Loss Train: 4.850e-05
+Runid 20240328_035654, Epoch 441, Iter 1, Loss Train: 4.850e-05
+epsilon: 0.44
+Runid 20240328_035654, Epoch 450, Iter 1, Loss Test: 4.227e-04, Loss Relative: 5.150e-02
+========
+Runid 20240328_035654, Epoch 451, Iter 1, Loss Train: 4.849e-05
+Runid 20240328_035654, Epoch 461, Iter 1, Loss Train: 4.850e-05
+Runid 20240328_035654, Epoch 471, Iter 1, Loss Train: 4.850e-05
+epsilon: 0.418
+Runid 20240328_035654, Epoch 480, Iter 1, Loss Test: 4.227e-04, Loss Relative: 5.150e-02
+========
+Runid 20240328_035654, Epoch 481, Iter 1, Loss Train: 4.850e-05
+Runid 20240328_035654, Epoch 491, Iter 1, Loss Train: 4.850e-05
+Runid 20240328_035654, Epoch 501, Iter 1, Loss Train: 4.850e-05
+epsilon: 0.397
+Runid 20240328_035654, Epoch 510, Iter 1, Loss Test: 4.228e-04, Loss Relative: 5.150e-02
+========
+Runid 20240328_035654, Epoch 511, Iter 1, Loss Train: 4.850e-05
+Runid 20240328_035654, Epoch 521, Iter 1, Loss Train: 4.850e-05
+Runid 20240328_035654, Epoch 531, Iter 1, Loss Train: 4.850e-05
+epsilon: 0.377
+Runid 20240328_035654, Epoch 540, Iter 1, Loss Test: 4.228e-04, Loss Relative: 5.150e-02
+========
+Runid 20240328_035654, Epoch 541, Iter 1, Loss Train: 4.850e-05
+Runid 20240328_035654, Epoch 551, Iter 1, Loss Train: 4.850e-05
+Runid 20240328_035654, Epoch 561, Iter 1, Loss Train: 4.850e-05
+epsilon: 0.358
+Runid 20240328_035654, Epoch 570, Iter 1, Loss Test: 4.228e-04, Loss Relative: 5.150e-02
+========
+Runid 20240328_035654, Epoch 571, Iter 1, Loss Train: 4.849e-05
+Runid 20240328_035654, Epoch 581, Iter 1, Loss Train: 4.850e-05
+Runid 20240328_035654, Epoch 591, Iter 1, Loss Train: 4.850e-05
+epsilon: 0.341
+Runid 20240328_035654, Epoch 600, Iter 1, Loss Test: 4.227e-04, Loss Relative: 5.150e-02
+========
+k1: [85, 95], K1: [0.625, 0.875], loss: 0.00042274323641322553, relative loss: 0.05149902403354645

@@ -20,8 +20,10 @@ epochs_train = [int(i) for i in epochs_train]
 
 ## collect all the loss values and epochs
 loss_test_values = re.findall(r'Loss Test ind: (\d+\.\d+e[+-]\d+)', code)
+# loss_test_values = re.findall(r'Loss Test: (\d+\.\d+e[+-]\d+)', code)
 loss_test_values = [float(i) for i in loss_test_values]
 epochs_test = re.findall(r'Epoch (\d+), Iter \d+, Loss Test ind:', code)
+# epochs_test = re.findall(r'Epoch (\d+), Iter \d+, Loss Test:', code)
 epochs_test = [int(i) for i in epochs_test]
 
 ## plot the loss values
@@ -35,6 +37,7 @@ plt.plot(epochs_test, loss_test_values, label='Loss Test')
 plt.xlabel('Epoch')
 plt.ylabel('MSE')
 plt.yscale('log')
+plt.ylim(1e-5, 0.1)
 plt.legend()
 plt.draw()
 
