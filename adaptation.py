@@ -14,6 +14,9 @@ import getopt
 import sys
 import math
 from itertools import product
+import time
+start = time.time()
+
 
 dataset = "lotka"
 gpu = 0
@@ -136,7 +139,7 @@ dataloader_train, dataloader_test = DataLoaderODE(dataset_train, minibatch_size,
 epsilon = epsilon_t = 0.95
 update_epsilon_every = 30
 log_every = 10
-n_epochs = 6000
+n_epochs = 1200
 lr = 1e-3
 test_type = "ind"
 checkpoint = torch.load(f"{path_model}", map_location=device)
@@ -254,3 +257,6 @@ if dataset == 'g_osci':
 torch.save(loss_per_param, os.path.join(path_checkpoint, f"loss.pt"))
 torch.save(loss_relative_per_param, os.path.join(path_checkpoint, f"loss_relative.pt"))
 torch.save(codes_per_param, os.path.join(path_checkpoint, f"codes.pt"))
+
+end = time.time()
+print("\nTotal script time in hours minutes seconds: ", time.strftime("%H:%M:%S", time.gmtime(end - start)))

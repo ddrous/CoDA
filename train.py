@@ -102,7 +102,7 @@ if dataset == "lotka":
     dataset_train, dataset_test = LotkaVolterraDataset(**dataset_train_params), LotkaVolterraDataset(**dataset_test_params)
 
 
-if dataset == "selkov":
+elif dataset == "selkov":
     minibatch_size = 4
     factor = 1.0
     state_c = 2
@@ -164,7 +164,8 @@ elif "g_osci" in dataset:
     factor = 1.0
     state_c = 7
     init_gain = 0.1
-    method = "rk4"
+    # method = "rk4"
+    method = "dopri5"
     k1_range = [100, 90, 80]
     if "_1" in dataset:
         k1_range = [100, 97.5, 95]
@@ -187,7 +188,7 @@ elif dataset == "gray":
     factor = 5e-4
     state_c = 2
     init_gain = 1
-    method = "rk4"
+    method = "dopri5"
     dataset_train_params = {
         "n_data_per_env": 1, "t_horizon": 400, "dt": 40, "method": "RK45", "size": 32, "n_block": 3, "dx": 1, "group": "train",
         "buffer_file": f"{path_results}/gray_buffer_train.shelve",
@@ -253,12 +254,12 @@ epsilon = epsilon_t = 0.99
 update_epsilon_every = 30
 if dataset == "navier":
     update_epsilon_every = 15
-n_epochs = 6000
+n_epochs = 4
 forecaster_params = {
     "dataset": dataset,
     "is_ode": is_ode,
     "state_c": state_c,
-    "hidden_c": 90,
+    "hidden_c": 146,
     "code_c": code_c,
     "n_env": n_env,
     "factor": factor,
