@@ -1,0 +1,78 @@
+Params: n_mask 1189637 / n_tot 1189637 / n_hypernet 1189637
+derivative.codes, True
+derivative.net_root.net.0.weight, False
+derivative.net_root.net.0.bias, False
+derivative.net_root.net.1.activation.beta, False
+derivative.net_root.net.2.weight, False
+derivative.net_root.net.2.bias, False
+derivative.net_root.net.3.activation.beta, False
+derivative.net_root.net.4.weight, False
+derivative.net_root.net.4.bias, False
+derivative.net_root.net.5.activation.beta, False
+derivative.net_root.net.6.weight, False
+derivative.net_root.net.6.bias, False
+derivative.net_hyper.weight, False
+derivative.ghost_structure.net.0.weight, False
+derivative.ghost_structure.net.0.bias, False
+derivative.ghost_structure.net.1.activation.beta, False
+derivative.ghost_structure.net.2.weight, False
+derivative.ghost_structure.net.2.bias, False
+derivative.ghost_structure.net.3.activation.beta, False
+derivative.ghost_structure.net.4.weight, False
+derivative.ghost_structure.net.4.bias, False
+derivative.ghost_structure.net.5.activation.beta, False
+derivative.ghost_structure.net.6.weight, False
+derivative.ghost_structure.net.6.bias, False
+lr: 0.001
+run_id: 20240411_150748
+gpu_id: 0
+dataset: gray
+path_model: ./results/gray/20240328_082112/model_ind.pt
+regul: 
+state: [4, 2, 10, 32, 32]
+t: tensor([  0.,  40.,  80., 120., 160., 200., 240., 280., 320., 360.],
+       device='cuda:0')
+Runid 20240411_150748, Epoch 1, Iter 1, Loss Train: 1.672e-02
+Runid 20240411_150748, Epoch 11, Iter 1, Loss Train: 9.799e-03
+Runid 20240411_150748, Epoch 21, Iter 1, Loss Train: 8.407e-03
+epsilon: 0.902
+Checkpoint created: min test loss was inf, new is 0.007205783389508724
+Runid 20240411_150748, Epoch 30, Iter 1, Loss Test: 7.206e-03, Loss Relative: 1.222e+00
+========
+Runid 20240411_150748, Epoch 31, Iter 1, Loss Train: 6.203e-03
+Runid 20240411_150748, Epoch 41, Iter 1, Loss Train: 3.850e-03
+Runid 20240411_150748, Epoch 51, Iter 1, Loss Train: 1.553e-03
+epsilon: 0.857
+Checkpoint created: min test loss was 0.007205783389508724, new is 0.0008916331571526825
+Runid 20240411_150748, Epoch 60, Iter 1, Loss Test: 8.916e-04, Loss Relative: 2.176e-01
+========
+Runid 20240411_150748, Epoch 61, Iter 1, Loss Train: 3.062e-04
+Runid 20240411_150748, Epoch 71, Iter 1, Loss Train: 1.639e-04
+Runid 20240411_150748, Epoch 81, Iter 1, Loss Train: 1.859e-04
+epsilon: 0.815
+Checkpoint created: min test loss was 0.0008916331571526825, new is 0.0007634717621840537
+Runid 20240411_150748, Epoch 90, Iter 1, Loss Test: 7.635e-04, Loss Relative: 2.287e-01
+========
+Runid 20240411_150748, Epoch 91, Iter 1, Loss Train: 1.417e-04
+Runid 20240411_150748, Epoch 101, Iter 1, Loss Train: 1.333e-04
+Runid 20240411_150748, Epoch 111, Iter 1, Loss Train: 1.327e-04
+epsilon: 0.774
+Checkpoint created: min test loss was 0.0007634717621840537, new is 0.0007572708418592811
+Runid 20240411_150748, Epoch 120, Iter 1, Loss Test: 7.573e-04, Loss Relative: 2.267e-01
+========
+Runid 20240411_150748, Epoch 121, Iter 1, Loss Train: 1.311e-04
+Runid 20240411_150748, Epoch 131, Iter 1, Loss Train: 1.307e-04
+Runid 20240411_150748, Epoch 141, Iter 1, Loss Train: 1.307e-04
+epsilon: 0.735
+Checkpoint created: min test loss was 0.0007572708418592811, new is 0.0007569983135908842
+Runid 20240411_150748, Epoch 150, Iter 1, Loss Test: 7.570e-04, Loss Relative: 2.260e-01
+========
+Runid 20240411_150748, Epoch 151, Iter 1, Loss Train: 1.302e-04
+Runid 20240411_150748, Epoch 161, Iter 1, Loss Train: 1.305e-04
+Runid 20240411_150748, Epoch 171, Iter 1, Loss Train: 1.303e-04
+epsilon: 0.698
+Checkpoint created: min test loss was 0.0007569983135908842, new is 0.0007569013978354633
+Runid 20240411_150748, Epoch 180, Iter 1, Loss Test: 7.569e-04, Loss Relative: 2.261e-01
+========
+Runid 20240411_150748, Epoch 181, Iter 1, Loss Train: 1.302e-04
+Runid 20240411_150748, Epoch 191, Iter 1, Loss Train: 1.304e-04
