@@ -229,7 +229,6 @@ for epoch in range(n_epochs):
             loss_relative = 0.0
             loss_relative_env = torch.zeros(n_env)
             with torch.no_grad():
-                loss_test_per_env = []
                 for j, data_test in enumerate(dataloader_test, 0):
                     state = data_test["state"].to(device)
                     t = data_test["t"].to(device)
@@ -238,7 +237,6 @@ for epoch in range(n_epochs):
                     net.derivative.net_leaf.update_ghost()
                     outputs = batch_transform_inverse(net(inputs, t[0], epsilon_t), n_env)
                     loss_test_j = criterion(outputs, targets)
-                    loss_test_per_env.append(loss_test_j.cpu().numpy())
                     loss_test += loss_test_j
                     raw_loss_relative = torch.abs(outputs - targets) / torch.abs(targets)
                     loss_relative += raw_loss_relative.nanmean()
@@ -253,7 +251,7 @@ for epoch in range(n_epochs):
                 loss_relative /= j + 1
                 loss_relative_env /= j + 1
 
-                logger.info(f"loss_test: {loss_test}, loss_test_per_env: {np.stack(loss_test_per_env)}")
+                logger.info(f"loss_test: {loss_test}, loss_test_per_env: {loss_test_env.numpy()}")
 
             if loss_test_min > loss_test:
                 logger.info(f"Checkpoint created: min test loss was {loss_test_min}, new is {loss_test}")

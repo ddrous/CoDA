@@ -7,8 +7,11 @@ import numpy as np
 # with open('nohup.log', 'r') as file:
 #     code = file.read()
 
+folderpath = 'results/navier/20240804_113447/'
+metatrain = False
+
 # ## Or read from the log file in forced/20240304_194521
-with open('results/brussel/20240803_234259/log', 'r') as file:
+with open(folderpath+'log', 'r') as file:
     code = file.read()
 
 
@@ -19,10 +22,10 @@ epochs_train = re.findall(r'Epoch (\d+), Iter \d+, Loss Train:', code)
 epochs_train = [int(i) for i in epochs_train]
 
 ## collect all the loss values and epochs
-loss_test_values = re.findall(r'Loss Test ind: (\d+\.\d+e[+-]\d+)', code)
+loss_test_values = re.findall(r'Loss Test ind: (\d+\.\d+e[+-]\d+)', code) if metatrain else re.findall(r'Loss Test: (\d+\.\d+e[+-]\d+)', code)
 # loss_test_values = re.findall(r'Loss Test: (\d+\.\d+e[+-]\d+)', code)
 loss_test_values = [float(i) for i in loss_test_values]
-epochs_test = re.findall(r'Epoch (\d+), Iter \d+, Loss Test ind:', code)
+epochs_test = re.findall(r'Epoch (\d+), Iter \d+, Loss Test ind:', code) if metatrain else re.findall(r'Epoch (\d+), Iter \d+, Loss Test:', code)
 # epochs_test = re.findall(r'Epoch (\d+), Iter \d+, Loss Test:', code)
 epochs_test = [int(i) for i in epochs_test]
 
@@ -39,7 +42,7 @@ plt.ylabel('MSE')
 plt.yscale('log')
 # plt.ylim(1e-5, 0.1)
 plt.legend()
-plt.draw()
+# plt.draw()
 
 #%%
 
@@ -51,3 +54,8 @@ print('Final Loss Test: ', loss_test_values[-1])
 
 ## save the figure to selkov.pdf
 # plt.savefig('selkov.pdf', dpi=300, bbox_inches='tight')
+
+# plt.show()
+# plt.savefig(folderpath+'loss_train_test.png', dpi=300, bbox_inches='tight');
+
+## Figure is empty. Save it properly

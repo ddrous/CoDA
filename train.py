@@ -214,7 +214,7 @@ elif dataset == "brussel":
     As = [0.75, 1., 1.25]
     Bs = [3.25, 3.5, 3.75]
     dataset_train_params = {
-        "n_data_per_env": 1, "t_horizon": 10, "dt": 0.5, "method": "RK45", "size": 8, "n_block": 3, "dx": 1, "group": "train",
+        "n_data_per_env": 4, "t_horizon": 10, "dt": 0.5, "method": "RK45", "size": 8, "n_block": 3, "dx": 1, "group": "train",
         "buffer_file": f"{path_results}/brussel_buffer_train.shelve",
         "params": [{"A": A, "B": B, "Du": 1.0, "Dv": 0.1} for A in As for B in Bs]
     }
@@ -393,7 +393,11 @@ for epoch in range(n_epochs):
                     loss_relative = 0.0
                     # loss_env = [0.0 for _ in range(len(dataset_train_params["params"]))]
                     # loss_test_tot = 0.0
-                    loss_test_per_env = []
+
+                    loss_test_env = torch.zeros(n_env)
+                    loss_relative_env = torch.zeros(n_env)
+
+                    loss_test_per_batch = []
                     for j, data_test in enumerate(dataloader_test_instance, 0):
                         # print("\n Here I lie, dataloader test instance: ", dataloader_test_instance.dataset, "\n")
                         state = data_test["state"].to(device)
@@ -403,13 +407,23 @@ for epoch in range(n_epochs):
                         net.derivative.net_leaf.update_ghost()
                         outputs = batch_transform_inverse(net(inputs, t[0]), n_env)
                         loss_test_j = criterion(outputs, targets)
-                        loss_test_per_env.append(loss_test_j.cpu().numpy())
+                        loss_test_per_batch.append(loss_test_j.cpu().numpy())
                         loss_test += loss_test_j
                         raw_loss_relative = torch.abs(outputs - targets) / torch.abs(targets)
                         loss_relative += raw_loss_relative[~(torch.isnan(raw_loss_relative))].mean()
+
+                        outputs_, targets_, raw_loss_relative_ = batch_transform_loss(outputs, minibatch_size), batch_transform_loss(targets, minibatch_size), batch_transform_loss(raw_loss_relative, minibatch_size)
+                        dim = list(range(outputs_.dim()))
+                        dim.remove(1)
+                        loss_test_env += F.mse_loss(outputs_, targets_, reduction='none').mean(dim=dim).cpu()
+                        loss_relative_env += raw_loss_relative_.nanmean(dim=dim).cpu()
+
                     loss_test /= j + 1          ## TODO: they are actually taking the mean !!! Line 326
                     loss_relative /= j + 1
-                    logger.info(f"loss_test: {loss_test}, loss_relative: {loss_relative}, loss_test_per_env: {np.stack(loss_test_per_env)}")
+                    loss_test_env /= j + 1
+                    loss_relative_env /= j + 1
+
+                    logger.info(f"loss_test: {loss_test}, loss_relative: {loss_relative}, loss_test_per_batch: {loss_test_env.numpy()}")
 
                     loss_test_min = loss_test_min_ind if test_type == "ind" else loss_test_min_ood
                     if loss_test_min > loss_test:

@@ -1,0 +1,366 @@
+Params: n_mask 39887 / n_tot 39887 / n_hypernet 39887
+derivative.codes, True
+derivative.net_root.net.0.weight, False
+derivative.net_root.net.0.bias, False
+derivative.net_root.net.1.activation.beta, False
+derivative.net_root.net.2.weight, False
+derivative.net_root.net.2.bias, False
+derivative.net_root.net.3.activation.beta, False
+derivative.net_root.net.4.weight, False
+derivative.net_root.net.4.bias, False
+derivative.net_root.net.5.activation.beta, False
+derivative.net_root.net.6.weight, False
+derivative.net_root.net.6.bias, False
+derivative.net_hyper.weight, False
+derivative.ghost_structure.net.0.weight, False
+derivative.ghost_structure.net.0.bias, False
+derivative.ghost_structure.net.1.activation.beta, False
+derivative.ghost_structure.net.2.weight, False
+derivative.ghost_structure.net.2.bias, False
+derivative.ghost_structure.net.3.activation.beta, False
+derivative.ghost_structure.net.4.weight, False
+derivative.ghost_structure.net.4.bias, False
+derivative.ghost_structure.net.5.activation.beta, False
+derivative.ghost_structure.net.6.weight, False
+derivative.ghost_structure.net.6.bias, False
+lr: 0.001
+run_id: 20240804_125427
+gpu_id: 0
+dataset: brussel
+path_model: ./results/brussel/20240804_114844/model_ind.pt
+regul: 
+state: [12, 2, 20, 8, 8]
+t: tensor([0.0000, 0.5000, 1.0000, 1.5000, 2.0000, 2.5000, 3.0000, 3.5000, 4.0000,
+        4.5000, 5.0000, 5.5000, 6.0000, 6.5000, 7.0000, 7.5000, 8.0000, 8.5000,
+        9.0000, 9.5000], device='cuda:0')
+Runid 20240804_125427, Epoch 1, Iter 1, Loss Train: 2.102e+00
+Runid 20240804_125427, Epoch 11, Iter 1, Loss Train: 2.066e+00
+Runid 20240804_125427, Epoch 21, Iter 1, Loss Train: 2.021e+00
+epsilon: 0.902
+loss_test: 2.3450124263763428, loss_test_per_env: [2.2383692  3.1522813  4.185702   5.438693   1.3242371  1.6408635
+ 2.0633297  2.7159333  0.97932625 1.1734738  1.4218802  1.8060619 ]
+Checkpoint created: min test loss was inf, new is 2.3450124263763428
+Runid 20240804_125427, Epoch 30, Iter 1, Loss Test: 2.345e+00, Loss Relative: 6.851e-01
+========
+Runid 20240804_125427, Epoch 31, Iter 1, Loss Train: 1.958e+00
+Runid 20240804_125427, Epoch 41, Iter 1, Loss Train: 1.904e+00
+Runid 20240804_125427, Epoch 51, Iter 1, Loss Train: 1.832e+00
+epsilon: 0.857
+loss_test: 2.244499683380127, loss_test_per_env: [2.2919023  3.004482   3.6389883  5.4194646  1.3084216  1.6166599
+ 2.0147045  2.5806208  0.90693474 1.0880158  1.3480742  1.7157242 ]
+Checkpoint created: min test loss was 2.3450124263763428, new is 2.244499683380127
+Runid 20240804_125427, Epoch 60, Iter 1, Loss Test: 2.244e+00, Loss Relative: 7.377e-01
+========
+Runid 20240804_125427, Epoch 61, Iter 1, Loss Train: 1.749e+00
+Runid 20240804_125427, Epoch 71, Iter 1, Loss Train: 1.698e+00
+Runid 20240804_125427, Epoch 81, Iter 1, Loss Train: 1.675e+00
+epsilon: 0.815
+loss_test: 2.1586644649505615, loss_test_per_env: [2.158136  2.6974206 3.2569537 5.4141755 1.3066503 1.6279025 1.9881709
+ 2.4786556 0.8708195 1.0657864 1.3411819 1.6981198]
+Checkpoint created: min test loss was 2.244499683380127, new is 2.1586644649505615
+Runid 20240804_125427, Epoch 90, Iter 1, Loss Test: 2.159e+00, Loss Relative: 7.386e-01
+========
+Runid 20240804_125427, Epoch 91, Iter 1, Loss Train: 1.639e+00
+Runid 20240804_125427, Epoch 101, Iter 1, Loss Train: 1.604e+00
+Runid 20240804_125427, Epoch 111, Iter 1, Loss Train: 1.577e+00
+epsilon: 0.774
+loss_test: 2.092367172241211, loss_test_per_env: [2.1699688  2.4712405  2.7505705  5.4077563  1.3059268  1.6295526
+ 1.9837253  2.434821   0.85621274 1.0638374  1.3425481  1.6922479 ]
+Checkpoint created: min test loss was 2.1586644649505615, new is 2.092367172241211
+Runid 20240804_125427, Epoch 120, Iter 1, Loss Test: 2.092e+00, Loss Relative: 7.150e-01
+========
+Runid 20240804_125427, Epoch 121, Iter 1, Loss Train: 1.543e+00
+Runid 20240804_125427, Epoch 131, Iter 1, Loss Train: 1.511e+00
+Runid 20240804_125427, Epoch 141, Iter 1, Loss Train: 1.474e+00
+epsilon: 0.735
+loss_test: 2.0316808223724365, loss_test_per_env: [2.1879847 2.215813  2.3338275 5.4166756 1.3056705 1.6306195 1.9956168
+ 2.3424053 0.8462232 1.0715775 1.344442  1.6893077]
+Checkpoint created: min test loss was 2.092367172241211, new is 2.0316808223724365
+Runid 20240804_125427, Epoch 150, Iter 1, Loss Test: 2.032e+00, Loss Relative: 7.020e-01
+========
+Runid 20240804_125427, Epoch 151, Iter 1, Loss Train: 1.447e+00
+Runid 20240804_125427, Epoch 161, Iter 1, Loss Train: 1.432e+00
+Runid 20240804_125427, Epoch 171, Iter 1, Loss Train: 1.424e+00
+epsilon: 0.698
+loss_test: 2.015510320663452, loss_test_per_env: [2.1984897  2.0790806  2.3196197  5.3906217  1.3057173  1.6339371
+ 2.0076928  2.2958617  0.83829266 1.0823158  1.346667   1.6878248 ]
+Checkpoint created: min test loss was 2.0316808223724365, new is 2.015510320663452
+Runid 20240804_125427, Epoch 180, Iter 1, Loss Test: 2.016e+00, Loss Relative: 7.007e-01
+========
+Runid 20240804_125427, Epoch 181, Iter 1, Loss Train: 1.414e+00
+Runid 20240804_125427, Epoch 191, Iter 1, Loss Train: 1.422e+00
+Runid 20240804_125427, Epoch 201, Iter 1, Loss Train: 1.418e+00
+epsilon: 0.663
+loss_test: 2.0320425033569336, loss_test_per_env: [2.2140028  2.080565   2.4511564  5.268414   1.3061186  1.6352841
+ 2.0138488  2.4532127  0.83440876 1.0919119  1.3483474  1.6872374 ]
+Runid 20240804_125427, Epoch 210, Iter 1, Loss Test: 2.032e+00, Loss Relative: 7.085e-01
+========
+Runid 20240804_125427, Epoch 211, Iter 1, Loss Train: 1.420e+00
+Runid 20240804_125427, Epoch 221, Iter 1, Loss Train: 1.400e+00
+Runid 20240804_125427, Epoch 231, Iter 1, Loss Train: 1.377e+00
+epsilon: 0.63
+loss_test: 1.976839542388916, loss_test_per_env: [2.225775   2.0944126  2.4469805  4.605498   1.3061038  1.6359286
+ 2.005578   2.4295526  0.83538204 1.1019965  1.3495202  1.6853429 ]
+Checkpoint created: min test loss was 2.015510320663452, new is 1.976839542388916
+Runid 20240804_125427, Epoch 240, Iter 1, Loss Test: 1.977e+00, Loss Relative: 7.310e-01
+========
+Runid 20240804_125427, Epoch 241, Iter 1, Loss Train: 1.330e+00
+Runid 20240804_125427, Epoch 251, Iter 1, Loss Train: 1.310e+00
+Runid 20240804_125427, Epoch 261, Iter 1, Loss Train: 1.301e+00
+epsilon: 0.599
+loss_test: 1.935789704322815, loss_test_per_env: [2.2353215  2.0587518  2.345781   4.2406015  1.3064268  1.636241
+ 2.0243852  2.3922524  0.83995056 1.1131444  1.3509192  1.6856997 ]
+Checkpoint created: min test loss was 1.976839542388916, new is 1.935789704322815
+Runid 20240804_125427, Epoch 270, Iter 1, Loss Test: 1.936e+00, Loss Relative: 7.331e-01
+========
+Runid 20240804_125427, Epoch 271, Iter 1, Loss Train: 1.284e+00
+Runid 20240804_125427, Epoch 281, Iter 1, Loss Train: 1.272e+00
+Runid 20240804_125427, Epoch 291, Iter 1, Loss Train: 1.261e+00
+epsilon: 0.569
+loss_test: 1.9014250040054321, loss_test_per_env: [2.2440252 2.0635169 2.3049445 3.881545  1.3065559 1.635924  2.0173178
+ 2.3558264 0.8454843 1.1251156 1.3517076 1.6851358]
+Checkpoint created: min test loss was 1.935789704322815, new is 1.9014250040054321
+Runid 20240804_125427, Epoch 300, Iter 1, Loss Test: 1.901e+00, Loss Relative: 7.349e-01
+========
+Runid 20240804_125427, Epoch 301, Iter 1, Loss Train: 1.247e+00
+Runid 20240804_125427, Epoch 311, Iter 1, Loss Train: 1.232e+00
+Runid 20240804_125427, Epoch 321, Iter 1, Loss Train: 1.215e+00
+epsilon: 0.54
+loss_test: 1.8992942571640015, loss_test_per_env: [2.2501624 2.0825968 2.7524858 3.3936465 1.3066663 1.6360645 2.0017107
+ 2.3404536 0.8507974 1.1388719 1.3529975 1.6850755]
+Checkpoint created: min test loss was 1.9014250040054321, new is 1.8992942571640015
+Runid 20240804_125427, Epoch 330, Iter 1, Loss Test: 1.899e+00, Loss Relative: 7.199e-01
+========
+Runid 20240804_125427, Epoch 331, Iter 1, Loss Train: 1.242e+00
+Runid 20240804_125427, Epoch 341, Iter 1, Loss Train: 1.173e+00
+Runid 20240804_125427, Epoch 351, Iter 1, Loss Train: 1.163e+00
+epsilon: 0.513
+loss_test: 1.8186211585998535, loss_test_per_env: [2.2552364  2.0650816  2.424686   2.7858033  1.3065783  1.6367396
+ 1.9996967  2.298488   0.85713995 1.1571434  1.3535402  1.68332   ]
+Checkpoint created: min test loss was 1.8992942571640015, new is 1.8186211585998535
+Runid 20240804_125427, Epoch 360, Iter 1, Loss Test: 1.819e+00, Loss Relative: 7.353e-01
+========
+Runid 20240804_125427, Epoch 361, Iter 1, Loss Train: 1.136e+00
+Runid 20240804_125427, Epoch 371, Iter 1, Loss Train: 1.130e+00
+Runid 20240804_125427, Epoch 381, Iter 1, Loss Train: 1.123e+00
+epsilon: 0.488
+loss_test: 1.8295621871948242, loss_test_per_env: [2.2560804 2.0485075 2.4157476 2.8951406 1.3067636 1.6365607 1.9970862
+ 2.3113184 0.8626239 1.1851971 1.3546591 1.6850622]
+Runid 20240804_125427, Epoch 390, Iter 1, Loss Test: 1.830e+00, Loss Relative: 7.243e-01
+========
+Runid 20240804_125427, Epoch 391, Iter 1, Loss Train: 1.092e+00
+Runid 20240804_125427, Epoch 401, Iter 1, Loss Train: 1.160e+00
+Runid 20240804_125427, Epoch 411, Iter 1, Loss Train: 1.093e+00
+epsilon: 0.463
+loss_test: 1.829403281211853, loss_test_per_env: [2.2563732  2.0466812  2.3487668  2.8899965  1.3067153  1.6362487
+ 2.0145226  2.3064234  0.86634076 1.240874   1.3552783  1.6846174 ]
+Runid 20240804_125427, Epoch 420, Iter 1, Loss Test: 1.829e+00, Loss Relative: 7.292e-01
+========
+Runid 20240804_125427, Epoch 421, Iter 1, Loss Train: 1.076e+00
+Runid 20240804_125427, Epoch 431, Iter 1, Loss Train: 1.077e+00
+Runid 20240804_125427, Epoch 441, Iter 1, Loss Train: 1.075e+00
+epsilon: 0.44
+loss_test: 1.8520569801330566, loss_test_per_env: [2.256961   2.0534303  2.3875027  2.9853077  1.3065996  1.6364653
+ 1.9994355  2.3021977  0.86895937 1.3885064  1.3555372  1.6837803 ]
+Runid 20240804_125427, Epoch 450, Iter 1, Loss Test: 1.852e+00, Loss Relative: 7.382e-01
+========
+Runid 20240804_125427, Epoch 451, Iter 1, Loss Train: 1.081e+00
+Runid 20240804_125427, Epoch 461, Iter 1, Loss Train: 1.075e+00
+Runid 20240804_125427, Epoch 471, Iter 1, Loss Train: 1.079e+00
+epsilon: 0.418
+loss_test: 1.9541199207305908, loss_test_per_env: [2.2568815  2.0539768  2.4020548  4.0592337  1.3065243  1.6360421
+ 1.9909488  2.2986157  0.87117404 1.5330875  1.3566216  1.6842763 ]
+Runid 20240804_125427, Epoch 480, Iter 1, Loss Test: 1.954e+00, Loss Relative: 7.221e-01
+========
+Runid 20240804_125427, Epoch 481, Iter 1, Loss Train: 1.191e+00
+Runid 20240804_125427, Epoch 491, Iter 1, Loss Train: 1.109e+00
+Runid 20240804_125427, Epoch 501, Iter 1, Loss Train: 1.117e+00
+epsilon: 0.397
+loss_test: 1.8944084644317627, loss_test_per_env: [2.2571697 2.0520406 2.4172728 3.1584444 1.3065181 1.6368256 1.989656
+ 2.3001008 0.8730358 1.7003492 1.3567333 1.6847574]
+Runid 20240804_125427, Epoch 510, Iter 1, Loss Test: 1.894e+00, Loss Relative: 7.399e-01
+========
+Runid 20240804_125427, Epoch 511, Iter 1, Loss Train: 1.069e+00
+Runid 20240804_125427, Epoch 521, Iter 1, Loss Train: 1.071e+00
+Runid 20240804_125427, Epoch 531, Iter 1, Loss Train: 1.074e+00
+epsilon: 0.377
+loss_test: 1.9217485189437866, loss_test_per_env: [2.2569647 2.0515897 2.2970276 3.467104  1.3067249 1.6370734 1.9937143
+ 2.3023672 0.8739452 1.8329989 1.3571401 1.6843302]
+Runid 20240804_125427, Epoch 540, Iter 1, Loss Test: 1.922e+00, Loss Relative: 7.345e-01
+========
+Runid 20240804_125427, Epoch 541, Iter 1, Loss Train: 1.098e+00
+Runid 20240804_125427, Epoch 551, Iter 1, Loss Train: 1.117e+00
+Runid 20240804_125427, Epoch 561, Iter 1, Loss Train: 1.094e+00
+epsilon: 0.358
+loss_test: 1.9127471446990967, loss_test_per_env: [2.2569275  2.0494516  2.4365454  3.1131408  1.306449   1.6367271
+ 1.983818   2.309842   0.87553924 1.942798   1.357334   1.6843919 ]
+Runid 20240804_125427, Epoch 570, Iter 1, Loss Test: 1.913e+00, Loss Relative: 7.442e-01
+========
+Runid 20240804_125427, Epoch 571, Iter 1, Loss Train: 1.069e+00
+Runid 20240804_125427, Epoch 581, Iter 1, Loss Train: 1.078e+00
+Runid 20240804_125427, Epoch 591, Iter 1, Loss Train: 1.083e+00
+epsilon: 0.341
+loss_test: 1.9162184000015259, loss_test_per_env: [2.257165  2.0525687 2.4301753 3.0545907 1.3066672 1.6369703 1.995901
+ 2.3087807 0.8765624 2.0331087 1.3577397 1.6843948]
+Runid 20240804_125427, Epoch 600, Iter 1, Loss Test: 1.916e+00, Loss Relative: 7.479e-01
+========
+Runid 20240804_125427, Epoch 601, Iter 1, Loss Train: 1.071e+00
+Runid 20240804_125427, Epoch 611, Iter 1, Loss Train: 1.070e+00
+Runid 20240804_125427, Epoch 621, Iter 1, Loss Train: 1.076e+00
+epsilon: 0.324
+loss_test: 1.9305363893508911, loss_test_per_env: [2.2573283 2.0481205 2.5233078 3.0801935 1.3065965 1.6365964 1.9884639
+ 2.3043993 0.8769865 2.102445  1.3579017 1.6840935]
+Runid 20240804_125427, Epoch 630, Iter 1, Loss Test: 1.931e+00, Loss Relative: 7.524e-01
+========
+Runid 20240804_125427, Epoch 631, Iter 1, Loss Train: 1.076e+00
+Runid 20240804_125427, Epoch 641, Iter 1, Loss Train: 1.076e+00
+Runid 20240804_125427, Epoch 651, Iter 1, Loss Train: 1.074e+00
+epsilon: 0.307
+loss_test: 1.938265323638916, loss_test_per_env: [2.2571702 2.0544555 2.525415  3.1153054 1.3065989 1.6364521 1.9871416
+ 2.303812  0.877847  2.152     1.3583684 1.684619 ]
+Runid 20240804_125427, Epoch 660, Iter 1, Loss Test: 1.938e+00, Loss Relative: 7.462e-01
+========
+Runid 20240804_125427, Epoch 661, Iter 1, Loss Train: 1.072e+00
+Runid 20240804_125427, Epoch 671, Iter 1, Loss Train: 1.070e+00
+Runid 20240804_125427, Epoch 681, Iter 1, Loss Train: 1.069e+00
+epsilon: 0.292
+loss_test: 1.940561294555664, loss_test_per_env: [2.256924  2.0537813 2.5301535 3.0979605 1.3065137 1.6361394 1.9915069
+ 2.3049357 0.8782417 2.187287  1.3586211 1.684671 ]
+Runid 20240804_125427, Epoch 690, Iter 1, Loss Test: 1.941e+00, Loss Relative: 7.493e-01
+========
+Runid 20240804_125427, Epoch 691, Iter 1, Loss Train: 1.069e+00
+Runid 20240804_125427, Epoch 701, Iter 1, Loss Train: 1.069e+00
+Runid 20240804_125427, Epoch 711, Iter 1, Loss Train: 1.069e+00
+epsilon: 0.277
+loss_test: 1.944183588027954, loss_test_per_env: [2.2571456 2.0497375 2.5395885 3.1166556 1.3065177 1.636451  1.9878058
+ 2.3031895 0.8785595 2.2110713 1.3586308 1.6848491]
+Runid 20240804_125427, Epoch 720, Iter 1, Loss Test: 1.944e+00, Loss Relative: 7.494e-01
+========
+Runid 20240804_125427, Epoch 721, Iter 1, Loss Train: 1.069e+00
+Runid 20240804_125427, Epoch 731, Iter 1, Loss Train: 1.069e+00
+Runid 20240804_125427, Epoch 741, Iter 1, Loss Train: 1.069e+00
+epsilon: 0.264
+loss_test: 1.9444310665130615, loss_test_per_env: [2.2571316 2.0524845 2.497436  3.1386902 1.3064203 1.6363088 1.9900193
+ 2.3058202 0.8788494 2.2267084 1.3587598 1.6845406]
+Runid 20240804_125427, Epoch 750, Iter 1, Loss Test: 1.944e+00, Loss Relative: 7.480e-01
+========
+Runid 20240804_125427, Epoch 751, Iter 1, Loss Train: 1.069e+00
+Runid 20240804_125427, Epoch 761, Iter 1, Loss Train: 1.070e+00
+Runid 20240804_125427, Epoch 771, Iter 1, Loss Train: 1.068e+00
+epsilon: 0.25
+loss_test: 1.9483630657196045, loss_test_per_env: [2.2571642 2.0521672 2.5330465 3.1363351 1.3065726 1.6363542 1.9885972
+ 2.3090644 0.8786571 2.2387009 1.3589762 1.6847187]
+Runid 20240804_125427, Epoch 780, Iter 1, Loss Test: 1.948e+00, Loss Relative: 7.500e-01
+========
+Runid 20240804_125427, Epoch 781, Iter 1, Loss Train: 1.069e+00
+Runid 20240804_125427, Epoch 791, Iter 1, Loss Train: 1.069e+00
+Runid 20240804_125427, Epoch 801, Iter 1, Loss Train: 1.069e+00
+epsilon: 0.238
+loss_test: 1.9452975988388062, loss_test_per_env: [2.2571278 2.053309  2.4527056 3.166555  1.306429  1.6367825 1.9886428
+ 2.3130355 0.8790071 2.2463393 1.3590146 1.6846178]
+Runid 20240804_125427, Epoch 810, Iter 1, Loss Test: 1.945e+00, Loss Relative: 7.485e-01
+========
+Runid 20240804_125427, Epoch 811, Iter 1, Loss Train: 1.069e+00
+Runid 20240804_125427, Epoch 821, Iter 1, Loss Train: 1.069e+00
+Runid 20240804_125427, Epoch 831, Iter 1, Loss Train: 1.069e+00
+epsilon: 0.226
+loss_test: 1.9494529962539673, loss_test_per_env: [2.2571702  2.0519     2.5141184  3.1584315  1.3064617  1.6366267
+ 1.9882731  2.3059053  0.87856925 2.2521122  1.3593107  1.6845577 ]
+Runid 20240804_125427, Epoch 840, Iter 1, Loss Test: 1.949e+00, Loss Relative: 7.503e-01
+========
+Runid 20240804_125427, Epoch 841, Iter 1, Loss Train: 1.068e+00
+Runid 20240804_125427, Epoch 851, Iter 1, Loss Train: 1.069e+00
+Runid 20240804_125427, Epoch 861, Iter 1, Loss Train: 1.069e+00
+epsilon: 0.215
+loss_test: 1.9518730640411377, loss_test_per_env: [2.257153   2.050108   2.5236883  3.1620796  1.3064414  1.6363485
+ 1.9949863  2.3151846  0.87862027 2.2537339  1.359346   1.6847872 ]
+Runid 20240804_125427, Epoch 870, Iter 1, Loss Test: 1.952e+00, Loss Relative: 7.507e-01
+========
+Runid 20240804_125427, Epoch 871, Iter 1, Loss Train: 1.069e+00
+Runid 20240804_125427, Epoch 881, Iter 1, Loss Train: 1.069e+00
+Runid 20240804_125427, Epoch 891, Iter 1, Loss Train: 1.069e+00
+epsilon: 0.204
+loss_test: 1.9503023624420166, loss_test_per_env: [2.2571788 2.0500865 2.5206738 3.1600907 1.3063396 1.636307  1.9859619
+ 2.3042767 0.8786097 2.2599247 1.3593686 1.6848105]
+Runid 20240804_125427, Epoch 900, Iter 1, Loss Test: 1.950e+00, Loss Relative: 7.488e-01
+========
+Runid 20240804_125427, Epoch 901, Iter 1, Loss Train: 1.069e+00
+Runid 20240804_125427, Epoch 911, Iter 1, Loss Train: 1.068e+00
+Runid 20240804_125427, Epoch 921, Iter 1, Loss Train: 1.069e+00
+epsilon: 0.194
+loss_test: 1.9506255388259888, loss_test_per_env: [2.2572916  2.0496957  2.518939   3.1607082  1.3066342  1.6360354
+ 1.9886262  2.306937   0.87874705 2.2599149  1.3594364  1.6845382 ]
+Runid 20240804_125427, Epoch 930, Iter 1, Loss Test: 1.951e+00, Loss Relative: 7.500e-01
+========
+Runid 20240804_125427, Epoch 931, Iter 1, Loss Train: 1.069e+00
+Runid 20240804_125427, Epoch 941, Iter 1, Loss Train: 1.088e+00
+Runid 20240804_125427, Epoch 951, Iter 1, Loss Train: 1.073e+00
+epsilon: 0.184
+loss_test: 1.946948528289795, loss_test_per_env: [2.2571974  2.0521975  2.5213425  3.1026106  1.3065076  1.636272
+ 1.9939222  2.3077705  0.87864363 2.2627282  1.3596547  1.6845366 ]
+Runid 20240804_125427, Epoch 960, Iter 1, Loss Test: 1.947e+00, Loss Relative: 7.514e-01
+========
+Runid 20240804_125427, Epoch 961, Iter 1, Loss Train: 1.072e+00
+Runid 20240804_125427, Epoch 971, Iter 1, Loss Train: 1.081e+00
+Runid 20240804_125427, Epoch 981, Iter 1, Loss Train: 1.071e+00
+epsilon: 0.175
+loss_test: 1.95219886302948, loss_test_per_env: [2.2572415 2.0543127 2.527007  3.1620884 1.3064619 1.6361995 1.9911071
+ 2.3061545 0.878736  2.2634904 1.3594093 1.6841764]
+Runid 20240804_125427, Epoch 990, Iter 1, Loss Test: 1.952e+00, Loss Relative: 7.494e-01
+========
+Runid 20240804_125427, Epoch 991, Iter 1, Loss Train: 1.069e+00
+Runid 20240804_125427, Epoch 1001, Iter 1, Loss Train: 1.073e+00
+Runid 20240804_125427, Epoch 1011, Iter 1, Loss Train: 1.069e+00
+epsilon: 0.166
+loss_test: 1.950566291809082, loss_test_per_env: [2.2570834 2.0512214 2.52823   3.1347013 1.3065408 1.6364399 1.9937407
+ 2.3128507 0.8787539 2.2633524 1.3595755 1.6843039]
+Runid 20240804_125427, Epoch 1020, Iter 1, Loss Test: 1.951e+00, Loss Relative: 7.509e-01
+========
+Runid 20240804_125427, Epoch 1021, Iter 1, Loss Train: 1.069e+00
+Runid 20240804_125427, Epoch 1031, Iter 1, Loss Train: 1.069e+00
+Runid 20240804_125427, Epoch 1041, Iter 1, Loss Train: 1.069e+00
+epsilon: 0.158
+loss_test: 1.9507520198822021, loss_test_per_env: [2.2572594 2.0513792 2.5356314 3.1322591 1.3064536 1.6363881 1.992588
+ 2.311158  0.8790087 2.2636309 1.3594112 1.6838584]
+Runid 20240804_125427, Epoch 1050, Iter 1, Loss Test: 1.951e+00, Loss Relative: 7.515e-01
+========
+Runid 20240804_125427, Epoch 1051, Iter 1, Loss Train: 1.069e+00
+Runid 20240804_125427, Epoch 1061, Iter 1, Loss Train: 1.069e+00
+Runid 20240804_125427, Epoch 1071, Iter 1, Loss Train: 1.068e+00
+epsilon: 0.15
+loss_test: 1.9522196054458618, loss_test_per_env: [2.2571695  2.0482833  2.5202131  3.1767712  1.3065461  1.6363059
+ 1.9877877  2.3078537  0.87885505 2.2624485  1.3597778  1.6846225 ]
+Runid 20240804_125427, Epoch 1080, Iter 1, Loss Test: 1.952e+00, Loss Relative: 7.483e-01
+========
+Runid 20240804_125427, Epoch 1081, Iter 1, Loss Train: 1.070e+00
+Runid 20240804_125427, Epoch 1091, Iter 1, Loss Train: 1.069e+00
+Runid 20240804_125427, Epoch 1101, Iter 1, Loss Train: 1.068e+00
+epsilon: 0.142
+loss_test: 1.9525072574615479, loss_test_per_env: [2.257149   2.0483103  2.5427222  3.1586936  1.3064033  1.6362947
+ 1.990493   2.3047094  0.87890524 2.2618752  1.3597168  1.6848122 ]
+Runid 20240804_125427, Epoch 1110, Iter 1, Loss Test: 1.953e+00, Loss Relative: 7.506e-01
+========
+Runid 20240804_125427, Epoch 1111, Iter 1, Loss Train: 1.068e+00
+Runid 20240804_125427, Epoch 1121, Iter 1, Loss Train: 1.069e+00
+Runid 20240804_125427, Epoch 1131, Iter 1, Loss Train: 1.068e+00
+epsilon: 0.135
+loss_test: 1.9511884450912476, loss_test_per_env: [2.2569742  2.0492184  2.4940763  3.193317   1.3065126  1.636721
+ 1.9877064  2.3065913  0.87851036 2.2604656  1.3598121  1.6843538 ]
+Runid 20240804_125427, Epoch 1140, Iter 1, Loss Test: 1.951e+00, Loss Relative: 7.491e-01
+========
+Runid 20240804_125427, Epoch 1141, Iter 1, Loss Train: 1.069e+00
+Runid 20240804_125427, Epoch 1151, Iter 1, Loss Train: 1.073e+00
+Runid 20240804_125427, Epoch 1161, Iter 1, Loss Train: 1.069e+00
+epsilon: 0.129
+loss_test: 1.949866771697998, loss_test_per_env: [2.2569175 2.0502963 2.4655235 3.2055857 1.3066583 1.6367145 1.9914259
+ 2.3017755 0.8779205 2.2613971 1.3597478 1.6844362]
+Runid 20240804_125427, Epoch 1170, Iter 1, Loss Test: 1.950e+00, Loss Relative: 7.489e-01
+========
+Runid 20240804_125427, Epoch 1171, Iter 1, Loss Train: 1.070e+00
+Runid 20240804_125427, Epoch 1181, Iter 1, Loss Train: 1.072e+00
+Runid 20240804_125427, Epoch 1191, Iter 1, Loss Train: 1.068e+00
+epsilon: 0.122
+loss_test: 1.9471538066864014, loss_test_per_env: [2.256833  2.0524337 2.4309268 3.1945302 1.3066556 1.636736  1.992749
+ 2.3116717 0.8776866 2.2615995 1.359719  1.6843036]
+Runid 20240804_125427, Epoch 1200, Iter 1, Loss Test: 1.947e+00, Loss Relative: 7.507e-01
+========

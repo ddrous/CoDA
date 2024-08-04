@@ -196,7 +196,7 @@ class GroupSpectralConv2d(nn.Module):
 
 
 class GroupFNO2d(nn.Module):
-    def __init__(self, state_c, modes1=12, modes2=12, width=10, groups=1, nl='swish'):
+    def __init__(self, state_c, modes1=8, modes2=8, width=10, groups=1, nl='swish'):
         super().__init__()
         self.width = width
         self.groups = groups
@@ -213,8 +213,8 @@ class GroupFNO2d(nn.Module):
         self.a1 = GroupActivation(nl, groups=groups)
         self.a2 = GroupActivation(nl, groups=groups)
         self.a3 = GroupActivation(nl, groups=groups)
-        self.fc1 = nn.Conv2d(self.width * self.groups, 128 * self.groups, 1, groups=groups)
-        self.fc2 = nn.Conv2d(128 * self.groups, state_c * self.groups, 1, groups=groups)
+        self.fc1 = nn.Conv2d(self.width * self.groups, 16 * self.groups, 1, groups=groups)
+        self.fc2 = nn.Conv2d(16 * self.groups, state_c * self.groups, 1, groups=groups)
 
     def forward(self, x):
         # x:  batchsize x n_env * c x h x w
