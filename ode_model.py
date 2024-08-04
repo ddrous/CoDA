@@ -20,7 +20,7 @@ class Derivative(nn.Module):
         # Bias
         if self.is_ode:
             self.net_root = GroupConvMLP(state_c, hidden_c, groups=1, factor=factor, nl=nl)
-        elif dataset == "gray" or dataset == "wave":
+        elif dataset == "gray" or dataset == "wave" or dataset == "brussel":
             self.net_root = GroupConv(state_c, hidden_c, groups=1, factor=factor, nl=nl, size=size)
         elif dataset == "navier":
             self.net_root = GroupFNO2d(state_c, nl=nl, groups=1)
@@ -35,7 +35,7 @@ class Derivative(nn.Module):
         # Ghost
         if self.is_ode:
             self.ghost_structure = GroupConvMLP(state_c, hidden_c, groups=n_env, factor=factor, nl=nl)
-        elif dataset == "gray" or dataset == "wave":
+        elif dataset == "gray" or dataset == "wave" or dataset == "brussel":
             self.ghost_structure = GroupConv(state_c, hidden_c, groups=n_env, factor=factor, nl=nl, size=size)
         elif dataset == "navier":
             self.ghost_structure = GroupFNO2d(state_c, nl=nl, groups=n_env)

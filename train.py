@@ -205,6 +205,25 @@ elif dataset == "gray":
     dataset_test_params["buffer_file"] = f"{path_results}/gray_buffer_test.shelve"
     dataset_test_params["group"] = "test"
     dataset_train, dataset_test = GrayScottDataset(**dataset_train_params), GrayScottDataset(**dataset_test_params)
+elif dataset == "brussel":
+    minibatch_size = 1
+    factor = 5e-4
+    state_c = 2
+    init_gain = 1
+    method = "dopri5"
+    As = [0.75, 1., 1.25]
+    Bs = [3.25, 3.5, 3.75]
+    dataset_train_params = {
+        "n_data_per_env": 1, "t_horizon": 10, "dt": 0.5, "method": "RK45", "size": 8, "n_block": 3, "dx": 1, "group": "train",
+        "buffer_file": f"{path_results}/brussel_buffer_train.shelve",
+        "params": [{"A": A, "B": B, "Du": 1.0, "Dv": 0.1} for A in As for B in Bs]
+    }
+    dataset_test_params = dict()
+    dataset_test_params.update(dataset_train_params)
+    dataset_test_params["n_data_per_env"] = 32
+    dataset_test_params["buffer_file"] = f"{path_results}/brussel_buffer_test.shelve"
+    dataset_test_params["group"] = "test"
+    dataset_train, dataset_test = BrusselatorDataset(**dataset_train_params), BrusselatorDataset(**dataset_test_params)
 elif dataset == "navier":
     minibatch_size = 16
     factor = 1
@@ -251,15 +270,15 @@ if dataset_test_ood:
 
 # Forecaster
 epsilon = epsilon_t = 0.99
-update_epsilon_every = 30
+update_epsilon_every = 10
 if dataset == "navier":
     update_epsilon_every = 15
-n_epochs = 4
+n_epochs = 10
 forecaster_params = {
     "dataset": dataset,
     "is_ode": is_ode,
     "state_c": state_c,
-    "hidden_c": 106,
+    "hidden_c": 46,
     "code_c": code_c,
     "n_env": n_env,
     "factor": factor,
@@ -374,6 +393,7 @@ for epoch in range(n_epochs):
                     loss_relative = 0.0
                     # loss_env = [0.0 for _ in range(len(dataset_train_params["params"]))]
                     # loss_test_tot = 0.0
+                    loss_test_per_env = []
                     for j, data_test in enumerate(dataloader_test_instance, 0):
                         # print("\n Here I lie, dataloader test instance: ", dataloader_test_instance.dataset, "\n")
                         state = data_test["state"].to(device)
@@ -382,12 +402,14 @@ for epoch in range(n_epochs):
                         inputs = batch_transform(state, minibatch_size)
                         net.derivative.net_leaf.update_ghost()
                         outputs = batch_transform_inverse(net(inputs, t[0]), n_env)
-                        loss_test += criterion(outputs, targets)
+                        loss_test_j = criterion(outputs, targets)
+                        loss_test_per_env.append(loss_test_j.cpu().numpy())
+                        loss_test += loss_test_j
                         raw_loss_relative = torch.abs(outputs - targets) / torch.abs(targets)
                         loss_relative += raw_loss_relative[~(torch.isnan(raw_loss_relative))].mean()
                     loss_test /= j + 1          ## TODO: they are actually taking the mean !!! Line 326
                     loss_relative /= j + 1
-                    logger.info(f"loss_test: {loss_test}, loss_relative: {loss_relative}")
+                    logger.info(f"loss_test: {loss_test}, loss_relative: {loss_relative}, loss_test_per_env: {np.stack(loss_test_per_env)}")
 
                     loss_test_min = loss_test_min_ind if test_type == "ind" else loss_test_min_ood
                     if loss_test_min > loss_test:

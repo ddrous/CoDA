@@ -113,6 +113,20 @@ elif dataset == "gray":
     dataset_test_params["buffer_file"] = f"{path_results}/gray_buffer_test_ada.shelve"
     dataset_test_params["group"] = "test"
     dataset_train, dataset_test = GrayScottDataset(**dataset_train_params), GrayScottDataset(**dataset_test_params)
+elif dataset == "brussel":
+    minibatch_size = 1
+    As = [0.875, 1.125, 1.375]
+    Bs = [3.125, 3.375, 3.625, 3.875]
+    dataset_train_params = {"n_data_per_env": 1, "t_horizon": 10, "dt": 0.5, "size": 8, "n_block": 3, "dx": 1, "method": "RK45", 
+                            "buffer_file": f"{path_results}/brussel_buffer_train_ada.shelve",
+                            "group": "train", "params": [{"A": A, "B": B, "Du": 1.0, "Dv": 0.1} for A in As for B in Bs]}
+    dataset_test_params = dict()
+    n_env = len(dataset_train_params['params'])
+    dataset_test_params.update(dataset_train_params)
+    dataset_test_params["n_data_per_env"] = 32
+    dataset_test_params["buffer_file"] = f"{path_results}/brussel_buffer_test_ada.shelve"
+    dataset_test_params["group"] = "test"
+    dataset_train, dataset_test = BrusselatorDataset(**dataset_train_params), BrusselatorDataset(**dataset_test_params)
 elif dataset == "navier":
     size = 32
     tt = torch.linspace(0, 1, size + 1)[0:-1]
@@ -215,6 +229,7 @@ for epoch in range(n_epochs):
             loss_relative = 0.0
             loss_relative_env = torch.zeros(n_env)
             with torch.no_grad():
+                loss_test_per_env = []
                 for j, data_test in enumerate(dataloader_test, 0):
                     state = data_test["state"].to(device)
                     t = data_test["t"].to(device)
@@ -222,7 +237,9 @@ for epoch in range(n_epochs):
                     inputs = batch_transform(state, minibatch_size)
                     net.derivative.net_leaf.update_ghost()
                     outputs = batch_transform_inverse(net(inputs, t[0], epsilon_t), n_env)
-                    loss_test += criterion(outputs, targets)
+                    loss_test_j = criterion(outputs, targets)
+                    loss_test_per_env.append(loss_test_j.cpu().numpy())
+                    loss_test += loss_test_j
                     raw_loss_relative = torch.abs(outputs - targets) / torch.abs(targets)
                     loss_relative += raw_loss_relative.nanmean()
 
@@ -235,6 +252,8 @@ for epoch in range(n_epochs):
                 loss_test_env /= j + 1
                 loss_relative /= j + 1
                 loss_relative_env /= j + 1
+
+                logger.info(f"loss_test: {loss_test}, loss_test_per_env: {np.stack(loss_test_per_env)}")
 
             if loss_test_min > loss_test:
                 logger.info(f"Checkpoint created: min test loss was {loss_test_min}, new is {loss_test}")

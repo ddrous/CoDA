@@ -4,12 +4,12 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # get the content of the nohup.log file as a string
-with open('nohup.log', 'r') as file:
-    code = file.read()
+# with open('nohup.log', 'r') as file:
+#     code = file.read()
 
 # ## Or read from the log file in forced/20240304_194521
-# with open('results/forced/20240304_194521/log', 'r') as file:
-#     code = file.read()
+with open('results/brussel/20240803_234259/log', 'r') as file:
+    code = file.read()
 
 
 ## collect all the loss values and epochs
@@ -37,7 +37,7 @@ plt.plot(epochs_test, loss_test_values, label='Loss Test')
 plt.xlabel('Epoch')
 plt.ylabel('MSE')
 plt.yscale('log')
-plt.ylim(1e-5, 0.1)
+# plt.ylim(1e-5, 0.1)
 plt.legend()
 plt.draw()
 
