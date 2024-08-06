@@ -278,8 +278,8 @@ forecaster_params = {
     "dataset": dataset,
     "is_ode": is_ode,
     "state_c": state_c,
-    "hidden_c": 46,
-    "code_c": code_c,
+    "hidden_c": 146,
+    "code_c": code_c,       ## Context size 
     "n_env": n_env,
     "factor": factor,
     "method": method,

@@ -7,8 +7,8 @@ import numpy as np
 # with open('nohup.log', 'r') as file:
 #     code = file.read()
 
-folderpath = 'results/navier/20240804_113447/'
-metatrain = False
+folderpath = 'results/g_osci/20240326_141140/'
+metatrain = True
 
 # ## Or read from the log file in forced/20240304_194521
 with open(folderpath+'log', 'r') as file:
@@ -34,7 +34,8 @@ epochs_test = [int(i) for i in epochs_test]
 ## Set figure size
 plt.figure(figsize=(10, 5))
 
-plt.plot(epochs_train, loss_train_values, label='Loss Train')
+skip = 1
+plt.plot(epochs_train[::skip], loss_train_values[::skip], label='Loss Train')
 plt.plot(epochs_test, loss_test_values, label='Loss Test')
 
 plt.xlabel('Epoch')
