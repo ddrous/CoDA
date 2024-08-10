@@ -137,7 +137,7 @@ for i in range(4):
     ax.text(Y_pred[i, 0]+0.01, Y_pred[i, 1]+0.01, f"{i}", fontsize=6, color="k", ha='left', va='bottom', fontstyle='italic', fontweight='bold')
 
 ## Set the title as CoDA - Error: 1.23e-4
-ax.set_title(f"Adapt MSE: {error:.2e}")
+ax.set_title(f"Adaptation MSE: {error:.2e}")
 
 ## Save the figure
 fig.savefig("interpretable_CoDA.pdf", dpi=300, bbox_inches='tight')
