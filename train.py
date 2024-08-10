@@ -273,7 +273,7 @@ epsilon = epsilon_t = 0.99
 update_epsilon_every = 10
 if dataset == "navier":
     update_epsilon_every = 15
-n_epochs = 10000
+n_epochs = 1
 forecaster_params = {
     "dataset": dataset,
     "is_ode": is_ode,
@@ -386,7 +386,8 @@ for epoch in range(n_epochs):
             logger.info(f"epsilon: {epsilon_t:.3}")
 
             with torch.no_grad():
-                # print(net.derivative.codes)
+                # print("Context vectors\n", net.derivative.codes)
+
                 dataloader_test_list = [(dataloader_test, "ind"), (dataloader_test_ood, "ood")] if dataset_test_ood else [(dataloader_test, "ind")]
                 for (dataloader_test_instance, test_type) in dataloader_test_list:
                     loss_test = 0.0
