@@ -273,12 +273,12 @@ epsilon = epsilon_t = 0.99
 update_epsilon_every = 10
 if dataset == "navier":
     update_epsilon_every = 15
-n_epochs = 1
+n_epochs = 100
 forecaster_params = {
     "dataset": dataset,
     "is_ode": is_ode,
     "state_c": state_c,
-    "hidden_c": 146,
+    "hidden_c": 224,
     "code_c": code_c,       ## Context size 
     "n_env": n_env,
     "factor": factor,
