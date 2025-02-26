@@ -204,9 +204,6 @@ for epoch in range(n_epochs):
         outputs = batch_transform_inverse(net(inputs, t[0], epsilon_t), n_env)
         loss = criterion(outputs, targets)
 
-        ## Save outputs and targets to a npz file
-        np.savez("sample_prediction_coda.npz", X_hat=outputs.cpu().detach().numpy(), X=targets.cpu().detach().numpy())
-
         # Total
         tot_loss = loss
         tot_loss.backward()
